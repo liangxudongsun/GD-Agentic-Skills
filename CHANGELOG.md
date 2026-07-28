@@ -42,7 +42,7 @@ Agents shouldn't have to *guess* which doc page or peer skill owns the landmine.
 Load [godot-monte-carlo-balancer](skills/godot-monte-carlo-balancer/SKILL.md) when you need source-driven balance labs: Resource-first extract, playstyle CI win-rate bands, economy careers, and headless Godot calibration (Rust + rayon under the hood).
 
 <p>
-  <a href="https://github.com/DedInc"><img src="https://github.com/DedInc.png?size=96" width="36" height="36" alt="@DedInc" style="border-radius:50%; vertical-align:middle;" /></a>
+  <a href="https://github.com/DedInc"><img src="https://wsrv.nl/?url=github.com/DedInc.png&w=96&h=96&mask=circle&fit=cover&maxage=1w" width="36" height="36" alt="@DedInc" /></a>
   &nbsp;<strong>SPECIAL MENTION — <a href="https://github.com/DedInc">@DedInc</a></strong> (PR #5): first external Domain Skill contribution to GDSkills. Thank you for shipping a real balance lab instead of another vibes spreadsheet.
 </p>
 
@@ -426,7 +426,7 @@ Day one: ship a usable agent-first Godot skill library — 80+ skills, the DIA l
 ---
 
 <div align="center">
-  <a href="https://github.com/thedivergentai"><img src="https://github.com/thedivergentai.png?size=96" width="36" height="36" alt="Divergent AI" style="border-radius:50%; vertical-align:middle;" /></a>
+  <a href="https://github.com/thedivergentai"><img src="https://wsrv.nl/?url=github.com/thedivergentai.png&w=96&h=96&mask=circle&fit=cover&maxage=1w" width="36" height="36" alt="Divergent AI" /></a>
   &nbsp;<b>Authored by <a href="https://github.com/thedivergentai">Divergent AI</a></b><br/>
   <em>Keeping Godot development social, fast, and slop-free.</em>
 </div>
