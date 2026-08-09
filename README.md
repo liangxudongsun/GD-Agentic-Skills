@@ -6,7 +6,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Godot Version](https://img.shields.io/badge/Godot-4.7%2B-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
-[![Skills](https://img.shields.io/badge/Skills-97-green?style=for-the-badge)](skills_index.json)
+[![Skills](https://img.shields.io/badge/Skills-98-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
 
@@ -206,13 +206,13 @@ Use this when installing via the [skills CLI](https://github.com/vercel-labs/ski
 To keep your AI agent fast and accurate, follow these "Expert Efficiency" rules:
 
 ### 1. The "Power of One" Rule
-Either use **`godot-master`** (which orchestrates the other 96 skills via references) OR use individual **Domain Skills**. 
+Either use **`godot-master`** (which orchestrates the other 97 skills via references) OR use individual **Domain Skills**. 
 
 *   **Godot Master** is an "Orchestrator" skill. It is dense (~15k tokens) but provides a complete blueprint. Use it when the "Big Picture" matters.
 *   **Domain Skills** are "Surgical" skills (~2-5k tokens). They are fast, reliable, and keep the agent focused on one specific API.
 
 ### 2. Why "Install All" Fails
-Installing 97 skills simultaneously creates a **"Metadata Flood"**:
+Installing 98 skills simultaneously creates a **"Metadata Flood"**:
 - **Token Bleed**: ~15,000 tokens are "permanently" used just to tell the agent which skills exist.
 - **Instruction Conflicts**: Having multiple overlapping expert instructions (e.g., 20+ different genre blueprints) can cause the agent to lose its specific focus.
 - **Reasoning Lag**: The model has to sift through 100+ KB of text before deciding what to do.
@@ -225,14 +225,14 @@ Installing 97 skills simultaneously creates a **"Metadata Flood"**:
 
 ## 🏆 Godot Master — Your Lead Architect
 
-The **[godot-master](skills/godot-master/SKILL.md)** skill is the crown jewel of this repository—a consolidated expert library that orchestrates all 97 specialized skills into a unified architectural framework.
+The **[godot-master](skills/godot-master/SKILL.md)** skill is the crown jewel of this repository—a consolidated expert library that orchestrates all 98 specialized skills into a unified architectural framework.
 
 ### 🎯 What Makes Godot Master Special?
 
 Unlike individual Domain Skills that focus on isolated features, **godot-master** is your *system architect*. It provides:
 
 **📚 Comprehensive Knowledge Base**
-- **97 Reference Documents**: Complete markdown guides for every skill, from foundations to advanced genres
+- **98 Reference Documents**: Complete markdown guides for every skill, from foundations to advanced genres
 - **982 Unique Production Scripts**: Battle-tested, production-ready GDScript implementations
 - **11 Workflow Patterns**: Step-by-step architectural workflows (scaffolding, entity orchestration, persistence, optimization, multiplayer, Builder CLI scene builds, etc.)
 
@@ -319,7 +319,7 @@ Individual Domain Skills are **modular add-ons** for targeted functionality. Eac
 Think of Domain Skills as your **component library**: Drop them into your project for instant, expert-level functionality.
 
 <details>
-<summary><b>🏗️ Architecture & Foundation (10 skills)</b></summary>
+<summary><b>🏗️ Architecture & Foundation (11 skills)</b></summary>
 
 - **[godot-autoload-architecture](skills/godot-autoload-architecture/SKILL.md)**: Singleton patterns, global state management, signal-based communication
 - **[godot-composition](skills/godot-composition/SKILL.md)**: Entity-Component architecture for scalable game systems (NPCs, weapons, actors)
@@ -331,6 +331,7 @@ Think of Domain Skills as your **component library**: Drop them into your projec
 - **[godot-resource-data-patterns](skills/godot-resource-data-patterns/SKILL.md)**: `.tres` workflows, data-driven design, resource factories
 - **[godot-signal-architecture](skills/godot-signal-architecture/SKILL.md)**: Global vs scoped signal buses, signal-driven decoupling
 - **[godot-state-machine-advanced](skills/godot-state-machine-advanced/SKILL.md)**: Hierarchical FSMs, pushdown automata, state stacks, transition validation
+- **[godot-version-migration](skills/godot-version-migration/SKILL.md)**: Incremental Godot 4.x upgrades (4.0→4.7 hop-by-hop) with per-skill migration notes
 
 </details>
 
@@ -563,10 +564,10 @@ If this project accelerates your Godot development or empowers your AI agents, c
 
 | Metric | Value |
 |:---|:---|
-| **Total Skills** | 97 |
+| **Total Skills** | 98 |
 | **Genre Blueprints** | 27 |
 | **Production Scripts** | 982 |
-| **Reference Documents** | 97 |
+| **Reference Documents** | 98 |
 | **Target Engine** | Godot 4.7+ |
 | **License** | LGPLv3 |
 

@@ -86,7 +86,7 @@
   },
   {
     "name": "godot-3d-world-building",
-    "description": "\"Expert patterns for 3D level design using GridMap with MeshLibrary, CSG constructive solid geometry, WorldEnvironment setup, ProceduralSkyMaterial, and volumetric fog. Use when building 3D levels, modular tilesets, BSP-style geometry, or environmental effects. Trigger keywords: GridMap, MeshLibrary, set_cell_item, get_cell_item, map_to_local, local_to_map, CSGCombiner3D, CSGBox3D, CSGSphere3D, CSGPolygon3D, WorldEnvironment, Environment, Sky, ProceduralSkyMaterial, PanoramaSkyMaterial, fog_enabled, volumetric_fog_enabled.\"",
+    "description": "\"Expert patterns for 3D level design using GridMap with MeshLibrary, CSG constructive solid geometry, occlusion, and runtime GridMap builders. Use when building 3D levels, modular tilesets, or BSP-style geometry. For sky/fog/Environment recipes, route to godot-3d-lighting. Trigger keywords: GridMap, MeshLibrary, set_cell_item, get_cell_item, map_to_local, local_to_map, CSGCombiner3D, CSGBox3D, CSGSphere3D, CSGPolygon3D, OccluderInstance3D, bake CSG.\"",
     "keywords": [
       "GridMap",
       "MeshLibrary",
@@ -98,13 +98,8 @@
       "CSGBox3D",
       "CSGSphere3D",
       "CSGPolygon3D",
-      "WorldEnvironment",
-      "Environment",
-      "Sky",
-      "ProceduralSkyMaterial",
-      "PanoramaSkyMaterial",
-      "fog_enabled",
-      "volumetric_fog_enabled"
+      "OccluderInstance3D",
+      "bake CSG"
     ]
   },
   {
@@ -141,15 +136,13 @@
   },
   {
     "name": "godot-adapt-3d-to-2d",
-    "description": "\"Expert patterns for simplifying 3D games to 2D including dimension reduction strategies, camera flattening, physics conversion, 3D-to-sprite art pipeline, and control simplification. Use when porting 3D to 2D, creating 2D versions for mobile, or prototyping. Trigger keywords: CharacterBody3D to CharacterBody2D, Camera3D to Camera2D, Vector3 to Vector2, flatten Z-axis, orthogonal projection, 3D to sprite conversion, performance optimization.\"",
+    "description": "\"Expert patterns for simplifying 3D games to 2D including dimension reduction strategies, 2.5D fake-depth, isometric ports, camera flattening, physics conversion, 3D-to-sprite art pipeline, and control simplification. Use when porting 3D to 2D, building 2.5D / isometric / fake-depth gameplay, creating 2D versions for mobile, or prototyping. Trigger keywords: CharacterBody3D to CharacterBody2D, Camera3D to Camera2D, Vector3 to Vector2, flatten Z-axis, 2.5D, isometric, fake depth, Y-sort, simulated Z, orthogonal projection, 3D to sprite conversion, performance optimization.\"",
     "keywords": [
       "CharacterBody3D to CharacterBody2D",
       "Camera3D to Camera2D",
       "Vector3 to Vector2",
       "flatten Z-axis",
-      "orthogonal projection",
-      "3D to sprite conversion",
-      "performance optimization"
+      "2"
     ]
   },
   {
@@ -200,27 +193,26 @@
   },
   {
     "name": "godot-ai-navigation",
-    "description": "\"Expert blueprint for AI pathfinding (tower defense, RTS, stealth) using NavigationAgent2D/3D, NavigationServer, avoidance, and dynamic navigation mesh generation. Use when implementing enemy AI, NPC movement, or obstacle avoidance. Keywords NavigationAgent2D, NavigationRegion2D, pathfinding, NavigationServer, avoidance, baking, NavigationObstacle.\"",
+    "description": "\"AI movement decision router for chase, patrol, crowd, and bake choices on top of NavigationAgent/Server. Use when deciding node agent vs RID server, bake vs obstacle, layer masks, or retarget policy \u2014 not for engine navmesh recipes. Keywords: AI navigation, chase retarget, patrol, crowd RVO, bake vs obstacle, NavigationAgent decision tree.\"",
     "keywords": [
-      "NavigationAgent2D",
-      "NavigationRegion2D",
-      "pathfinding",
-      "NavigationServer",
-      "avoidance",
-      "baking",
-      "NavigationObstacle"
+      "AI navigation",
+      "chase retarget",
+      "patrol",
+      "crowd RVO",
+      "bake vs obstacle",
+      "NavigationAgent decision tree"
     ]
   },
   {
     "name": "godot-analyst",
-    "description": "\"Godot Expert Analyst: Anara. Visionary project scoring and certification for Godot 4.7+ architecture. Use when evaluating project health, modernity, scalability, or generating Visionary Certificates. Keywords: analyst, Anara, scoring, certification, architecture audit, Godot 4.7.\"",
+    "description": "\"Godot Expert Analyst: Anara. Visionary project scoring and certification for Godot 4.7+ architecture. Use when evaluating project health, modernity, scalability, dependency graphs, or generating Visionary Certificates. Keywords: analyst, Anara, scoring, certification, architecture audit, ResourceLoader.get_dependencies, typed Dictionary, folder-by-feature, Visionary Certificate, Godot 4.7.\"",
     "keywords": [
       "analyst",
       "Anara",
       "scoring",
       "certification",
       "architecture audit",
-      "Godot 4"
+      "ResourceLoader"
     ]
   },
   {
@@ -275,20 +267,17 @@
   },
   {
     "name": "godot-auditor",
-    "description": "\"Godot Expert Auditor: Aurelius. Exhaustive never-list enforcement and architectural slap-down for Godot 4.7 projects.\"",
+    "description": "\"Godot Expert Auditor: Aurelius. Exhaustive never-list enforcement and architectural slap-down for Godot 4.7 projects. Use when auditing signal decay, ObjectDB orphans, typed Array/Dictionary slop, material.duplicate batch breaks, export case-sensitivity, Expression.execute risks, or sector never-lists. Keywords: auditor, Aurelius, never-list, signal decay, ObjectDB orphans, typed Array, export case-sensitivity, instance uniforms, PackedScene.get_state.\"",
     "keywords": [
       "auditor",
-      "down",
-      "projects",
-      "enforcement",
-      "architectural",
-      "exhaustive",
-      "never",
-      "slap",
-      "expert",
-      "list",
-      "aurelius",
-      "godot"
+      "Aurelius",
+      "never-list",
+      "signal decay",
+      "ObjectDB orphans",
+      "typed Array",
+      "export case-sensitivity",
+      "instance uniforms",
+      "PackedScene"
     ]
   },
   {
@@ -382,49 +371,25 @@
   },
   {
     "name": "godot-composition-apps",
-    "description": "\"Expert architectural standards for building scalable Godot applications (Apps, Tools, UI, or Games) using the Composition pattern. Use when designing node structures, refactoring monolithic scripts, or implementing complex behaviors. Enforces \\\"Has-A\\\" relationships over \\\"Is-A\\\" inheritance.\"",
+    "description": "\"Expert architectural standards for scalable Godot Apps, Tools, EditorPlugins, and Control-heavy UIs using Composition (Has-A Orchestrator + components). Use when building dashboards, tool windows, forms, settings panels, or EditorPlugin UIs. Do NOT use for gameplay entities (Player/Enemy/Weapon/Hitbox) \u2014 route those to godot-composition. Trigger keywords: Control, EditorPlugin, tool UI, Orchestrator, VLS, rock test, AuthComponent, ThemeManager, Saveable component, dependency injection.\"",
     "keywords": [
-      "applications",
-      "behaviors",
-      "building",
-      "complex",
-      "scripts",
-      "using",
-      "monolithic",
-      "enforces",
-      "expert",
-      "over",
-      "godot",
-      "relationships",
-      "node",
-      "refactoring",
-      "apps",
-      "when",
-      "architectural",
-      "pattern",
-      "scalable",
-      "implementing",
-      "tools",
-      "games",
-      "designing",
-      "inheritance",
-      "composition",
-      "standards",
-      "structures"
+      "Control",
+      "EditorPlugin",
+      "tool UI",
+      "Orchestrator",
+      "VLS",
+      "rock test",
+      "AuthComponent",
+      "ThemeManager",
+      "Saveable component",
+      "dependency injection"
     ]
   },
   {
     "name": "godot-debugging-profiling",
-    "description": "\"Expert debugging workflows including print debugging (push_warning, push_error, assert), breakpoints (conditional breakpoints), Godot Debugger (stack trace, variables, remote debug), profiler (time profiler, memory monitor), error handling patterns, and performance optimization. Use for bug fixing, performance tuning, or development diagnostics. Trigger keywords: breakpoint, print_debug, push_error, assert, profiler, remote_debug, memory_leak, orphan_nodes, Performance.get_monitor.\"",
+    "description": "\"Expert debugging and profiling for leaks, GPU/Visual Profiler, headless CI QA, orphan nodes, thread-safe logs, and custom Debugger monitors \u2014 not print/breakpoint tutorials. Trigger on OBJECT_ORPHAN_NODE_COUNT, ObjectDB growth, Visual Profiler GPU spikes, flaky headless exits, or remote device consoles. Keywords: orphan nodes, Performance.get_monitor, Visual Profiler, Time.get_ticks_usec, EditorDebuggerPlugin, headless QA, push_error, backtrace.\"",
     "keywords": [
-      "breakpoint",
-      "print_debug",
-      "push_error",
-      "assert",
-      "profiler",
-      "remote_debug",
-      "memory_leak",
-      "orphan_nodes",
+      "orphan nodes",
       "Performance"
     ]
   },
@@ -475,98 +440,84 @@
   },
   {
     "name": "godot-game-loop-collection",
-    "description": "Use when implementing collection quests, scavenger hunts, or \"find all X\" objectives.",
+    "description": "\"Expert collection-loop systems for collectible IDs, scavenger hunts, completion archives, nearest-item compass UI, hidden spawners, and persistent find-all-X progress. Use when implementing collectibles, scavenger hunts, completion% archives, or compass-guided item hunts. Keywords: collectible_id, scavenger_hunt, collection_manager, collection_compass, completion_archive, hidden_item_spawner, find_all, collectible_item.\"",
     "keywords": [
-      "scavenger",
-      "when",
-      "quests",
-      "find",
-      "objectives",
-      "hunts",
-      "collection",
-      "implementing"
+      "collectible_id",
+      "scavenger_hunt",
+      "collection_manager",
+      "collection_compass",
+      "completion_archive",
+      "hidden_item_spawner",
+      "find_all",
+      "collectible_item"
     ]
   },
   {
     "name": "godot-game-loop-harvest",
-    "description": "Data-driven resource harvesting system (mining, logging, foraging) for Godot 4. Use when implementing gathering mechanics with tool/tier validation, health depletion, item spawning, and persistence.",
+    "description": "\"Data-driven resource harvesting (mining, logging, foraging) for Godot 4: apply_hit tool/tier validation via HarvestToolData enums, HarvestResourceData yields, harvestable_node shake/deplete, respawn_manager world persistence, UNIX offline progress, autosave, and noise vein proc-gen. Trigger keywords: apply_hit, HarvestResourceData, HarvestToolData, offline UNIX, respawn_manager, tool tier, harvestable_node, FastNoiseLite veins.\"",
     "keywords": [
-      "with",
-      "tool",
-      "resource",
-      "data",
-      "driven",
-      "health",
-      "item",
-      "godot",
-      "mining",
-      "spawning",
-      "tier",
-      "validation",
-      "system",
-      "logging",
-      "harvesting",
-      "when",
-      "foraging",
-      "mechanics",
-      "persistence",
-      "implementing",
-      "depletion",
-      "gathering"
+      "apply_hit",
+      "HarvestResourceData",
+      "HarvestToolData",
+      "offline UNIX",
+      "respawn_manager",
+      "tool tier",
+      "harvestable_node",
+      "FastNoiseLite veins"
     ]
   },
   {
     "name": "godot-game-loop-time-trial",
     "description": "Expert patterns for racing mechanics, checkpoint tracking, and ghost recording/playback in Godot 4. Use when building racing games, speed-run platformers, or arcade trials.",
     "keywords": [
-      "checkpoint",
-      "building",
       "games",
-      "arcade",
-      "when",
-      "recording",
+      "building",
       "speed",
-      "platformers",
-      "mechanics",
-      "tracking",
-      "racing",
       "ghost",
-      "playback",
-      "trials",
-      "expert",
+      "arcade",
+      "mechanics",
+      "racing",
+      "recording",
       "patterns",
-      "godot"
+      "playback",
+      "godot",
+      "checkpoint",
+      "platformers",
+      "trials",
+      "tracking",
+      "when",
+      "expert"
     ]
   },
   {
     "name": "godot-game-loop-waves",
     "description": "Expert patterns for managing combat waves, difficulty scaling, and automated enemy spawning in Godot 4. Use when building wave-based shooters, tower defense, or arena games.",
     "keywords": [
-      "managing",
-      "tower",
-      "expert",
-      "scaling",
-      "godot",
-      "automated",
-      "defense",
-      "shooters",
-      "based",
-      "spawning",
-      "waves",
-      "wave",
       "when",
-      "enemy",
+      "expert",
       "difficulty",
-      "arena",
+      "managing",
+      "spawning",
+      "wave",
+      "shooters",
+      "tower",
+      "godot",
       "games",
-      "patterns",
+      "combat",
       "building",
-      "combat"
+      "based",
+      "scaling",
+      "automated",
+      "arena",
+      "defense",
+      "waves",
+      "patterns",
+      "enemy"
     ]
   },
   {
     "name": "godot-gdscript-mastery",
-    "description": "\"Expert GDScript best practices including static typing (var x: int, func returns void), signal architecture (signal up call down), unique node access (%NodeName, @onready), script structure (extends, class_name, signals, exports, methods), and performance patterns (dict.get with defaults, avoid get_node in loops). Use for code review, refactoring, or establishing project standards. Trigger keywords: static_typing, signal_architecture, unique_nodes, @onready, class_name, signal_up_call_down, gdscript_style_guide.\"",
+    "description": "\"Expert GDScript landmine guidance: static typing opcodes, signal-up/call-down, %UniqueName/@onready lifecycle, Callable bind/unbind, await sequences, typed collections, and safe Dictionary iteration. Use for code review, refactoring hot paths, or project standards. Trigger keywords: static_typing, signal_architecture, unique_nodes, @onready, class_name, signal_up_call_down, Callable.bind, typed_collections, await_sequence.\"",
     "keywords": [
       "static_typing",
       "signal_architecture",
@@ -574,7 +525,7 @@
       "@onready",
       "class_name",
       "signal_up_call_down",
-      "gdscript_style_guide"
+      "Callable"
     ]
   },
   {
@@ -651,7 +602,7 @@
   },
   {
     "name": "godot-genre-horror",
-    "description": "\"Expert blueprint for horror games including tension pacing (sawtooth wave: buildup/peak/relief), Director system (macro AI controlling pacing), sensory AI (vision/sound detection), sanity/stress systems (camera shake, audio distortion), lighting atmosphere (volumetric fog, dynamic shadows), and \\\"dual brain\\\" AI (cheating director + honest senses). Use for psychological horror, survival horror, or atmospheric games. Trigger keywords: horror_game, tension_pacing, director_system, sensory_perception, sanity_system, volumetric_fog, AI_reaction_time.\"",
+    "description": "\"Expert blueprint for horror games: sawtooth tension pacing, Director macro-AI, sensory predator AI, sanity/stress FX, and scarcity loops. Use when building psychological/survival horror, dual-brain stalker AI (cheating Director + honest LoS/sound), flashlight/fog atmosphere, or safe-room saves. Keywords: horror_game, tension_pacing, director_system, sensory_perception, sanity_system, volumetric_fog, AI_reaction_time.\"",
     "keywords": [
       "horror_game",
       "tension_pacing",
@@ -831,27 +782,26 @@
   },
   {
     "name": "godot-genre-shooter",
-    "description": "\"Expert blueprint for FPS/TPS shooter games (Call of Duty, Counter-Strike, Apex Legends, Fortnite) covering weapon systems, recoil patterns, hitscan vs projectile, aim assist, multiplayer prediction, and gunplay feel. Use when building competitive shooters, battle royales, or tactical FPS games requiring responsive combat. Keywords hitscan, recoil pattern, aim assist, client prediction, weapon archetype, projectile physics, hit registration.\"",
+    "description": "\"Expert blueprint for TPS/hybrid shooters: soft-lock aim assist, cover validation rays, SpringArm TPS camera, and genre routing to FPS sibling for viewmodel/hitscan feel. Use for third-person/cover shooters and hybrids. Keywords: TPS, soft_lock, cover, SpringArm3D, hybrid shooter, aim assist \u2014 not FPS-only movement.\"",
     "keywords": [
-      "hitscan",
-      "recoil pattern",
-      "aim assist",
-      "client prediction",
-      "weapon archetype",
-      "projectile physics",
-      "hit registration"
+      "TPS",
+      "soft_lock",
+      "cover",
+      "SpringArm3D",
+      "hybrid shooter",
+      "aim assist \u2014 not FPS-only movement"
     ]
   },
   {
     "name": "godot-genre-shooter-fps",
-    "description": "\"Expert blueprint for First-Person Shooters (Doom, Quake, Battlefield, Overwatch) focusing on physics-based movement, acceleration/friction, camera sway, weapon bobbing, and high-precision hit registration. Use when building tight, responsive FPS combat with advanced camera mechanics. Keywords FPS, movement physics, weapon bobbing, camera sway, hitscan, ground detection, air control.\"",
+    "description": "\"Expert blueprint for First-Person Shooters: fps_camera_look, fps_movement_logic, hitscan_weapon_query, weapon_bobbing_system, procedural recoil, and FPS NEVER rules. Shared TPS/cover theory links to godot-genre-shooter. Keywords: FPS, movement physics, weapon bobbing, camera sway, hitscan, viewmodel, air control.\"",
     "keywords": [
       "FPS",
       "movement physics",
       "weapon bobbing",
       "camera sway",
       "hitscan",
-      "ground detection",
+      "viewmodel",
       "air control"
     ]
   },
@@ -870,7 +820,7 @@
   },
   {
     "name": "godot-genre-sports",
-    "description": "\"Expert blueprint for sports games (FIFA, NBA 2K, Rocket League, Tony Hawk) covering physics-based ball interaction, team AI formations, contextual input, and broadcast camera systems. Use when building soccer, basketball, hockey, racing sports, or arcade sports games. Keywords ball physics, magnus effect, formation AI, team tactics, contextual controls, steering behaviors.\"",
+    "description": "\"Expert blueprint for sports games (FIFA, NBA 2K, Rocket League, Tony Hawk) covering physics-based ball interaction, team AI formations, contextual input, and match umpire/score authority. Broadcast framing routes to godot-camera-systems. Use when building soccer, basketball, hockey, racing sports, or arcade sports games. Keywords ball physics, magnus effect, formation AI, team tactics, contextual controls, steering behaviors.\"",
     "keywords": [
       "ball physics",
       "magnus effect",
@@ -967,34 +917,25 @@
   },
   {
     "name": "godot-mechanic-revival",
-    "description": "Use when implementing player death, resurrection, or \"second chance\" mechanics.",
+    "description": "\"Expert blueprint for player mortality loops: progress-index checkpoints, soul graves, ghost/spirit layers, I-frame restitution, world-progress persistence, and death analytics. Use when implementing respawn, shrine checkpoints, corpse-run retrieval, or second-chance mechanics. Keywords revival, respawn, checkpoint, soul grave, ghost mode, I-frames, death analytics, progress index.\"",
     "keywords": [
-      "when",
-      "mechanics",
-      "death",
-      "resurrection",
-      "player",
-      "second",
-      "implementing",
-      "chance"
+      "revival",
+      "respawn",
+      "checkpoint",
+      "soul grave",
+      "ghost mode",
+      "I-frames",
+      "death analytics",
+      "progress index"
     ]
   },
   {
     "name": "godot-mechanic-secrets",
-    "description": "Use when implementing cheat codes, hidden interactions, or unlockable content based on player input/behavior.",
+    "description": "\"Implement cheat codes, hidden interactions, and unlockable meta-content via time-windowed input sequence buffers, spam thresholds, look-at (dot-product) detectors, progress-% unlocks, and meta persistence in user://secrets.cfg. Use when adding Konami-style codes, curiosity spam eggs, glimmer cues, lockout anti-brute-force, or gallery flags that must survive slot deletes. Keywords: Konami, sequence buffer, meta secrets.cfg, visibility detector, lockout, glimmer, spam threshold, progress unlock.\"",
     "keywords": [
-      "implementing",
-      "cheat",
-      "when",
-      "content",
-      "based",
-      "unlockable",
-      "behavior",
-      "hidden",
-      "interactions",
-      "input",
-      "player",
-      "codes"
+      "Konami",
+      "sequence buffer",
+      "meta secrets"
     ]
   },
   {
@@ -1014,7 +955,7 @@
   },
   {
     "name": "godot-multiplayer-networking",
-    "description": "\"Expert blueprint for multiplayer networking (Among Us, Brawlhalla, Terraria) using Godot's high-level API covering RPCs, state synchronization, authoritative servers, client prediction, and lobby systems. Use when building online multiplayer, LAN co-op, or networked games. Keywords multiplayer, RPC, ENetMultiplayerPeer, MultiplayerSynchronizer, authority, client prediction, rollback.\"",
+    "description": "\"Expert multiplayer for desync, rollback, dedicated --headless servers, interest culling, and bandwidth spikes: ENet/WebRTC choice, authority, secure RPCs, client prediction/reconcile, and adaptive sync. Trigger on rubber-banding, cheat-able clients, peer floods, late join, or profiler Network spikes \u2014 not only greenfield online games. Keywords: multiplayer, RPC, ENetMultiplayerPeer, MultiplayerSynchronizer, authority, client prediction, rollback, interest management, headless, desync.\"",
     "keywords": [
       "multiplayer",
       "RPC",
@@ -1022,7 +963,10 @@
       "MultiplayerSynchronizer",
       "authority",
       "client prediction",
-      "rollback"
+      "rollback",
+      "interest management",
+      "headless",
+      "desync"
     ]
   },
   {
@@ -1145,14 +1089,16 @@
   },
   {
     "name": "godot-platform-web",
-    "description": "\"Expert blueprint for web/browser platforms (HTML5 export) covering WebGL/WebGPU rendering, custom loading screens, JavaScriptBridge integration, LocalStorage saves, and size optimization. Use when exporting to web or implementing browser-specific features. Keywords web, HTML5, WebGL, WebGPU, JavaScriptBridge, localStorage, canvas, browser API.\"",
+    "description": "\"Expert blueprint for HTML5/web export on Compatibility (WebGL 2.0): JavaScriptBridge, localStorage wrapper, custom loading shells, COOP/COEP hosts, relative paths, beforeunload, visibility pause, and size optimization. WebGPU is out of scope. Keywords: web, HTML5, WebGL, Compatibility, JavaScriptBridge, localStorage, COOP, COEP, canvas, browser API.\"",
     "keywords": [
       "web",
       "HTML5",
       "WebGL",
-      "WebGPU",
+      "Compatibility",
       "JavaScriptBridge",
       "localStorage",
+      "COOP",
+      "COEP",
       "canvas",
       "browser API"
     ]
@@ -1184,15 +1130,15 @@
   },
   {
     "name": "godot-project-templates",
-    "description": "\"Expert blueprint for genre-specific project boilerplates (2D platformer, top-down RPG, 3D FPS) including directory structures, AutoLoad patterns, and core systems. Use when bootstrapping new projects or migrating architecture. Keywords project templates, boilerplate, 2D platformer, RPG, FPS, AutoLoad, scene structure.\"",
+    "description": "\"Navigation skill for genre project scaffolds: pick platformer/RPG/FPS (or other genre) then load matching template scripts and route gameplay fill to godot-genre-* skills. Use when bootstrapping architecture, bootstrap order, pause modes, PCK DLC, or feature tags \u2014 not for pasting FPS/inventory recipes. Keywords: project templates, bootstrap, Subsystem Locator, PCK, feature tags, PROCESS_MODE_ALWAYS, genre scaffold.\"",
     "keywords": [
       "project templates",
-      "boilerplate",
-      "2D platformer",
-      "RPG",
-      "FPS",
-      "AutoLoad",
-      "scene structure"
+      "bootstrap",
+      "Subsystem Locator",
+      "PCK",
+      "feature tags",
+      "PROCESS_MODE_ALWAYS",
+      "genre scaffold"
     ]
   },
   {
@@ -1282,32 +1228,30 @@
   },
   {
     "name": "godot-server-architecture",
-    "description": "\"Expert blueprint for low-level server access (RenderingServer, PhysicsServer2D/3D, NavigationServer) using RIDs for maximum performance. Bypasses scene tree overhead for procedural generation, particle systems, and voxel engines. Use when nodes are too slow OR managing thousands of objects. Keywords RenderingServer, PhysicsServer, NavigationServer, RID, canvas_item, body_create, low-level, performance.\"",
+    "description": "\"Expert blueprint for dedicated / headless multiplayer hosts: ENet/DTLS, authority validation, safe packet decode, matchmaker handoff, and health telemetry. Use when building authoritative servers, --headless hosts, or hardening host networking. Keywords: dedicated server, headless, ENet, DTLS, authority, safe_packet_decoder, multiplayer host, WebSocketMultiplayerPeer.\"",
     "keywords": [
-      "RenderingServer",
-      "PhysicsServer",
-      "NavigationServer",
-      "RID",
-      "canvas_item",
-      "body_create",
-      "low-level",
-      "performance"
+      "dedicated server",
+      "headless",
+      "ENet",
+      "DTLS",
+      "authority",
+      "safe_packet_decoder",
+      "multiplayer host",
+      "WebSocketMultiplayerPeer"
     ]
   },
   {
     "name": "godot-shaders-basics",
-    "description": "\"Expert blueprint for shader programming (visual effects, post-processing, material customization) using Godot's GLSL-like shader language. Covers canvas_item (2D), spatial (3D), uniforms, built-in variables, and performance. Use when implementing custom effects OR stylized rendering. Keywords shader, GLSL, fragment, vertex, canvas_item, spatial, uniform, UV, COLOR, ALBEDO, post-processing.\"",
+    "description": "\"Expert Godot shader patterns for batch-safe hitflash, alpha-scissor foliage/dissolve, screenspace postFX, depth reconstruction, triplanar, and instance uniforms \u2014 not first-shader tutorials. Trigger on draw-call batching breaks, discard vs depth-prepass, foliage shadows, post-process quads, or world-position FX. Keywords: instance uniform, ALPHA_SCISSOR, hint_screen_texture, hint_depth_texture, global uniform, sampler2DArray, canvas_item, spatial, post-processing.\"",
     "keywords": [
-      "shader",
-      "GLSL",
-      "fragment",
-      "vertex",
+      "instance uniform",
+      "ALPHA_SCISSOR",
+      "hint_screen_texture",
+      "hint_depth_texture",
+      "global uniform",
+      "sampler2DArray",
       "canvas_item",
       "spatial",
-      "uniform",
-      "UV",
-      "COLOR",
-      "ALBEDO",
       "post-processing"
     ]
   },
@@ -1340,33 +1284,30 @@
   },
   {
     "name": "godot-testing-patterns",
-    "description": "\"Expert blueprint for testing patterns using GUT (Godot Unit Test), integration tests, mock/stub patterns, async testing, and validation techniques. Covers assert patterns, signal testing, and CI/CD integration. Use when implementing tests OR validating game logic. Keywords GUT, unit test, integration test, assert, mock, stub, GutTest, watch_signals, TDD.\"",
+    "description": "\"Expert testing decision trees for GdUnit4: unit vs scene vs CI gates, headless runners, snapshots, and mock networks. Use when choosing test layers, wiring CI, or validating signals/physics without beginner assert catalogs. Keywords: GdUnit4, GdUnitTestSuite, headless CI, snapshot test, mock network, scene integration test, TDD.\"",
     "keywords": [
-      "GUT",
-      "unit test",
-      "integration test",
-      "assert",
-      "mock",
-      "stub",
-      "GutTest",
-      "watch_signals",
+      "GdUnit4",
+      "GdUnitTestSuite",
+      "headless CI",
+      "snapshot test",
+      "mock network",
+      "scene integration test",
       "TDD"
     ]
   },
   {
     "name": "godot-theme-easter",
-    "description": "Use when applying a specific Easter holiday theme (Eggs, Bunnies, Pastels) to a game.",
+    "description": "\"Apply a Classic Easter seasonal overlay: pastel Theme/StyleBox injection, confetti/shimmer VFX, elastic juice, mesh surface_override painting, cursor/audio swaps, and a date-window activation gate with player opt-out. Use when shipping holiday skins, April events, or egg-hunt juice without mutating shared .mesh/.tres assets. Keywords: pastel, seasonal Theme, StyleBox, confetti, Easter egg, surface_override, TRANS_ELASTIC, Disable Seasonal Themes, activation gate.\"",
     "keywords": [
-      "holiday",
-      "eggs",
-      "pastels",
-      "when",
-      "game",
-      "theme",
-      "bunnies",
-      "applying",
-      "specific",
-      "easter"
+      "pastel",
+      "seasonal Theme",
+      "StyleBox",
+      "confetti",
+      "Easter egg",
+      "surface_override",
+      "TRANS_ELASTIC",
+      "Disable Seasonal Themes",
+      "activation gate"
     ]
   },
   {
@@ -1410,12 +1351,16 @@
   },
   {
     "name": "godot-ui-containers",
-    "description": "\"Expert blueprint for responsive UI layouts using Container nodes (HBoxContainer, VBoxContainer, GridContainer, MarginContainer, ScrollContainer). Covers size flags, anchors, split containers, and dynamic layouts. Use when building adaptive interfaces OR implementing responsive menus. Keywords Container, HBoxContainer, VBoxContainer, GridContainer, size_flags, EXPAND_FILL, anchors, responsive.\"",
+    "description": "\"Expert blueprint for responsive UI layouts using Container nodes (HBoxContainer, VBoxContainer, GridContainer, MarginContainer, ScrollContainer, HFlowContainer, SubViewportContainer). Covers size flags, anchors, split containers, virtual_list pooling, stretch_shrink previews, and dynamic layouts. Use when building adaptive interfaces OR implementing responsive menus. Keywords: Container, HBoxContainer, VBoxContainer, GridContainer, HFlowContainer, SubViewportContainer, virtual_list, stretch_shrink, size_flags, EXPAND_FILL, anchors, responsive.\"",
     "keywords": [
       "Container",
       "HBoxContainer",
       "VBoxContainer",
       "GridContainer",
+      "HFlowContainer",
+      "SubViewportContainer",
+      "virtual_list",
+      "stretch_shrink",
       "size_flags",
       "EXPAND_FILL",
       "anchors",
@@ -1447,6 +1392,14 @@
       "font",
       "theme inheritance",
       "dark mode"
+    ]
+  },
+  {
+    "name": "godot-version-migration",
+    "description": "\"Incremental Godot 4.x version migration hub. Use when upgrading a Godot project hop-by-hop from 4.0 toward the library target (currently 4.7), migrating APIs after a minor engine release, or finding Domain Skill-scoped migration notes. Trigger keywords: upgrade Godot, migrate 4.0 to 4.1, upgrading_to_godot, version migration, breaking changes, TileMapLayer, AnimationMixer, RichTextLabel ImageUnit, Jolt Physics, stretch mode, area_mask.\"",
+    "keywords": [
+      "upgrade Godot",
+      "migrate 4"
     ]
   }
 ]
