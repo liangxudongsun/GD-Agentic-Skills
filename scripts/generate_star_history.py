@@ -301,11 +301,18 @@ def select_even_months(months: list[date], max_labels: int = MAX_X_MONTH_LABELS)
     return deduped
 
 
-def equal_spaced_x(index: int, count: int, chart_x: float, chart_w: float) -> float:
-    """Equal visual slots for axis labels (independent of calendar day widths)."""
+def equal_spaced_x(
+    index: int,
+    count: int,
+    chart_x: float,
+    chart_w: float,
+    inset: float = 0.0,
+) -> float:
+    """Equal visual centers for axis labels (independent of calendar day widths)."""
     if count <= 1:
         return chart_x + chart_w / 2
-    return chart_x + (index / (count - 1)) * chart_w
+    usable = max(0.0, chart_w - 2.0 * inset)
+    return chart_x + inset + (index / (count - 1)) * usable
 
 def nice_y_max(n: int, step: int = Y_STEP) -> int:
     if n <= 0:
@@ -558,21 +565,18 @@ def render_svg(
         parts.append(f"L{coords[-1][0]:.2f},{bottom:.2f} Z")
         return " ".join(parts)
 
-    # X labels: consecutive months (or evenly thinned), equal visual spacing.
-    # Star series stays time-linear; month labels must not track partial-month day widths.
+    # X labels: consecutive months (or evenly thinned), equal visual centers.
+    # Always text-anchor=middle — start/end anchors made equal slots look uneven.
+    # Star series stays time-linear; month labels do not track calendar day widths.
     months = month_starts_in_range(start_d, end_d)
     shown = select_even_months(months, MAX_X_MONTH_LABELS)
-    x_labels: list[tuple[float, str, str]] = []
+    x_labels: list[tuple[float, str]] = []
     n_shown = len(shown)
+    # ~half width of "MMM YYYY" at 12px mono so edge labels stay inside the SVG.
+    label_inset = 36.0
     for i, m in enumerate(shown):
-        x = equal_spaced_x(i, n_shown, chart_x, chart_w)
-        if i == 0:
-            anchor = "start"
-        elif i == n_shown - 1:
-            anchor = "end"
-        else:
-            anchor = "middle"
-        x_labels.append((x, month_label(m), anchor))
+        x = equal_spaced_x(i, n_shown, chart_x, chart_w, inset=label_inset)
+        x_labels.append((x, month_label(m)))
 
     # Y ticks every 100
     y_labels: list[tuple[float, str]] = []
@@ -640,10 +644,12 @@ def render_svg(
     subtitle = f"{fmt_int(total)} stars · {start_d.isoformat()} → {end_d.isoformat()}"
 
     x_label_svg = "".join(
-        f'<text x="{x:.2f}" y="{HEIGHT - 36}" text-anchor="{anchor}" '
+        f'<line x1="{x:.2f}" y1="{chart_y + chart_h}" x2="{x:.2f}" y2="{chart_y + chart_h + 6}" '
+        f'stroke="{pal["axis"]}" stroke-width="1" opacity="0.55"/>'
+        f'<text x="{x:.2f}" y="{HEIGHT - 36}" text-anchor="middle" '
         f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
         f'font-size="12">{escape(label)}</text>'
-        for x, label, anchor in x_labels
+        for x, label in x_labels
     )
     y_label_svg = "".join(
         f'<line x1="{chart_x}" y1="{y:.2f}" x2="{chart_x + chart_w}" y2="{y:.2f}" '
