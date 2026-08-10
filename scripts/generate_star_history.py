@@ -35,14 +35,15 @@ MAX_PAGES = 400  # GitHub pagination cap (~40k stars)
 USER_AGENT = "gd-agentic-skills-star-history/1.0"
 
 WIDTH = 1200
-HEIGHT = 420
-PAD_L, PAD_R, PAD_T, PAD_B = 72, 48, 78, 64
+HEIGHT = 440
+PAD_L, PAD_R, PAD_T, PAD_B = 88, 48, 78, 78
 Y_STEP = 100
+MAX_X_MONTH_LABELS = 8
 
 VERSION_RE = re.compile(r"\bv?(\d+\.\d+\.\d+)\b", re.I)
 # Prefer real release commits over incidental version mentions in docs.
 RELEASE_SUBJECT_RE = re.compile(
-    r"(?i)^(release:|feat:\s*ship\s+|feat\(release\)|feat:\s*v\d|feat:\s*initial\b)"
+    r"(?i)^(release\b|release:|feat:\s*ship\s+|feat\(release\)|feat:\s*v\d|feat:\s*initial\b)"
 )
 
 
@@ -263,6 +264,51 @@ def fmt_int(n: int) -> str:
 def month_label(d: date) -> str:
     return d.strftime("%b %Y").upper()
 
+
+def _next_month_start(d: date) -> date:
+    if d.month == 12:
+        return date(d.year + 1, 1, 1)
+    return date(d.year, d.month + 1, 1)
+
+
+def month_starts_in_range(start_d: date, end_d: date) -> list[date]:
+    """First day of every calendar month that intersects [start_d, end_d]."""
+    months: list[date] = []
+    cursor = date(start_d.year, start_d.month, 1)
+    end_month = date(end_d.year, end_d.month, 1)
+    while cursor <= end_month:
+        months.append(cursor)
+        cursor = _next_month_start(cursor)
+    return months
+
+
+def select_even_months(months: list[date], max_labels: int = MAX_X_MONTH_LABELS) -> list[date]:
+    """Keep first/last; pick remaining at even index steps (no random skips)."""
+    if len(months) <= max_labels:
+        return list(months)
+    if max_labels <= 2:
+        return [months[0], months[-1]]
+    out: list[date] = []
+    for i in range(max_labels):
+        idx = round(i * (len(months) - 1) / (max_labels - 1))
+        out.append(months[idx])
+    deduped: list[date] = []
+    for m in out:
+        if not deduped or deduped[-1] != m:
+            deduped.append(m)
+    if deduped[-1] != months[-1]:
+        deduped[-1] = months[-1]
+    return deduped
+
+
+def month_label_anchor(month_start: date, start_d: date, end_d: date) -> date:
+    """Midpoint of the month's visible slice — even visual rhythm on a linear axis."""
+    next_m = _next_month_start(month_start)
+    lo = max(start_d, month_start)
+    hi = min(end_d, next_m - timedelta(days=1))
+    if hi < lo:
+        return lo
+    return lo + timedelta(days=(hi - lo).days // 2)
 
 def nice_y_max(n: int, step: int = Y_STEP) -> int:
     if n <= 0:
@@ -515,27 +561,12 @@ def render_svg(
         parts.append(f"L{coords[-1][0]:.2f},{bottom:.2f} Z")
         return " ".join(parts)
 
-    # X ticks: one per month in range (cap density).
+    # X ticks: every calendar month (or evenly thinned); label at month midpoints.
+    months = month_starts_in_range(start_d, end_d)
+    shown = select_even_months(months, MAX_X_MONTH_LABELS)
     x_labels: list[tuple[float, str, str]] = []
-    months: list[date] = []
-    cursor = date(start_d.year, start_d.month, 1)
-    end_month = date(end_d.year, end_d.month, 1)
-    while cursor <= end_month:
-        months.append(cursor)
-        if cursor.month == 12:
-            cursor = date(cursor.year + 1, 1, 1)
-        else:
-            cursor = date(cursor.year, cursor.month + 1, 1)
-    # Always include start/end if missing
-    if not months or months[0] != start_d.replace(day=1):
-        pass
-    step = 1 if len(months) <= 8 else max(1, len(months) // 6)
-    shown = months[::step]
-    if months and months[-1] not in shown:
-        shown.append(months[-1])
     for i, m in enumerate(shown):
-        # Clamp label position into chart range
-        d = max(start_d, min(end_d, m))
+        d = month_label_anchor(m, start_d, end_d)
         x = x_for(d)
         if i == 0:
             anchor = "start"
@@ -549,6 +580,19 @@ def render_svg(
     y_labels: list[tuple[float, str]] = []
     for stars in range(0, y_max + 1, Y_STEP):
         y_labels.append((y_for(stars), fmt_int(stars)))
+
+    # Axis titles
+    axis_title_y = (
+        f'<text x="18" y="{chart_y + chart_h / 2:.2f}" text-anchor="middle" '
+        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'font-size="11" font-weight="700" letter-spacing="2" '
+        f'transform="rotate(-90 18 {chart_y + chart_h / 2:.2f})">STARS</text>'
+    )
+    axis_title_x = (
+        f'<text x="{chart_x + chart_w / 2:.2f}" y="{HEIGHT - 14}" text-anchor="middle" '
+        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'font-size="11" font-weight="700" letter-spacing="2">DATE</text>'
+    )
 
     # Milestones on/inside the visible range
     milestone_svg_parts: list[str] = []
@@ -598,7 +642,7 @@ def render_svg(
     subtitle = f"{fmt_int(total)} stars · {start_d.isoformat()} → {end_d.isoformat()}"
 
     x_label_svg = "".join(
-        f'<text x="{x:.2f}" y="{HEIGHT - 20}" text-anchor="{anchor}" '
+        f'<text x="{x:.2f}" y="{HEIGHT - 36}" text-anchor="{anchor}" '
         f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
         f'font-size="12">{escape(label)}</text>'
         for x, label, anchor in x_labels
@@ -606,7 +650,7 @@ def render_svg(
     y_label_svg = "".join(
         f'<line x1="{chart_x}" y1="{y:.2f}" x2="{chart_x + chart_w}" y2="{y:.2f}" '
         f'stroke="{pal["grid"]}" stroke-width="0.6" opacity="0.35"/>'
-        f'<text x="{PAD_L - 12}" y="{y + 4:.2f}" text-anchor="end" '
+        f'<text x="{PAD_L - 14}" y="{y + 4:.2f}" text-anchor="end" '
         f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
         f'font-size="11">{escape(label)}</text>'
         for y, label in y_labels
@@ -644,6 +688,7 @@ def render_svg(
   <text x="{WIDTH - 48}" y="38" text-anchor="end" fill="{pal["meta"]}" font-family="Consolas, ui-monospace, monospace" font-size="12" letter-spacing="1">{escape(meta_right)}</text>
   <line x1="48" y1="52" x2="320" y2="52" stroke="{pal["line"]}" stroke-width="1" opacity="0.75"/>
   <text x="48" y="66" fill="{pal["meta"]}" font-family="Consolas, ui-monospace, monospace" font-size="12">{escape(subtitle)} · {escape(repo_short)}</text>
+  {axis_title_y}
   {y_label_svg}
   <path d="{path_area()}" fill="url(#fill-{uid})"/>
   <path d="{path_line()}" fill="none" stroke="{pal["line"]}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-{uid})"/>
@@ -651,6 +696,7 @@ def render_svg(
   <line x1="{chart_x}" y1="{chart_y + chart_h}" x2="{chart_x + chart_w}" y2="{chart_y + chart_h}" stroke="{pal["grid"]}" stroke-width="1" opacity="0.6"/>
   <line x1="{chart_x}" y1="{chart_y}" x2="{chart_x}" y2="{chart_y + chart_h}" stroke="{pal["grid"]}" stroke-width="1" opacity="0.6"/>
   {x_label_svg}
+  {axis_title_x}
 </svg>
 '''
     return svg
