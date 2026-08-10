@@ -301,14 +301,11 @@ def select_even_months(months: list[date], max_labels: int = MAX_X_MONTH_LABELS)
     return deduped
 
 
-def month_label_anchor(month_start: date, start_d: date, end_d: date) -> date:
-    """Midpoint of the month's visible slice — even visual rhythm on a linear axis."""
-    next_m = _next_month_start(month_start)
-    lo = max(start_d, month_start)
-    hi = min(end_d, next_m - timedelta(days=1))
-    if hi < lo:
-        return lo
-    return lo + timedelta(days=(hi - lo).days // 2)
+def equal_spaced_x(index: int, count: int, chart_x: float, chart_w: float) -> float:
+    """Equal visual slots for axis labels (independent of calendar day widths)."""
+    if count <= 1:
+        return chart_x + chart_w / 2
+    return chart_x + (index / (count - 1)) * chart_w
 
 def nice_y_max(n: int, step: int = Y_STEP) -> int:
     if n <= 0:
@@ -561,16 +558,17 @@ def render_svg(
         parts.append(f"L{coords[-1][0]:.2f},{bottom:.2f} Z")
         return " ".join(parts)
 
-    # X ticks: every calendar month (or evenly thinned); label at month midpoints.
+    # X labels: consecutive months (or evenly thinned), equal visual spacing.
+    # Star series stays time-linear; month labels must not track partial-month day widths.
     months = month_starts_in_range(start_d, end_d)
     shown = select_even_months(months, MAX_X_MONTH_LABELS)
     x_labels: list[tuple[float, str, str]] = []
+    n_shown = len(shown)
     for i, m in enumerate(shown):
-        d = month_label_anchor(m, start_d, end_d)
-        x = x_for(d)
+        x = equal_spaced_x(i, n_shown, chart_x, chart_w)
         if i == 0:
             anchor = "start"
-        elif i == len(shown) - 1:
+        elif i == n_shown - 1:
             anchor = "end"
         else:
             anchor = "middle"
