@@ -17,6 +17,34 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 ---
 
+## 🚀 Major Release: v0.0.10 — Migration Station
+**August 10, 2026**
+
+<div align="center">
+  <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
+</div>
+
+Engine upgrades used to mean scavenger hunts across blog posts, half-remembered renames, and “just open it in the new editor.” **Migration Station** is the library’s dedicated stop for that journey: detect the era, take the right bridge, hop one minor at a time, and only then return to Domain Skills for current-API work.
+
+- **New skill — [godot-version-migration](skills/godot-version-migration/SKILL.md)**: Full-history router from early Godot through **4.7** — archaeology (1.x), legacy 2→3, official 3→4 converter bridge, then 4.0→4.7 minor hops.
+- **Per-skill notes**: Every Domain Skill carries `references/migration-notes.md`; bodies stay on **current** APIs so agents are not fed changelogs as tutorials.
+- **Corpus-backed**: Official migrating guides where they exist, plus docs changelog, interactive changelog, download archive, and GitHub releases for eras without a dedicated `upgrading_to_*` page.
+- **Lattice**: Analyst / Auditor / Builder (and foundations, GDScript, TileMap) route engine-version jobs here; `godot-master` points upgrades at the hub instead of mirroring a changelog.
+
+### Featured skill — Version Migration
+
+Load [godot-version-migration](skills/godot-version-migration/SKILL.md) whenever the job is “get this project onto the library target,” not “implement a genre loop.”
+
+### Squad desk
+
+> "Score the *destination* APIs. If the project is still speaking Godot 3, buy a ticket at Migration Station first — then ask me for a Visionary Certificate." — *Anara*
+
+> "String `connect`, legacy TileMap, `SCREEN_TEXTURE` nostalgia: those are never-list citations *after* you finish the hops. Do not invent rename folklore in the audit." — *Aurelius*
+
+> "Bump the CI engine one hop. Bake. Playtest. Next hop. I will not headless-export a Frankenstein minor mix." — *Builder*
+
+---
+
 ## 🚀 Major Release: v0.0.9 — The Reference Lattice Update
 **July 22, 2026**
 

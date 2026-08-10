@@ -44,17 +44,26 @@
 ## 📜 Updates
 
 <div align="center">
-  <img src="assets/banner_0_0_9.webp" alt="The Reference Lattice Update - v0.0.9" width="100%" />
+  <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
 </div>
 
-- **The Reference Lattice**: Every Domain Skill now ends with a curated Official Documentation lattice (`docs.godotengine.org/en/stable/…`) plus detailed Related Skills (Prerequisites / Complements / Downstream / Master), so agents can research deeper without leaving the skill graph.
-- **Script & reference footers**: Research-link comment blocks on Domain Skill scripts and phase docs (marker `GDSkills research links (agents)`) — non-executing, file-specific, progressive disclosure.
-- **SPECIAL MENTION —** <a href="https://github.com/DedInc"><img src="https://wsrv.nl/?url=github.com/DedInc.png&w=64&h=64&mask=circle&fit=cover&maxage=1w" width="22" height="22" alt="@DedInc" /></a> [**@DedInc**](https://github.com/DedInc): First external Domain Skill — [godot-monte-carlo-balancer](skills/godot-monte-carlo-balancer/SKILL.md) — source-driven Monte Carlo balance lab (Rust + rayon), Resource-first extract, playstyle CI bands, economy careers, and headless Godot calibration. Thank you!
+- **Migration Station**: New Architecture skill — [godot-version-migration](skills/godot-version-migration/SKILL.md) — full-history engine upgrades from early Godot through **4.7** (legacy eras → official 3→4 → hop-by-hop 4.x).
+- **Per-skill migration notes**: Every Domain Skill ships `references/migration-notes.md`; Domain `SKILL.md` bodies stay on **current** APIs.
+- **Lattice routing**: Analyst, Auditor, Builder, foundations, GDScript, and TileMap point engine-version work at the migration hub; `godot-master` routes upgrades there (not as a changelog dump).
 
 ---
 
 <details>
 <summary><b>📜 Update Archive</b></summary>
+
+<div align="center">
+  <img src="assets/banner_0_0_9.webp" alt="The Reference Lattice Update - v0.0.9" width="100%" />
+</div>
+
+#### v0.0.9 — The Reference Lattice Update
+- **The Reference Lattice**: Every Domain Skill now ends with a curated Official Documentation lattice (`docs.godotengine.org/en/stable/…`) plus detailed Related Skills (Prerequisites / Complements / Downstream / Master), so agents can research deeper without leaving the skill graph.
+- **Script & reference footers**: Research-link comment blocks on Domain Skill scripts and phase docs (marker `GDSkills research links (agents)`) — non-executing, file-specific, progressive disclosure.
+- **SPECIAL MENTION —** <a href="https://github.com/DedInc"><img src="https://wsrv.nl/?url=github.com/DedInc.png&w=64&h=64&mask=circle&fit=cover&maxage=1w" width="22" height="22" alt="@DedInc" /></a> [**@DedInc**](https://github.com/DedInc): First external Domain Skill — [godot-monte-carlo-balancer](skills/godot-monte-carlo-balancer/SKILL.md) — source-driven Monte Carlo balance lab (Rust + rayon), Resource-first extract, playstyle CI bands, economy careers, and headless Godot calibration. Thank you!
 
 <div align="center">
   <img src="assets/banner_0_0_8.webp" alt="The Director's Cut Update - v0.0.8" width="100%" />
@@ -331,7 +340,7 @@ Think of Domain Skills as your **component library**: Drop them into your projec
 - **[godot-resource-data-patterns](skills/godot-resource-data-patterns/SKILL.md)**: `.tres` workflows, data-driven design, resource factories
 - **[godot-signal-architecture](skills/godot-signal-architecture/SKILL.md)**: Global vs scoped signal buses, signal-driven decoupling
 - **[godot-state-machine-advanced](skills/godot-state-machine-advanced/SKILL.md)**: Hierarchical FSMs, pushdown automata, state stacks, transition validation
-- **[godot-version-migration](skills/godot-version-migration/SKILL.md)**: Incremental Godot 4.x upgrades (4.0→4.7 hop-by-hop) with per-skill migration notes
+- **[godot-version-migration](skills/godot-version-migration/SKILL.md)**: Full-history engine upgrades (legacy eras → 3→4 → 4.x hops) with per-skill migration notes
 
 </details>
 
