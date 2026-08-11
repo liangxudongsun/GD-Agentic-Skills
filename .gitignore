@@ -15,6 +15,7 @@ site/
 .windsurf/
 .cline/
 .aider/
+.editorconfig
 GEMINI.md
 LEARNINGS.gemini.md
 skills-lock.json
