@@ -11,9 +11,7 @@ site/
 .agent/
 .agents/
 .gemini/
-.cursor/*
-!.cursor/rules/
-!.cursor/rules/**
+.cursor/
 .windsurf/
 .cline/
 .aider/
@@ -31,6 +29,11 @@ workspace/
 *.sqlite3
 *.log
 *.jsonl
+
+# Python bytecode (never commit)
+__pycache__/
+*.py[cod]
+*$py.class
 
 # -----------------------------
 # Godot 4+ Standard
@@ -72,3 +75,6 @@ builds/
 .audit/
 docs/internal/
 .venv/
+
+# GDSkills agent vision scratch (do not commit)
+.gdskills/
