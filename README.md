@@ -6,7 +6,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Godot Version](https://img.shields.io/badge/Godot-4.7%2B-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
-[![Skills](https://img.shields.io/badge/Skills-98-green?style=for-the-badge)](skills_index.json)
+[![Skills](https://img.shields.io/badge/Skills-99-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
 
@@ -20,12 +20,20 @@
 
 ## 💬 A Message from the Creator (Divergent AI)
 
-> **March 19, 2026**
-> 
+> **August 2026 — 500 stars**
+>
+> Hey everyone, Divergent AI here. Thank you — seriously — for the amazing support. Hitting **500 stars** means the world to me, and it puts this library in roughly the **top 0.4% of all public GitHub repositories**. I don't take that lightly.
+>
+> I've worked hard to keep these skills useful, true to **official Godot standards**, and aimed at one thing: helping you bring your vision to reality. A big part of that is making sure our coding agents can actually **see** the work — the menus, the HUD, the assets — not just guess from file paths.
+>
+> That's why I'm proud to introduce **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**. It lets agents capture your various GUI elements and surfaces, then analyse whether what they see matches the intended output — so sight and design intent finally line up.
+>
+> Please keep starring, sharing, and building. Have fun, and dream big.
+
+<details>
+<summary><b>Earlier message (March 19, 2026)</b></summary>
+
 > Hey everyone, Divergent AI here! I'm super happy that I'm seeing the project getting some love. It's motivated me to come back at it with a really strong update for you all. I've spent many hours working on updating all Domain Skills to be completely packed with top expert-level knowledge as learned directly from the robot's mouth—the Godot documentation.
-> 
-> <details>
-> <summary><b>Read the full message...</b></summary>
 >
 > The reason I did this was two-fold:
 >
@@ -37,24 +45,34 @@
 > I have many things I want to add to this project and a lot of testing and things I would like to do to ensure it continues to improve in quality over time.
 >
 > Please enjoy and remember to use AI for good. Most importantly, have fun and dream big!
-> </details>
+
+</details>
 
 ---
 
 ## 📜 Updates
 
 <div align="center">
-  <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
+  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
 </div>
 
-- **Migration Station**: New Architecture skill — [godot-version-migration](skills/godot-version-migration/SKILL.md) — full-history engine upgrades from early Godot through **4.7** (legacy eras → official 3→4 → hop-by-hop 4.x).
-- **Per-skill migration notes**: Every Domain Skill ships `references/migration-notes.md`; Domain `SKILL.md` bodies stay on **current** APIs.
-- **Lattice routing**: Analyst, Auditor, Builder, foundations, GDScript, and TileMap point engine-version work at the migration hub; `godot-master` routes upgrades there (not as a changelog dump).
+- **500 stars** — thank you. That puts this repo in roughly the **top 0.4%** of all public GitHub repositories.
+- **New — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents get **eyes** — capture GUI / assets / editor viewports to budgeted WebP, then score what they see against a granular production rubric (typography-weighted, anti-slop, identity).
+- Cross-platform host CLI (Win / macOS / Linux) + TEMP editor bridge under `.gdskills/` — not an in-game Autoload.
 
 ---
 
 <details>
 <summary><b>📜 Update Archive</b></summary>
+
+<div align="center">
+  <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
+</div>
+
+#### v0.0.10 — Migration Station
+- **Migration Station**: New Architecture skill — [godot-version-migration](skills/godot-version-migration/SKILL.md) — full-history engine upgrades from early Godot through **4.7** (legacy eras → official 3→4 → hop-by-hop 4.x).
+- **Per-skill migration notes**: Every Domain Skill ships `references/migration-notes.md`; Domain `SKILL.md` bodies stay on **current** APIs.
+- **Lattice routing**: Analyst, Auditor, Builder, foundations, GDScript, and TileMap point engine-version work at the migration hub; `godot-master` routes upgrades there (not as a changelog dump).
 
 <div align="center">
   <img src="assets/banner_0_0_9.webp" alt="The Reference Lattice Update - v0.0.9" width="100%" />
@@ -215,13 +233,13 @@ Use this when installing via the [skills CLI](https://github.com/vercel-labs/ski
 To keep your AI agent fast and accurate, follow these "Expert Efficiency" rules:
 
 ### 1. The "Power of One" Rule
-Either use **`godot-master`** (which orchestrates the other 97 skills via references) OR use individual **Domain Skills**. 
+Either use **`godot-master`** (which orchestrates the other 98 skills via references) OR use individual **Domain Skills**. 
 
 *   **Godot Master** is an "Orchestrator" skill. It is dense (~15k tokens) but provides a complete blueprint. Use it when the "Big Picture" matters.
 *   **Domain Skills** are "Surgical" skills (~2-5k tokens). They are fast, reliable, and keep the agent focused on one specific API.
 
 ### 2. Why "Install All" Fails
-Installing 98 skills simultaneously creates a **"Metadata Flood"**:
+Installing 99 skills simultaneously creates a **"Metadata Flood"**:
 - **Token Bleed**: ~15,000 tokens are "permanently" used just to tell the agent which skills exist.
 - **Instruction Conflicts**: Having multiple overlapping expert instructions (e.g., 20+ different genre blueprints) can cause the agent to lose its specific focus.
 - **Reasoning Lag**: The model has to sift through 100+ KB of text before deciding what to do.
@@ -234,14 +252,14 @@ Installing 98 skills simultaneously creates a **"Metadata Flood"**:
 
 ## 🏆 Godot Master — Your Lead Architect
 
-The **[godot-master](skills/godot-master/SKILL.md)** skill is the crown jewel of this repository—a consolidated expert library that orchestrates all 98 specialized skills into a unified architectural framework.
+The **[godot-master](skills/godot-master/SKILL.md)** skill is the crown jewel of this repository—a consolidated expert library that orchestrates all 99 specialized skills into a unified architectural framework.
 
 ### 🎯 What Makes Godot Master Special?
 
 Unlike individual Domain Skills that focus on isolated features, **godot-master** is your *system architect*. It provides:
 
 **📚 Comprehensive Knowledge Base**
-- **98 Reference Documents**: Complete markdown guides for every skill, from foundations to advanced genres
+- **99 Reference Documents**: Complete markdown guides for every skill, from foundations to advanced genres
 - **982 Unique Production Scripts**: Battle-tested, production-ready GDScript implementations
 - **11 Workflow Patterns**: Step-by-step architectural workflows (scaffolding, entity orchestration, persistence, optimization, multiplayer, Builder CLI scene builds, etc.)
 
@@ -397,8 +415,9 @@ Think of Domain Skills as your **component library**: Drop them into your projec
 </details>
 
 <details>
-<summary><b>🎨 UI & UX (5 skills)</b></summary>
+<summary><b>🎨 UI & UX (7 skills)</b></summary>
 
+- **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: Agentic eyes — host screenshot CLI → WebP, TEMP editor bridge, structured anti-slop vision review
 - **[godot-input-handling](skills/godot-input-handling/SKILL.md)**: `InputMap`, controller support, rebinding, input buffering
 - **[godot-ui-containers](skills/godot-ui-containers/SKILL.md)**: Responsive layouts, anchor presets, margin containers
 - **[godot-ui-rich-text](skills/godot-ui-rich-text/SKILL.md)**: `RichTextLabel`, BBCode, custom effects
@@ -573,10 +592,10 @@ If this project accelerates your Godot development or empowers your AI agents, c
 
 | Metric | Value |
 |:---|:---|
-| **Total Skills** | 98 |
+| **Total Skills** | 99 |
 | **Genre Blueprints** | 27 |
 | **Production Scripts** | 982 |
-| **Reference Documents** | 98 |
+| **Reference Documents** | 99 |
 | **Target Engine** | Godot 4.7+ |
 | **License** | LGPLv3 |
 

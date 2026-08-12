@@ -5,7 +5,18 @@
 ---
 
 ## 📌 Pinned Post: A Message from Divergent AI
-**March 19, 2026**
+**August 2026 — 500 stars**
+
+Hey everyone, Divergent AI here. Thank you — seriously — for the amazing support. Hitting **500 stars** means the world to me, and it puts this library in roughly the **top 0.4% of all public GitHub repositories**. I don't take that lightly.
+
+I've worked hard to keep these skills useful, true to **official Godot standards**, and aimed at one thing: helping you bring your vision to reality. A big part of that is making sure our coding agents can actually **see** the work — the menus, the HUD, the assets — not just guess from file paths.
+
+That's why I'm proud to introduce **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**. It lets agents capture your various GUI elements and surfaces, then analyse whether what they see matches the intended output — so sight and design intent finally line up.
+
+Please keep starring, sharing, and building. Have fun, and dream big.
+
+<details>
+<summary><b>Earlier pinned note (March 19, 2026)</b></summary>
 
 Hey everyone! 🚀 The project is gaining some serious traction and I'm loving the energy. It motivated me to push a massive overhaul.
 
@@ -14,6 +25,36 @@ We've spent a "Big Brain" amount of hours updating **every single microskill** t
 **The Goal:** Zero slop. 100% Native Godot Best Practices.
 
 I want this library to be the "Long-Term Memory" your agents need to build your dream games without the technical debt. Let's make something awesome! 🛠️
+
+</details>
+
+---
+
+## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
+**August 12, 2026**
+
+<div align="center">
+  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
+</div>
+
+Hey everyone — Divergent AI here. Thank you for the incredible support on **500 stars** (roughly **top 0.4%** of public GitHub repos). I've pushed hard to keep GDSkills useful, Godot-doc-true, and aimed at helping you ship your vision. A big missing piece was sight itself — so this release introduces **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents capture your GUI and assets, then check that what they see matches what you meant. Proud of this one. Dream big!
+
+- **Milestone**: 500 GitHub stars — roughly **top 0.4%** of public repositories.
+- **New Domain Skill — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: host-side eyes — screen/window/region/asset WebP capture, TEMP editor bridge, granular scored vision rubric (typography, anti-slop, originality, identity).
+- Cross-platform capture CLI; default short-edge 512 context budget; `--detail` when glyphs/layout need it.
+- Not shipped as a game Autoload — agentic development service only.
+
+### Featured skill — Agent Vision
+
+Load [godot-agent-vision](skills/godot-agent-vision/SKILL.md) whenever agents must **see** menus, HUDs, and assets — not guess from paths — and score the result against production taste receptors.
+
+### Squad desk
+
+> "Sight without structure is noise; the rubric is the architecture of looking." — *Anara*
+
+> "Never Autoload a screenshot toy. Stage the bridge. Tear it down. Leave no addon ghosts." — *Aurelius*
+
+> "`capture.py` to WebP under `.gdskills/vision/`, Read, score /120, fix list. Ship the CLI, not the game feature." — *Builder*
 
 ---
 

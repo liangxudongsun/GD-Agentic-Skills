@@ -192,6 +192,22 @@
     ]
   },
   {
+    "name": "godot-agent-vision",
+    "description": "\"Agentic eyes for Godot work: cross-platform screenshot CLI (asset/region/window/screen) to budgeted WebP, TEMP editor viewport bridge under .gdskills/, and Taste Receptor Atlas v2 (~237 micro-receptors \u00d7 0\u20132: hierarchy, contrast, typography\u00d741, affordance, space, color, icon, composition, light/FX, motion-tells, anti-slop, originality, identity). Use when agents must see UI, assets, or the editor \u2014 not for in-game screenshot Autoloads. Keywords: agent vision, screenshot, WebP, visual QA, taste receptors, typography, UI review, asset sheet, editor viewport, anti-slop.\"",
+    "keywords": [
+      "agent vision",
+      "screenshot",
+      "WebP",
+      "visual QA",
+      "taste receptors",
+      "typography",
+      "UI review",
+      "asset sheet",
+      "editor viewport",
+      "anti-slop"
+    ]
+  },
+  {
     "name": "godot-ai-navigation",
     "description": "\"AI movement decision router for chase, patrol, crowd, and bake choices on top of NavigationAgent/Server. Use when deciding node agent vs RID server, bake vs obstacle, layer masks, or retarget policy \u2014 not for engine navmesh recipes. Keywords: AI navigation, chase retarget, patrol, crowd RVO, bake vs obstacle, NavigationAgent decision tree.\"",
     "keywords": [
@@ -470,22 +486,22 @@
     "name": "godot-game-loop-time-trial",
     "description": "Expert patterns for racing mechanics, checkpoint tracking, and ghost recording/playback in Godot 4. Use when building racing games, speed-run platformers, or arcade trials.",
     "keywords": [
-      "games",
-      "building",
-      "speed",
-      "ghost",
-      "arcade",
-      "mechanics",
-      "racing",
-      "recording",
-      "patterns",
-      "playback",
-      "godot",
-      "checkpoint",
-      "platformers",
-      "trials",
       "tracking",
+      "trials",
+      "recording",
       "when",
+      "arcade",
+      "patterns",
+      "platformers",
+      "ghost",
+      "godot",
+      "mechanics",
+      "building",
+      "playback",
+      "checkpoint",
+      "games",
+      "speed",
+      "racing",
       "expert"
     ]
   },
@@ -493,26 +509,26 @@
     "name": "godot-game-loop-waves",
     "description": "Expert patterns for managing combat waves, difficulty scaling, and automated enemy spawning in Godot 4. Use when building wave-based shooters, tower defense, or arena games.",
     "keywords": [
-      "when",
-      "expert",
-      "difficulty",
-      "managing",
       "spawning",
-      "wave",
-      "shooters",
-      "tower",
-      "godot",
-      "games",
-      "combat",
-      "building",
-      "based",
-      "scaling",
-      "automated",
       "arena",
-      "defense",
-      "waves",
+      "enemy",
       "patterns",
-      "enemy"
+      "building",
+      "games",
+      "tower",
+      "shooters",
+      "when",
+      "godot",
+      "wave",
+      "based",
+      "defense",
+      "difficulty",
+      "waves",
+      "expert",
+      "managing",
+      "combat",
+      "scaling",
+      "automated"
     ]
   },
   {
@@ -1396,10 +1412,19 @@
   },
   {
     "name": "godot-version-migration",
-    "description": "\"Incremental Godot 4.x version migration hub. Use when upgrading a Godot project hop-by-hop from 4.0 toward the library target (currently 4.7), migrating APIs after a minor engine release, or finding Domain Skill-scoped migration notes. Trigger keywords: upgrade Godot, migrate 4.0 to 4.1, upgrading_to_godot, version migration, breaking changes, TileMapLayer, AnimationMixer, RichTextLabel ImageUnit, Jolt Physics, stretch mode, area_mask.\"",
+    "description": "\"Full-history Godot version migration hub. Use when upgrading any Godot project toward the library target (currently 4.7)\u2014from 1.x/2.x legacy eras through 3\u21924 and hop-by-hop 4.x minors\u2014or finding Domain Skill-scoped migration notes. Trigger keywords: upgrade Godot, migrate Godot version, Godot 3 to 4, Godot 2 to 3, upgrading_to_godot, version migration, breaking changes, convert-3to4, TileMapLayer, AnimationMixer, engine.cfg, project.godot.\"",
     "keywords": [
       "upgrade Godot",
-      "migrate 4"
+      "migrate Godot version",
+      "Godot 3 to 4",
+      "Godot 2 to 3",
+      "upgrading_to_godot",
+      "version migration",
+      "breaking changes",
+      "convert-3to4",
+      "TileMapLayer",
+      "AnimationMixer",
+      "engine"
     ]
   }
 ]
