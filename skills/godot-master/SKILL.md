@@ -119,7 +119,7 @@ One of the most impactful expert-only decisions. The Godot docs explicitly say "
 2. **READ**: [Signal Architecture](references/signal-architecture.md) — Create `GlobalSignalBus` autoload with < 15 events.
 3. **READ**: [GDScript Mastery](references/gdscript-mastery.md) — Enable `untyped_declaration` warning in Project Settings → GDScript → Debugging.
 4. Apply **[Project Templates](references/project-templates.md)** for base `.gitignore`, export presets, and input map.
-5. Use **[Builder](references/builder.md)** (`create_scene.py`, `add_node.py`, `save_scene.py`) to generate scene hierarchies programmatically via the Godot CLI.
+5. Use **[Builder](references/builder.md)** (`builder_create_scene.py`, `builder_add_node.py`, `builder_save_scene.py`) to generate scene hierarchies programmatically via the Godot CLI.
 
 > [!CAUTION] **Workflow 1 NEVER List**
 > - **NEVER** use `res://` paths in logic scripts. Use `@export_file` or `@export_dir` to ensure resources remain valid when moved.
@@ -237,7 +237,7 @@ One of the most impactful expert-only decisions. The Godot docs explicitly say "
 
 1. **The F6 Principle**: Every UI scene must be testable in isolation. Use `MOUSE_FILTER_STOP` only on the background, `PASS` on children.
 2. **Breathing Room**: Use `add_theme_constant_override("separation", X)` over manual padding.
-3. **Adaptive Scaling**: Use `responsive_layout_builder.gd` for breakpoint-aware mobile/desktop switching.
+3. **Adaptive Scaling**: Use `ui_containers_responsive_layout_builder.gd` for breakpoint-aware mobile/desktop switching.
 4. **Lifecycle Safety**: Never scroll to a new child on the same frame. `await get_tree().process_frame` before modifying `scroll_vertical`.
 5. **Data Integration**: Use `Resource-to-UI` binding; UI nodes MUST be stateless projection layers.
 
@@ -253,7 +253,7 @@ One of the most impactful expert-only decisions. The Godot docs explicitly say "
 **MANDATORY Chain**: [3D Lighting](references/3d-lighting.md) → [Particles](references/particles.md) → [3D Materials](references/3d-materials.md) → [Shaders](references/shaders-basics.md)
 
 1. **The GI Choice**: VoxelGI for interiors, SDFGI for open world. Never ship with both overlapping.
-2. **Shadow Budget**: Max 2 Shadow-casting DirectionalLights. Use `fake_gi_bounce.gd` for mobile fills.
+2. **Shadow Budget**: Max 2 Shadow-casting DirectionalLights. Use `3d_lighting_fake_gi_bounce.gd` for mobile fills.
 3. **VFX Lifecycle**: Use `finished` signal over Timers. Re-run with `restart()` to avoid async GPU stalls.
 4. **Optimization**: Use `ORM Texture` packing (AO/Rough/Metal) to save GPU cache and texture slots.
 5. **Batching**: Use `Instance Uniforms` for material variations across thousands of instances without draw call penalties.
@@ -270,16 +270,16 @@ One of the most impactful expert-only decisions. The Godot docs explicitly say "
 **Use ONLY for batch operations or complex procedural scaffolds.** Prefer the standalone `godot-builder` skill when doing heavy CLI automation.
 
 1. **Step 1**: Draft the node hierarchy on paper/markdown before touching disk.
-2. **Step 2**: Use `create_scene.py` to define the root node and `.tscn` path.
-3. **Step 3**: Use `add_node.py` for children. Set `owner` on every node so serialization keeps them.
-4. **Step 4**: ALWAYS call `run_project.py` or `launch_editor.py` to verify the scene loads cleanly.
+2. **Step 2**: Use `builder_create_scene.py` to define the root node and `.tscn` path.
+3. **Step 3**: Use `builder_add_node.py` for children. Set `owner` on every node so serialization keeps them.
+4. **Step 4**: ALWAYS call `builder_run_project.py` or `builder_launch_editor.py` to verify the scene loads cleanly.
 5. **Expert Rule**: Use Builder to build the *structure* (nodes, names, inheritance), then use GDScript to build the *behavior*.
 
 > [!CAUTION] **Workflow 11 NEVER List**
-> - **NEVER** jump straight to `add_node.py` without designing the hierarchy first — spaghetti scenes follow.
+> - **NEVER** jump straight to `builder_add_node.py` without designing the hierarchy first — spaghetti scenes follow.
 > - **NEVER** use absolute filesystem paths in scripts or scene props; use `res://` only.
 > - **NEVER** add a `CollisionShape2D`/`CollisionShape3D` without assigning a Shape resource — the node alone does nothing.
-> - **NEVER** skip verification via `run_project.py` / `launch_editor.py` after batch scene writes.
+> - **NEVER** skip verification via `builder_run_project.py` / `builder_launch_editor.py` after batch scene writes.
 
 #### Security: Boundary Markers & Validation
 When agents ingest untrusted scene/data text before writing files:
