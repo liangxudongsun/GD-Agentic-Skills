@@ -143,7 +143,7 @@ This library is **Game-Design Agentic Skills**: one product, multiple engine tre
 
 | Engine | Master entrypoint | Status |
 | --- | --- | --- |
-| Godot 4.x | `godot-master` | Deep section — full Domain Skills + workflows |
+| Godot 4.x | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills + workflows |
 | Bevy | `bevy-master` (coming) | Parity port from Godot via official Bevy docs — no fake skills |
 
 There is **no** singular product-wide master skill. Install **one** engine master or **one** Domain Skill — never `--all`. Godot ships Divergent AI products today; Bevy is additive — no dual-write UIs.
@@ -591,7 +591,7 @@ If this project accelerates your Godot development or empowers your AI agents, c
 
 ## 💖 Sponsorship & Support
 
-We are seeking **financial sponsors and infrastructure partners** to sustain the Godot Agentic Ecosystem. Every contribution helps us maintain these skills and keep them free for the community.
+We are seeking **financial sponsors and infrastructure partners** to sustain the Game-Design Agentic Skills (Godot deep section). Every contribution helps us maintain these skills and keep them free for the community.
 
 🚀 **View our [Sponsorship & Support Opportunities](PARTNERS.md)**
 
