@@ -1,17 +1,16 @@
 # Game-Design Agentic Skills
 <div align="center">
-  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot deep, Bevy docs-first parity" width="100%" />
+  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot & Bevy" width="100%" />
 
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Godot Version](https://img.shields.io/badge/Godot-4.7%2B-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
+[![Bevy Version](https://img.shields.io/badge/Bevy-0.20%2B-232323?style=for-the-badge&logo=bevy&logoColor=white)](https://bevyengine.org/)
 [![Skills](https://img.shields.io/badge/Skills-181-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
 
-**Game-Design Agentic Skills (GDAS)** — multi-engine library for coding agents · **Godot 4.x** deep section · **Bevy** docs-first parity in progress
-
-![Bevy](https://img.shields.io/badge/Bevy-parity_in_progress-lightgrey?style=for-the-badge)
+**Game-Design Agentic Skills (GDAS)** — multi-engine library for coding agents · **Godot 4.x** · **Bevy**
 
 **"A skill forgotten is a power lost." — The Code Architect**
 
@@ -24,15 +23,15 @@
 ## 📜 Updates
 
 <div align="center">
-  <img src="assets/banner_bevy_parity.webp" alt="Bevy docs-first parity — Game-Design Agentic Skills" width="100%" />
+  <img src="assets/banner_bevy.webp" alt="Bevy — Game-Design Agentic Skills" width="100%" />
 </div>
 
-### Bevy docs-first parity
+### Bevy skills
 **October 11, 2026**
 
-- **Multi-engine GDAS**: Godot stays the deep section. Bevy lands under **[bevy-master](skills/bevy-master/SKILL.md)** with a living [parity matrix](skills/bevy-master/references/parity-matrix.md) — docs-first Domain Skills, not a silent full port.
-- **A-gate depth**: ECS ownership, NEVER lists with WHY, decision tables, and unversioned lattices (`docs.rs/bevy/latest`, [migration guides](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
-- **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
+- **Multi-engine GDAS**: Godot and Bevy side by side. Start Bevy work at **[bevy-master](skills/bevy-master/SKILL.md)** — ECS ownership, decision tables, and Official Docs lattices (`docs.rs/bevy/latest`, [migration guides](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
+- **Domain Skills**: Bevy Domain Skills for composition, schedules, and genre samples — install one path at a time.
+- **Honest scope**: physics solver, networking, MOBA, and battle royale skills are not shipped yet; XR is on a later revisit.
 
 ---
 
@@ -153,9 +152,9 @@
 | Engine | Master | Status |
 | --- | --- | --- |
 | **Godot 4.x** | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills, personas, and workflows |
-| **Bevy** | [bevy-master](skills/bevy-master/SKILL.md) | **Docs-first parity** — living matrix + Domain Skills; blocked rows stay blocked |
+| **Bevy** | [bevy-master](skills/bevy-master/SKILL.md) | Domain Skills + hub under **bevy-master** |
 
-Install **one** engine master or **one** Domain Skill — never `--all`. Godot is the parity source of truth and what Divergent AI ships today; Bevy is additive (no dual-write UIs).
+Install **one** engine master or **one** Domain Skill — never `--all`. Pick the engine you are shipping; skills stay engine-scoped.
 
 ## 📍 Quick Navigation
 
@@ -170,8 +169,8 @@ Install **one** engine master or **one** Domain Skill — never `--all`. Godot i
 **Game-Design Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
 
 - **Godot 4.7+** is the deep section today: official-doc-true patterns, personas, and production scripts.
-- **Bevy** is on the road to parity under `bevy-master`: docs-first skills and an honest matrix (gaps stay gaps).
-- **Godot is the source of truth** for parity. Skills stay engine-scoped — install one path, avoid a Context Storm.
+- **Bevy** under `bevy-master`: Domain Skills and Official Docs lattices for ECS-first Rust game work.
+- Skills stay engine-scoped — install one path, avoid a Context Storm.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
 
@@ -196,7 +195,7 @@ npx skills add thedivergentai/gd-agentic-skills/skills/godot-characterbody-2d
 ```
 
 ### 🦀 Path C: Bevy hub
-Bevy work starts at **bevy-master** (docs-first skills + parity matrix — not a second full Godot-depth library):
+Bevy work starts at **bevy-master**:
 ```bash
 npx skills add thedivergentai/gd-agentic-skills/skills/bevy-master
 ```
@@ -351,9 +350,9 @@ Individual Domain Skills are **modular add-ons** for targeted functionality. Eac
 Think of Domain Skills as your **component library**: Drop them into your project for instant, expert-level functionality.
 
 <details>
-<summary><b>🟦 Bevy (docs-first)</b></summary>
+<summary><b>🟦 Bevy</b></summary>
 
-Hub: **[bevy-master](skills/bevy-master/SKILL.md)** and the [parity matrix](skills/bevy-master/references/parity-matrix.md). Docs-first Domain Skills (ECS ownership, schedules, honest Gaps). Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. Console certification and export packaging have no Bevy twin. XR is revisit until 2026-11-11.
+Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS ownership, schedules, and genre samples. Some advanced topics (networking, MOBA, battle royale, physics solver) are not shipped yet.
 
 - **[bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md)**: Components, `Query`, `Commands`, `Startup` / `Update`, `.chain()`
 - **[bevy-events-messaging](skills/bevy-events-messaging/SKILL.md)**: Messages and observers as an ownership slot (no invented event structs)
@@ -366,7 +365,7 @@ Hub: **[bevy-master](skills/bevy-master/SKILL.md)** and the [parity matrix](skil
 - **[bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md)**: Asset and scene loading boundaries
 - **[bevy-platform-desktop](skills/bevy-platform-desktop/SKILL.md)**, **[bevy-platform-web](skills/bevy-platform-web/SKILL.md)**, **[bevy-platform-mobile](skills/bevy-platform-mobile/SKILL.md)**: Platform axes
 - **[bevy-adapt-2d-to-3d](skills/bevy-adapt-2d-to-3d/SKILL.md)** and **[bevy-adapt-desktop-to-mobile](skills/bevy-adapt-desktop-to-mobile/SKILL.md)**: Adaptation routers
-- **[bevy-genre-platformer](skills/bevy-genre-platformer/SKILL.md)**, **[bevy-genre-roguelike](skills/bevy-genre-roguelike/SKILL.md)**, **[bevy-game-loop-waves](skills/bevy-game-loop-waves/SKILL.md)**: Genre and loop samples (full set is on the hub matrix)
+- **[bevy-genre-platformer](skills/bevy-genre-platformer/SKILL.md)**, **[bevy-genre-roguelike](skills/bevy-genre-roguelike/SKILL.md)**, **[bevy-game-loop-waves](skills/bevy-game-loop-waves/SKILL.md)**: Genre and loop samples
 
 </details>
 

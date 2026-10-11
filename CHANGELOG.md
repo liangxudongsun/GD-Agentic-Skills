@@ -30,16 +30,16 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 ---
 
-## Bevy docs-first parity
+## Bevy skills
 **October 11, 2026**
 
 <div align="center">
-  <img src="assets/banner_bevy_parity.webp" alt="Bevy docs-first parity — Game-Design Agentic Skills" width="100%" />
+  <img src="assets/banner_bevy.webp" alt="Bevy — Game-Design Agentic Skills" width="100%" />
 </div>
 
-Hey everyone — Divergent AI here. Thank you for sticking with the library while we grow past a single engine. **Godot** remains the deep section — that does not change. What *does* change today is that **Bevy** finally has an honest home here: **[bevy-master](skills/bevy-master/SKILL.md)** plus docs-first Domain Skills and a living [parity matrix](skills/bevy-master/references/parity-matrix.md). This is not a Rust paste of the Godot tree, and it is not a second full library pretending the Gaps do not exist.
+Hey everyone — Divergent AI here. Thank you for sticking with the library while we grow past a single engine. **Godot** remains the deep section — that does not change. What *does* change today is that **Bevy** has a home here under **[bevy-master](skills/bevy-master/SKILL.md)** with Domain Skills for ECS-first Rust game work.
 
-- **A-gate depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, [bevy.org/learn](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
+- **Depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, [bevy.org/learn](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
 - **Related Skills** use GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so single-skill installs still resolve.
 - **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
 
