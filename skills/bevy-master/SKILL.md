@@ -36,6 +36,14 @@ The Quick Start ECS page (opened 2026-10-11) defines entities, components (`Comp
 | App-wide resources and schedules | [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md) |
 | Character movement | [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) |
 | 3D physics | [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md) |
+| Keyboard, mouse, gamepad | [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) |
+| 2D or 3D camera entity | [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md) |
+| Play or control a clip | [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) |
+| Load assets or spawn a scene | [bevy-asset-scenes](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-asset-scenes/SKILL.md) |
+| Player save slot | [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) (gap: no save format opened) |
+| Logs and frame diagnostics | [bevy-debugging-profiling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-debugging-profiling/SKILL.md) |
+| Parallelism, fixed step, handle lifetime | [bevy-performance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-performance/SKILL.md) |
+| `cargo test` | [bevy-testing-patterns](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-testing-patterns/SKILL.md) |
 | Godot language, version hops, CLI, or project audit | Stay on the Godot skill (`n_a_godot_only` in the matrix) |
 | Networking or a dedicated server | Blocked until 2026-11-11. No Bevy skill |
 | Any other genre or domain | No Bevy skill yet. Read the matrix |
@@ -52,7 +60,7 @@ Data that is not simulated can be a plain Rust struct or a resource. The Quick S
 
 **(c) Data.** Components and resources. Not `.tres` files.
 
-**(d) Performance.** The ECS page states systems run in parallel by default when they can, and `.chain()` forces order. No numeric budget is copied here; the opened pages do not give one.
+**(d) Performance.** The ECS page states systems run in parallel by default when they can, and `.chain()` forces order. Frame-time diagnostics and handle lifetimes are on `bevy-performance`. No numeric budget is copied here; the opened pages do not give one.
 
 ## NEVER
 
@@ -77,6 +85,14 @@ Phase-1 domain stubs:
 - [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md)
 - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md)
 - [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)
+- [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md)
+- [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md)
+- [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md)
+- [bevy-asset-scenes](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-asset-scenes/SKILL.md)
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md)
+- [bevy-debugging-profiling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-debugging-profiling/SKILL.md)
+- [bevy-performance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-performance/SKILL.md)
+- [bevy-testing-patterns](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-testing-patterns/SKILL.md)
 
 The matrix holds the rest.
 
@@ -115,6 +131,14 @@ docs.rs links use the unversioned `latest` permalink (same role as Godot `/en/st
 - [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md)  -  App-wide resources and `Startup` / `Update`.
 - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md)  -  Player and actor motion on the fixed timestep.
 - [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)  -  Simulated 3D bodies once a solver crate is verified.
+- [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md)  -  `ButtonInput`, mouse, and gamepad.
+- [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md)  -  `Camera2d` and `Camera3d`.
+- [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md)  -  `AudioPlayer` and `AudioSink`.
+- [bevy-asset-scenes](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-asset-scenes/SKILL.md)  -  `AssetServer` and `spawn_scene`.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md)  -  Save-slot gap. Scene spawn is not a save.
+- [bevy-debugging-profiling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-debugging-profiling/SKILL.md)  -  `LogPlugin` and diagnostics plugins.
+- [bevy-performance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-performance/SKILL.md)  -  Parallel systems, fixed step, handle lifetimes.
+- [bevy-testing-patterns](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-testing-patterns/SKILL.md)  -  `cargo test`. Not GdUnit.
 
 #### Master
 - This file. Do not route Bevy work through a parent that also owns Godot.
