@@ -1,6 +1,7 @@
 # AGENT.md — GDSkills
 
-**Primary:** Cipher
+**Primary:** Forge
+**Architecture collaborator:** Cipher
 **Private ops skill:** `.agents/skills/gdskills-dev/SKILL.md`
 **A-gate:** nested godot-skill-judge (not generic public skill-judge)
 **Portfolio:** ryan-ops for cross-pillar routing
