@@ -42,7 +42,6 @@ Hey everyone — Divergent AI here. Thank you for sticking with the library whil
 - **A-gate depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, [bevy.org/learn](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
 - **Related Skills** use GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so single-skill installs still resolve.
 - **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
-- README Skills badge tracks the combined Godot + Bevy index (**181**). Install one master or one Domain Skill — never `--all`.
 
 > "A schedule is not a scene tree. Name the component, the system, and the gap — then stop." — *Anara*
 

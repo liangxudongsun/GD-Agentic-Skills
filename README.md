@@ -33,7 +33,6 @@
 - **Multi-engine GDAS**: Godot stays the deep section. Bevy lands under **[bevy-master](skills/bevy-master/SKILL.md)** with a living [parity matrix](skills/bevy-master/references/parity-matrix.md) — docs-first Domain Skills, not a silent full port.
 - **A-gate depth**: ECS ownership, NEVER lists with WHY, decision tables, and unversioned lattices (`docs.rs/bevy/latest`, [migration guides](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
 - **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
-- Skills badge is the combined index (**181**). Install **one** engine master or **one** Domain Skill — never `--all`.
 
 ---
 
