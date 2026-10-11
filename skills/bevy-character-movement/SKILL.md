@@ -33,6 +33,46 @@ Load this when a Bevy app needs a player or actor that moves in discrete steps (
 - Do not call `move_and_slide`, `_physics_process`, or `CharacterBody2D`.
 - Ground detection, shape casts, and collision layers are unverified. Do not invent query APIs.
 
+
+## Expert Knowledge Delta
+
+Library target in prose: **Bevy 0.20.0**. Lattice URLs stay unversioned.
+
+Opened canon only: `Component`, `Resource`, `Query`, `Commands`, `Startup`, `Update`, `Fixed` / `FixedMain` (`bevy::time`), `.chain()`, `Plugin`, `DefaultPlugins`, `MinimalPlugins`. Messages and observers are an ownership slot. This file does not invent their struct APIs. Systems run in parallel unless `.chain()` orders the ones that conflict.
+
+### Who owns state
+
+| Piece | Owner | Who may mutate | Schedule |
+| --- | --- | --- | --- |
+| Data on one entity | `Component` | One system via `Query` | `Update` or `FixedMain` |
+| One value for the whole app | `Resource` | One system | `Startup` to insert, then the schedule that reads it |
+| Spawn | `Commands` | The spawning system | `Startup` for the initial world; later schedules for runtime spawn |
+| Order that must not race | `.chain()` | The chained systems only | Same schedule |
+| Plugin boundary | `Plugin` | `build` registers systems and resources | Before the app runs |
+
+Borrow rule: two systems that both mutably query the same component must be ordered (`.chain()`) or split so only one writes. Unrelated systems stay parallel. That is the ECS page rule, not a guess at a system-set API.
+
+### Decision
+
+| If you need | Do this | Do not |
+| --- | --- | --- |
+| Per-entity data | `Component` + `Query` | A Godot node script |
+| App-wide config or clock | `Resource` | Copy the value onto every entity |
+| Stable simulation step | `FixedMain` and the `Fixed` clock | Tie simulation to raw frame `Update` |
+| Startup spawn | `Commands` in `Startup` | Spawn from a render system |
+| Cross-system notice that is not shared state | Message or observer slot in `bevy-events-messaging` | A new event type invented in this file |
+| An API this skill did not open | A Gaps row | A fabricated crate (solver, navmesh module, net, XR) |
+
+Load `references/a-gate-notes.md` for the same table plus the gap rule.
+
+## NEVER
+
+- Do not put `/0.20.0/` in lattice URLs. WHY: permalinks stay on `latest`. The 0.20.0 pin belongs in prose once.
+- Do not step locomotion on raw `Update` when the step must stay stable. WHY: `bevy::time` documents `Fixed` and `run_fixed_main_schedule` (`FixedMain`) for a fixed clock.
+- Do not call `move_and_slide`, `_physics_process`, or `CharacterBody2D`. WHY: those are Godot types. This skill only owns ECS movement data.
+- Do not invent a character-controller or shape-cast API. WHY: no verified controller type was opened in the `bevy` crate docs for this pass.
+- Do not mutably query the same movement component from two unordered systems. WHY: systems run in parallel unless `.chain()` orders them.
+
 ## Reference
 
 docs.rs links use the unversioned `latest` permalink. The library pin on bevy-master stays **0.20.0**.

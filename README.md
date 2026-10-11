@@ -5,7 +5,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Godot Version](https://img.shields.io/badge/Godot-4.7%2B-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
-[![Skills](https://img.shields.io/badge/Skills-99-green?style=for-the-badge)](skills_index.json)
+[![Skills](https://img.shields.io/badge/Skills-181-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
 
@@ -336,10 +336,20 @@ Think of Domain Skills as your **component library**: Drop them into your projec
 <details>
 <summary><b>🟦 Bevy (docs-first)</b></summary>
 
-Hub: **[bevy-master](skills/bevy-master/SKILL.md)** and the [parity matrix](skills/bevy-master/references/parity-matrix.md). Domain skills, UI, platforms, adapts, and genre routers are docs-first stubs. Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. Console certification and export packaging have no Bevy twin. XR is revisit until 2026-11-11.
+Hub: **[bevy-master](skills/bevy-master/SKILL.md)** and the [parity matrix](skills/bevy-master/references/parity-matrix.md). Docs-first Domain Skills (ECS ownership, schedules, honest Gaps). Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. Console certification and export packaging have no Bevy twin. XR is revisit until 2026-11-11.
 
-- **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Docs-first movement stub (fixed timestep, ECS). Not a full port. Godot counterpart: `godot-characterbody-2d`
-- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: Docs-first 3D physics stub. No solver crate pinned. Godot counterpart: `godot-physics-3d`
+- **[bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md)**: Components, `Query`, `Commands`, `Startup` / `Update`, `.chain()`
+- **[bevy-events-messaging](skills/bevy-events-messaging/SKILL.md)**: Messages and observers as an ownership slot (no invented event structs)
+- **[bevy-app-resources](skills/bevy-app-resources/SKILL.md)**: App-wide `Resource` ownership and plugin boundaries
+- **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Locomotion on `Fixed` / `FixedMain`. Not a Godot body port
+- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: 3D physics gap map. No solver crate pinned
+- **[bevy-physics-2d](skills/bevy-physics-2d/SKILL.md)**: 2D physics gap map. Same solver honesty
+- **[bevy-ui-layout](skills/bevy-ui-layout/SKILL.md)**: UI layout routing without a Godot Control tree
+- **[bevy-input-handling](skills/bevy-input-handling/SKILL.md)**: Input as components and systems
+- **[bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md)**: Asset and scene loading boundaries
+- **[bevy-platform-desktop](skills/bevy-platform-desktop/SKILL.md)**, **[bevy-platform-web](skills/bevy-platform-web/SKILL.md)**, **[bevy-platform-mobile](skills/bevy-platform-mobile/SKILL.md)**: Platform axes
+- **[bevy-adapt-2d-to-3d](skills/bevy-adapt-2d-to-3d/SKILL.md)** and **[bevy-adapt-desktop-to-mobile](skills/bevy-adapt-desktop-to-mobile/SKILL.md)**: Adaptation routers
+- **[bevy-genre-platformer](skills/bevy-genre-platformer/SKILL.md)**, **[bevy-genre-roguelike](skills/bevy-genre-roguelike/SKILL.md)**, **[bevy-game-loop-waves](skills/bevy-game-loop-waves/SKILL.md)**: Genre and loop samples (full set is on the hub matrix)
 
 </details>
 
@@ -590,7 +600,7 @@ If this project accelerates your Godot development or empowers your AI agents, c
 
 | Metric | Value |
 |:---|:---|
-| **Total Skills** | 99 |
+| **Total Skills** | 181 |
 | **Genre Blueprints** | 27 |
 | **Production Scripts** | 982 |
 | **Reference Documents** | 99 |

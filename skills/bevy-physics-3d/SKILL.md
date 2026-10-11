@@ -1,4 +1,4 @@
-﻿---
+---
 name: bevy-physics-3d
 description: "Docs-first stub for Bevy 3D physics. Godot counterpart: godot-physics-3d. Not a full port. Keywords: Bevy, physics, ECS, 3D."
 ---
@@ -32,6 +32,46 @@ Load this when a Bevy app needs simulated 3D bodies (props, impulses, constraint
 - The `bevy` 0.20.0 crate feature list opened on docs.rs has no physics-engine feature. Jolt, a Godot physical-bone type, and Godot joint types are not Bevy names. Do not pretend those APIs exist.
 - Third-party plugins are allowed by the plugins page (add a crate, then `add_plugins`). This pass did not open a specific 3D physics crate, so no plugin path is recorded.
 - Raycasts, CCD, and collision events are unverified.
+
+
+## Expert Knowledge Delta
+
+Library target in prose: **Bevy 0.20.0**. Lattice URLs stay unversioned.
+
+Opened canon only: `Component`, `Resource`, `Query`, `Commands`, `Startup`, `Update`, `Fixed` / `FixedMain` (`bevy::time`), `.chain()`, `Plugin`, `DefaultPlugins`, `MinimalPlugins`. Messages and observers are an ownership slot. This file does not invent their struct APIs. Systems run in parallel unless `.chain()` orders the ones that conflict.
+
+### Who owns state
+
+| Piece | Owner | Who may mutate | Schedule |
+| --- | --- | --- | --- |
+| Data on one entity | `Component` | One system via `Query` | `Update` or `FixedMain` |
+| One value for the whole app | `Resource` | One system | `Startup` to insert, then the schedule that reads it |
+| Spawn | `Commands` | The spawning system | `Startup` for the initial world; later schedules for runtime spawn |
+| Order that must not race | `.chain()` | The chained systems only | Same schedule |
+| Plugin boundary | `Plugin` | `build` registers systems and resources | Before the app runs |
+
+Borrow rule: two systems that both mutably query the same component must be ordered (`.chain()`) or split so only one writes. Unrelated systems stay parallel. That is the ECS page rule, not a guess at a system-set API.
+
+### Decision
+
+| If you need | Do this | Do not |
+| --- | --- | --- |
+| Per-entity data | `Component` + `Query` | A Godot node script |
+| App-wide config or clock | `Resource` | Copy the value onto every entity |
+| Stable simulation step | `FixedMain` and the `Fixed` clock | Tie simulation to raw frame `Update` |
+| Startup spawn | `Commands` in `Startup` | Spawn from a render system |
+| Cross-system notice that is not shared state | Message or observer slot in `bevy-events-messaging` | A new event type invented in this file |
+| An API this skill did not open | A Gaps row | A fabricated crate (solver, navmesh module, net, XR) |
+
+Load `references/a-gate-notes.md` for the same table plus the gap rule.
+
+## NEVER
+
+- Do not put `/0.20.0/` in lattice URLs. WHY: permalinks stay on `latest`. The 0.20.0 pin belongs in prose once.
+- Do not name Jolt, a Godot physical-bone type, or Godot joint types as Bevy APIs. WHY: the opened `bevy` feature list has no physics-engine feature.
+- Do not pin Avian, Rapier, or any other solver crate. WHY: this pass did not open a specific 3D physics crate.
+- Do not treat `Fixed` / `FixedMain` as a physics engine. WHY: `bevy::time` documents a clock, not a solver.
+- Do not mutably query the same body component from two unordered systems. WHY: systems run in parallel unless `.chain()` orders them.
 
 ## Reference
 

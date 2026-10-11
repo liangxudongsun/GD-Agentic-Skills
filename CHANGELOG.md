@@ -30,6 +30,14 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 ---
 
+## Bevy docs-first parity
+**October 11, 2026**
+
+- Bevy Domain Skills now carry A-gate depth: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, `bevy.org/learn`).
+- Related Skills use GitHub blob URLs (Prerequisites, Complements, Downstream, Master).
+- Honest Gaps stay: no invented physics solver, networking blocked until 2026-11-11, XR revisit until 2026-11-11.
+- README Bevy section lists the hub, the parity matrix, and category samples. Skills badge tracks the combined Godot + Bevy index.
+
 ## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
 **August 12, 2026**
 

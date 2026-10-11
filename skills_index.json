@@ -614,11 +614,12 @@
   },
   {
     "name": "bevy-master",
-    "description": "\"Bevy ECS hub for this library. Orchestrates Bevy domain skills as they appear. Use when starting a Bevy game, choosing ECS boundaries, or routing to a Bevy skill. Phase-1 hub; the parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master.\"",
+    "description": "\"Bevy ECS hub for this library. Routes the docs-first Bevy domain skills. Use when starting a Bevy game, choosing ECS boundaries, or picking a Bevy skill. The parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master, A-gate.\"",
     "keywords": [
       "Bevy",
       "ECS",
-      "bevy-master"
+      "bevy-master",
+      "A-gate"
     ]
   },
   {
@@ -1405,49 +1406,49 @@
     "name": "godot-game-loop-time-trial",
     "description": "Expert patterns for racing mechanics, checkpoint tracking, and ghost recording/playback in Godot 4. Use when building racing games, speed-run platformers, or arcade trials.",
     "keywords": [
-      "checkpoint",
       "arcade",
-      "recording",
       "speed",
-      "godot",
-      "tracking",
-      "expert",
-      "patterns",
-      "games",
-      "racing",
-      "when",
       "mechanics",
-      "ghost",
-      "building",
-      "trials",
+      "games",
       "platformers",
-      "playback"
+      "recording",
+      "godot",
+      "trials",
+      "ghost",
+      "playback",
+      "building",
+      "patterns",
+      "racing",
+      "tracking",
+      "when",
+      "expert",
+      "checkpoint"
     ]
   },
   {
     "name": "godot-game-loop-waves",
     "description": "Expert patterns for managing combat waves, difficulty scaling, and automated enemy spawning in Godot 4. Use when building wave-based shooters, tower defense, or arena games.",
     "keywords": [
-      "godot",
-      "scaling",
-      "spawning",
       "games",
-      "defense",
-      "based",
-      "wave",
-      "arena",
-      "building",
-      "shooters",
-      "automated",
-      "difficulty",
       "enemy",
-      "expert",
-      "waves",
-      "combat",
-      "managing",
       "patterns",
       "when",
-      "tower"
+      "building",
+      "shooters",
+      "difficulty",
+      "godot",
+      "automated",
+      "wave",
+      "combat",
+      "based",
+      "managing",
+      "expert",
+      "waves",
+      "tower",
+      "arena",
+      "defense",
+      "spawning",
+      "scaling"
     ]
   },
   {
