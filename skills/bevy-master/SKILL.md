@@ -36,6 +36,11 @@ The Quick Start ECS page (opened 2026-10-11) defines entities, components (`Comp
 | App-wide resources and schedules | [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md) |
 | Character movement | [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) |
 | 3D physics | [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md) |
+| 2D physics | [bevy-physics-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-2d/SKILL.md) (gap: no solver crate) |
+| Ray, overlap, or physics pick | [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md) (gap: same solver) |
+| Navigation mesh or path data | [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md) (gap: no nav module) |
+| Chase, patrol, retarget | [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md) |
+| Seeded level or loot layout | [bevy-procedural-generation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-procedural-generation/SKILL.md) |
 | Keyboard, mouse, gamepad | [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) |
 | 2D or 3D camera entity | [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md) |
 | Play or control a clip | [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) |
@@ -44,9 +49,11 @@ The Quick Start ECS page (opened 2026-10-11) defines entities, components (`Comp
 | Logs and frame diagnostics | [bevy-debugging-profiling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-debugging-profiling/SKILL.md) |
 | Parallelism, fixed step, handle lifetime | [bevy-performance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-performance/SKILL.md) |
 | `cargo test` | [bevy-testing-patterns](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-testing-patterns/SKILL.md) |
+| Clips, blend graphs, sprites, lights, materials, UI, or a genre loop | Module directory below. Gaps stay in each skill |
 | Godot language, version hops, CLI, or project audit | Stay on the Godot skill (`n_a_godot_only` in the matrix) |
 | Networking or a dedicated server | Blocked until 2026-11-11. No Bevy skill |
-| Any other genre or domain | No Bevy skill yet. Read the matrix |
+| Console certification | `n_a_godot_only`. No Bevy skill |
+| XR / VR | `revisit` until 2026-11-11. No XR module was opened |
 
 ## When not to spawn an entity
 
@@ -75,7 +82,7 @@ Data that is not simulated can be a plain Rust struct or a resource. The Quick S
 
 ## Module directory
 
-Phase-1 domain stubs:
+Domain skills (docs-first):
 
 - [bevy-project-foundations](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-project-foundations/SKILL.md)
 - [bevy-ecs-composition](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ecs-composition/SKILL.md)
@@ -85,6 +92,11 @@ Phase-1 domain stubs:
 - [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md)
 - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md)
 - [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)
+- [bevy-physics-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-2d/SKILL.md)
+- [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md)
+- [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md)
+- [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md)
+- [bevy-procedural-generation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-procedural-generation/SKILL.md)
 - [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md)
 - [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md)
 - [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md)
@@ -94,7 +106,79 @@ Phase-1 domain stubs:
 - [bevy-performance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-performance/SKILL.md)
 - [bevy-testing-patterns](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-testing-patterns/SKILL.md)
 
-The matrix holds the rest.
+Rendering and animation:
+
+- [bevy-2d-animation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-2d-animation/SKILL.md)
+- [bevy-animation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-animation/SKILL.md)
+- [bevy-animation-graph](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-animation-graph/SKILL.md)
+- [bevy-particles](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-particles/SKILL.md)
+- [bevy-shaders](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-shaders/SKILL.md)
+- [bevy-tilemap](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-tilemap/SKILL.md)
+- [bevy-tweening](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-tweening/SKILL.md)
+- [bevy-3d-lighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-lighting/SKILL.md)
+- [bevy-3d-materials](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-materials/SKILL.md)
+- [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md)
+
+Gameplay:
+
+- [bevy-ability-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ability-system/SKILL.md)
+- [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md)
+- [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md)
+- [bevy-economy-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-economy-system/SKILL.md)
+- [bevy-game-loop-collection](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-collection/SKILL.md)
+- [bevy-game-loop-harvest](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-harvest/SKILL.md)
+- [bevy-game-loop-time-trial](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md)
+- [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md)
+- [bevy-inventory-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-inventory-system/SKILL.md)
+- [bevy-mechanic-revival](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-revival/SKILL.md)
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md)
+- [bevy-quest-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-quest-system/SKILL.md)
+- [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md)
+- [bevy-turn-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-turn-system/SKILL.md)
+
+UI, platforms, adapts, templates:
+
+- [bevy-ui-layout](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-layout/SKILL.md)
+- [bevy-ui-text](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-text/SKILL.md)
+- [bevy-ui-theming](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-theming/SKILL.md)
+- [bevy-platform-desktop](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-platform-desktop/SKILL.md)
+- [bevy-platform-web](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-platform-web/SKILL.md)
+- [bevy-platform-mobile](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-platform-mobile/SKILL.md)
+- [bevy-adapt-2d-to-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-adapt-2d-to-3d/SKILL.md)
+- [bevy-adapt-3d-to-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-adapt-3d-to-2d/SKILL.md)
+- [bevy-adapt-desktop-to-mobile](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-adapt-desktop-to-mobile/SKILL.md)
+- [bevy-adapt-mobile-to-desktop](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-adapt-mobile-to-desktop/SKILL.md)
+- [bevy-project-templates](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-project-templates/SKILL.md)
+
+Genre routers:
+
+- [bevy-genre-action-rpg](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-action-rpg/SKILL.md)
+- [bevy-genre-fighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-fighting/SKILL.md)
+- [bevy-genre-platformer](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-platformer/SKILL.md)
+- [bevy-genre-shooter](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-shooter/SKILL.md)
+- [bevy-genre-shooter-fps](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-shooter-fps/SKILL.md)
+- [bevy-genre-rts](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-rts/SKILL.md)
+- [bevy-genre-tower-defense](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-tower-defense/SKILL.md)
+- [bevy-genre-metroidvania](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-metroidvania/SKILL.md)
+- [bevy-genre-open-world](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-open-world/SKILL.md)
+- [bevy-genre-roguelike](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-roguelike/SKILL.md)
+- [bevy-genre-survival](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-survival/SKILL.md)
+- [bevy-genre-card-game](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-card-game/SKILL.md)
+- [bevy-genre-educational](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-educational/SKILL.md)
+- [bevy-genre-horror](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-horror/SKILL.md)
+- [bevy-genre-puzzle](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-puzzle/SKILL.md)
+- [bevy-genre-visual-novel](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-visual-novel/SKILL.md)
+- [bevy-genre-romance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-romance/SKILL.md)
+- [bevy-genre-idle-clicker](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-idle-clicker/SKILL.md)
+- [bevy-genre-party](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-party/SKILL.md)
+- [bevy-genre-racing](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-racing/SKILL.md)
+- [bevy-genre-rhythm](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-rhythm/SKILL.md)
+- [bevy-genre-sandbox](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-sandbox/SKILL.md)
+- [bevy-genre-simulation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-simulation/SKILL.md)
+- [bevy-genre-sports](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-sports/SKILL.md)
+- [bevy-genre-stealth](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-genre-stealth/SKILL.md)
+
+No file: console (`n_a_godot_only`), XR (`revisit` 2026-11-11), export packaging (`n_a_godot_only`), networking and net-heavy genres (`blocked` until 2026-11-11). The matrix is the full list.
 
 ## Reference
 
@@ -131,6 +215,11 @@ docs.rs links use the unversioned `latest` permalink (same role as Godot `/en/st
 - [bevy-app-resources](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-app-resources/SKILL.md)  -  App-wide resources and `Startup` / `Update`.
 - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md)  -  Player and actor motion on the fixed timestep.
 - [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)  -  Simulated 3D bodies once a solver crate is verified.
+- [bevy-physics-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-2d/SKILL.md)  -  Simulated 2D bodies. Same solver gap.
+- [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md)  -  Casts and overlaps. Solver still unpicked.
+- [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md)  -  Path data gap. No nav module opened.
+- [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md)  -  Chase and patrol policy.
+- [bevy-procedural-generation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-procedural-generation/SKILL.md)  -  Seed resource and spawn. No noise API.
 - [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md)  -  `ButtonInput`, mouse, and gamepad.
 - [bevy-camera-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-camera-systems/SKILL.md)  -  `Camera2d` and `Camera3d`.
 - [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md)  -  `AudioPlayer` and `AudioSink`.

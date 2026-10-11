@@ -144,7 +144,7 @@ This library is **Game-Design Agentic Skills**: one product, multiple engine tre
 | Engine | Master entrypoint | Status |
 | --- | --- | --- |
 | Godot 4.x | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills + workflows |
-| Bevy | [bevy-master](skills/bevy-master/SKILL.md) | **Phase-1** — hub + parity matrix + two docs-first stubs (Bevy 0.20.0). Not a full port |
+| Bevy | [bevy-master](skills/bevy-master/SKILL.md) | Docs-first skills plus the parity matrix (Bevy 0.20.0). Not a full port. Blocked rows stay blocked |
 
 There is **no** singular product-wide master skill. Install **one** engine master or **one** Domain Skill — never `--all`. Godot ships Divergent AI products today; Bevy is additive — no dual-write UIs.
 
@@ -160,7 +160,7 @@ There is **no** singular product-wide master skill. Install **one** engine maste
 
 **Game-Design Agentic Skills** is an agent-first, multi-engine knowledge library. Today **Godot 4.7+** is the deep section — structured long-term memory for coding agents, packed from official Godot standards so agents ship real games instead of slop.
 
-Later engines grow under their own masters (**Bevy** first as `bevy-master`, Phase-1). **Godot is the source of truth** for parity. Domain Skills stay engine-scoped — there is no singular umbrella master skill.
+Later engines grow under their own masters (**Bevy** first as `bevy-master`). **Godot is the source of truth** for parity. Domain Skills stay engine-scoped — there is no singular umbrella master skill.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
 
@@ -168,7 +168,7 @@ Later engines grow under their own masters (**Bevy** first as `bevy-master`, Pha
 
 ## ⚡ Quick Start
 
-Today the Architect path is **Godot**. `bevy-master` is a Phase-1 hub (docs-first). It is not a second full library.
+Today the Architect path is **Godot**. `bevy-master` is the Bevy hub (docs-first skills and a full parity matrix). It is not a second full library.
 
 Choose your path to avoid a **"Context Storm"** (overloading your agent with too many instructions at once).
 
@@ -334,7 +334,9 @@ Individual Domain Skills are **modular add-ons** for targeted functionality. Eac
 Think of Domain Skills as your **component library**: Drop them into your project for instant, expert-level functionality.
 
 <details>
-<summary><b>🟦 Bevy (Phase-1 docs-first, 2 stubs)</b></summary>
+<summary><b>🟦 Bevy (docs-first)</b></summary>
+
+Hub: **[bevy-master](skills/bevy-master/SKILL.md)** and the [parity matrix](skills/bevy-master/references/parity-matrix.md). Domain skills, UI, platforms, adapts, and genre routers are docs-first stubs. Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. Console certification and export packaging have no Bevy twin. XR is revisit until 2026-11-11.
 
 - **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Docs-first movement stub (fixed timestep, ECS). Not a full port. Godot counterpart: `godot-characterbody-2d`
 - **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: Docs-first 3D physics stub. No solver crate pinned. Godot counterpart: `godot-physics-3d`
