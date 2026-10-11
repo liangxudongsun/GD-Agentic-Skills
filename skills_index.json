@@ -1,5 +1,34 @@
 [
   {
+    "name": "bevy-character-movement",
+    "description": "\"Docs-first stub for Bevy character movement. Godot counterpart: godot-characterbody-2d. Not a full port. Keywords: Bevy, movement, ECS, fixed timestep.\"",
+    "keywords": [
+      "Bevy",
+      "movement",
+      "ECS",
+      "fixed timestep"
+    ]
+  },
+  {
+    "name": "bevy-master",
+    "description": "\"Bevy ECS hub for this library. Orchestrates Bevy domain skills as they appear. Use when starting a Bevy game, choosing ECS boundaries, or routing to a Bevy skill. Phase-1 hub; the parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master.\"",
+    "keywords": [
+      "Bevy",
+      "ECS",
+      "bevy-master"
+    ]
+  },
+  {
+    "name": "bevy-physics-3d",
+    "description": "\"Docs-first stub for Bevy 3D physics. Godot counterpart: godot-physics-3d. Not a full port. Keywords: Bevy, physics, ECS, 3D.\"",
+    "keywords": [
+      "Bevy",
+      "physics",
+      "ECS",
+      "3D"
+    ]
+  },
+  {
     "name": "godot-2d-animation",
     "description": "\"Expert patterns for 2D animation in Godot using AnimatedSprite2D and skeletal cutout rigs. Use when implementing sprite frame animations, procedural animation (squash/stretch), cutout bone hierarchies, or frame-perfect timing systems. Trigger keywords: AnimatedSprite2D, SpriteFrames, animation_finished, animation_looped, frame_changed, frame_progress, set_frame_and_progress, cutout animation, skeletal 2D, Bone2D, procedural animation, animation state machine, advance(0).\"",
     "keywords": [
