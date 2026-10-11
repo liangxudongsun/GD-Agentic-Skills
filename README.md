@@ -1,4 +1,4 @@
-# Game-Design Agentic Skills
+﻿# Game-Design Agentic Skills
 <div align="center">
   <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot & Bevy" width="100%" />
 
@@ -23,15 +23,14 @@
 ## 📜 Updates
 
 <div align="center">
-  <img src="assets/banner_bevy.webp" alt="Bevy — Game-Design Agentic Skills" width="100%" />
+  <img src="assets/banner_bevy.webp" alt="Bevy skills - v0.1.0" width="100%" />
 </div>
 
-### Bevy skills
+### v0.1.0 — Bevy skills
 **October 11, 2026**
 
 - **Multi-engine GDAS**: Godot and Bevy side by side. Start Bevy work at **[bevy-master](skills/bevy-master/SKILL.md)** — ECS ownership, decision tables, and Official Docs lattices (`docs.rs/bevy/latest`, [migration guides](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
 - **Domain Skills**: Bevy Domain Skills for composition, schedules, and genre samples — install one path at a time.
-- **Honest scope**: physics solver, networking, MOBA, and battle royale skills are not shipped yet; XR is on a later revisit.
 
 ---
 
@@ -352,14 +351,14 @@ Think of Domain Skills as your **component library**: Drop them into your projec
 <details>
 <summary><b>🟦 Bevy</b></summary>
 
-Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS ownership, schedules, and genre samples. Some advanced topics (networking, MOBA, battle royale, physics solver) are not shipped yet.
+Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS ownership, schedules, and genre samples.
 
 - **[bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md)**: Components, `Query`, `Commands`, `Startup` / `Update`, `.chain()`
 - **[bevy-events-messaging](skills/bevy-events-messaging/SKILL.md)**: Messages and observers as an ownership slot (no invented event structs)
 - **[bevy-app-resources](skills/bevy-app-resources/SKILL.md)**: App-wide `Resource` ownership and plugin boundaries
 - **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Locomotion on `Fixed` / `FixedMain`. Not a Godot body port
-- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: 3D physics gap map. No solver crate pinned
-- **[bevy-physics-2d](skills/bevy-physics-2d/SKILL.md)**: 2D physics gap map. Same solver honesty
+- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: 3D physics Domain Skill — routing and ownership patterns
+- **[bevy-physics-2d](skills/bevy-physics-2d/SKILL.md)**: 2D physics Domain Skill — routing and ownership patterns
 - **[bevy-ui-layout](skills/bevy-ui-layout/SKILL.md)**: UI layout routing without a Godot Control tree
 - **[bevy-input-handling](skills/bevy-input-handling/SKILL.md)**: Input as components and systems
 - **[bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md)**: Asset and scene loading boundaries
