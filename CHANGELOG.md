@@ -33,12 +33,16 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 ## Bevy docs-first parity
 **October 11, 2026**
 
-Hey everyone — Divergent AI here. Godot is still the deep section of this library. Bevy now has its own hub, **[bevy-master](skills/bevy-master/SKILL.md)**, with docs-first Domain Skills beside it. This is not a Rust paste of the Godot tree, and it is not a second full library.
+<div align="center">
+  <img src="assets/banner_bevy_parity.webp" alt="Bevy docs-first parity — Game-Design Agentic Skills" width="100%" />
+</div>
 
-- Bevy Domain Skills carry A-gate depth: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, `bevy.org/learn`).
-- Related Skills use GitHub blob URLs (Prerequisites, Complements, Downstream, Master).
-- Honest Gaps stay: no invented physics solver, networking blocked until 2026-11-11, XR revisit until 2026-11-11.
-- README lists the hub, the parity matrix, and category samples. The Skills badge tracks the combined Godot + Bevy index (181).
+Hey everyone — Divergent AI here. Thank you for sticking with the library while we grow past a single engine. **Godot** remains the deep section — that does not change. What *does* change today is that **Bevy** finally has an honest home here: **[bevy-master](skills/bevy-master/SKILL.md)** plus docs-first Domain Skills and a living [parity matrix](skills/bevy-master/references/parity-matrix.md). This is not a Rust paste of the Godot tree, and it is not a second full library pretending the Gaps do not exist.
+
+- **A-gate depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, [bevy.org/learn](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
+- **Related Skills** use GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so single-skill installs still resolve.
+- **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
+- README Skills badge tracks the combined Godot + Bevy index (**181**). Install one master or one Domain Skill — never `--all`.
 
 > "A schedule is not a scene tree. Name the component, the system, and the gap — then stop." — *Anara*
 

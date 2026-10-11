@@ -1,6 +1,6 @@
 # Game-Design Agentic Skills
 <div align="center">
-  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot deep, multi-engine" width="100%" />
+  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot deep, Bevy docs-first parity" width="100%" />
 
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
@@ -9,7 +9,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
 
-Multi-engine agent skill library · **Godot 4.x** is the deep section today · **Bevy** on the road to parity
+**Game-Design Agentic Skills (GDAS)** — multi-engine library for coding agents · **Godot 4.x** deep section · **Bevy** docs-first parity in progress
 
 ![Bevy](https://img.shields.io/badge/Bevy-parity_in_progress-lightgrey?style=for-the-badge)
 
@@ -23,25 +23,31 @@ Multi-engine agent skill library · **Godot 4.x** is the deep section today · *
 
 ## 📜 Updates
 
-### Bevy docs-first — October 11, 2026
-- **[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub, with a [parity matrix](skills/bevy-master/references/parity-matrix.md). Docs-first Domain Skills sit beside the Godot tree. This is not a full port.
-- Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. XR is revisit until 2026-11-11.
-- Skills badge counts Godot + Bevy together (**181**). Install one engine master or one Domain Skill — never `--all`.
-
 <div align="center">
-  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
+  <img src="assets/banner_bevy_parity.webp" alt="Bevy docs-first parity — Game-Design Agentic Skills" width="100%" />
 </div>
 
-### v0.0.11 — Agent Eyes
-- **500 stars** — thank you. That puts this repo in roughly the **top 0.4%** of all public GitHub repositories.
-- **New — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents get **eyes** — capture GUI / assets / editor viewports to budgeted WebP, then score what they see against a granular production rubric (typography-weighted, anti-slop, identity).
-- Cross-platform host CLI (Win / macOS / Linux) + TEMP editor bridge under `.gdskills/` — not an in-game Autoload.
+### Bevy docs-first parity
+**October 11, 2026**
+
+- **Multi-engine GDAS**: Godot stays the deep section. Bevy lands under **[bevy-master](skills/bevy-master/SKILL.md)** with a living [parity matrix](skills/bevy-master/references/parity-matrix.md) — docs-first Domain Skills, not a silent full port.
+- **A-gate depth**: ECS ownership, NEVER lists with WHY, decision tables, and unversioned lattices (`docs.rs/bevy/latest`, [migration guides](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
+- **Honest Gaps**: no invented physics solver; networking / MOBA / battle royale blocked until **2026-11-11**; XR revisit the same date.
+- Skills badge is the combined index (**181**). Install **one** engine master or **one** Domain Skill — never `--all`.
 
 ---
 
 <details>
 <summary><b>📜 Update Archive</b></summary>
 
+<div align="center">
+  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
+</div>
+
+#### v0.0.11 — Agent Eyes
+- **500 stars** — thank you. That puts this repo in roughly the **top 0.4%** of all public GitHub repositories.
+- **New — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents get **eyes** — capture GUI / assets / editor viewports to budgeted WebP, then score what they see against a granular production rubric (typography-weighted, anti-slop, identity).
+- Cross-platform host CLI (Win / macOS / Linux) + TEMP editor bridge under `.gdskills/` — not an in-game Autoload.
 
 <div align="center">
   <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
@@ -143,14 +149,14 @@ Multi-engine agent skill library · **Godot 4.x** is the deep section today · *
 
 ## Engines
 
-This library is **Game-Design Agentic Skills**: one product, multiple engine trees.
+**Game-Design Agentic Skills** is one product with per-engine trees. Pick the master for the engine you are shipping — there is **no** singular product-wide master.
 
-| Engine | Master entrypoint | Status |
+| Engine | Master | Status |
 | --- | --- | --- |
-| Godot 4.x | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills + workflows |
-| Bevy | [bevy-master](skills/bevy-master/SKILL.md) | Docs-first skills plus the parity matrix (Bevy 0.20.0). Not a full port. Blocked rows stay blocked |
+| **Godot 4.x** | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills, personas, and workflows |
+| **Bevy** | [bevy-master](skills/bevy-master/SKILL.md) | **Docs-first parity** — living matrix + Domain Skills; blocked rows stay blocked |
 
-There is **no** singular product-wide master skill. Install **one** engine master or **one** Domain Skill — never `--all`. Godot ships Divergent AI products today; Bevy is additive — no dual-write UIs.
+Install **one** engine master or **one** Domain Skill — never `--all`. Godot is the parity source of truth and what Divergent AI ships today; Bevy is additive (no dual-write UIs).
 
 ## 📍 Quick Navigation
 
@@ -162,9 +168,11 @@ There is **no** singular product-wide master skill. Install **one** engine maste
 
 ## The Philosophy
 
-**Game-Design Agentic Skills** is an agent-first, multi-engine knowledge library. Today **Godot 4.7+** is the deep section — structured long-term memory for coding agents, packed from official Godot standards so agents ship real games instead of slop.
+**Game-Design Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
 
-Later engines grow under their own masters (**Bevy** first as `bevy-master`). **Godot is the source of truth** for parity. Domain Skills stay engine-scoped — there is no singular umbrella master skill.
+- **Godot 4.7+** is the deep section today: official-doc-true patterns, personas, and production scripts.
+- **Bevy** is on the road to parity under `bevy-master`: docs-first skills and an honest matrix (gaps stay gaps).
+- **Godot is the source of truth** for parity. Skills stay engine-scoped — install one path, avoid a Context Storm.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
 
@@ -172,24 +180,30 @@ Later engines grow under their own masters (**Bevy** first as `bevy-master`). **
 
 ## ⚡ Quick Start
 
-Today the Architect path is **Godot**. `bevy-master` is the Bevy hub (docs-first skills and a full parity matrix). It is not a second full library.
+Choose **one** path so you do not trigger a **"Context Storm"** (flooding the agent with every skill at once).
 
-Choose your path to avoid a **"Context Storm"** (overloading your agent with too many instructions at once).
-
-### 🏆 Path A: The Architect (New or Existing Projects)
-If you are starting a new project OR you have an existing project that needs to be **"checked" and brought up to date** with modern Godot 4 standards, install the **Godot Master** hub. 
+### 🏆 Path A: Godot Architect
+New Godot project, or an existing one that needs a modern **Godot 4.7+** standards check — install the **Godot Master** hub:
 ```bash
 npx skills add thedivergentai/gd-agentic-skills/skills/godot-master
 ```
 
-### 🧩 Path B: The Specialist (Existing Projects)
-If you need a specific feature (e.g., 2D movement, inventory), install only that **Domain Skill**.
+### 🧩 Path B: Specialist (any engine)
+Need one feature (movement, inventory, ECS composition) — install **only** that Domain Skill:
 ```bash
 npx skills add thedivergentai/gd-agentic-skills/skills/godot-characterbody-2d
+# Bevy example:
+# npx skills add thedivergentai/gd-agentic-skills/skills/bevy-ecs-composition
+```
+
+### 🦀 Path C: Bevy hub
+Bevy work starts at **bevy-master** (docs-first skills + parity matrix — not a second full Godot-depth library):
+```bash
+npx skills add thedivergentai/gd-agentic-skills/skills/bevy-master
 ```
 
 > [!DANGER]
-> **NEVER** use the `--all` flag when installing this repository (e.g., `npx skills add ... --all`). This is an **"Instant No-No"** that will cause an unrecoverable Context Storm by forcing your agent to read every single metadata entry in the library.
+> **NEVER** use the `--all` flag when installing this repository (e.g., `npx skills add ... --all`). That is an **"Instant No-No"** — it forces your agent to load every metadata entry across **181** skills and triggers an unrecoverable Context Storm.
 
 ---
 
@@ -225,7 +239,7 @@ Use this when installing via the [skills CLI](https://github.com/vercel-labs/ski
 To keep your AI agent fast and accurate, follow these "Expert Efficiency" rules:
 
 ### 1. The "Power of One" Rule
-Either use **`godot-master`** (which orchestrates the other 98 skills via references) OR use individual **Domain Skills**. 
+Either use an engine **master** (`godot-master` / `bevy-master`) OR individual **Domain Skills** — never both masters plus a pile of Domain Skills. 
 
 *   **Godot Master** is an "Orchestrator" skill. It is dense (~15k tokens) but provides a complete blueprint. Use it when the "Big Picture" matters.
 *   **Domain Skills** are "Surgical" skills (~2-5k tokens). They are fast, reliable, and keep the agent focused on one specific API.
