@@ -8,7 +8,7 @@
 [![Bevy Version](https://img.shields.io/badge/Bevy-0.20%2B-232323?style=for-the-badge&logo=bevy&logoColor=white)](https://bevyengine.org/)
 [![Skills](https://img.shields.io/badge/Skills-181-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/Game-Design-Agentic-Skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/Game-Design-Agentic-Skills/commits/main)
-[![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/Game-Design-Agentic-Skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/Game-Design-Agentic-Skills)
+[![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/Game-Design-Agentic-Skills)
 
 **Game-Design Agentic Skills (GDAS)** — multi-engine library for coding agents · **Godot 4.x** · **Bevy**
 
