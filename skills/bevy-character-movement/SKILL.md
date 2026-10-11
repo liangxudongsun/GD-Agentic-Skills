@@ -33,8 +33,28 @@ Load this when a Bevy app needs a player or actor that moves in discrete steps (
 - Do not call `move_and_slide`, `_physics_process`, or `CharacterBody2D`.
 - Ground detection, shape casts, and collision layers are unverified. Do not invent query APIs.
 
-## Related
+## Reference
 
-- Hub: [bevy-master](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-master/SKILL.md)
-- Godot counterpart: [godot-characterbody-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-characterbody-2d/SKILL.md)
-- Docs opened: https://bevy.org/learn/quick-start/getting-started/ecs/ and https://docs.rs/bevy/0.20.0/bevy/time/index.html
+docs.rs links use the unversioned `latest` permalink. The library pin on bevy-master stays **0.20.0**.
+
+### Official Documentation
+- [Migration guides](https://bevy.org/learn/migration-guides/introduction/)  -  Unversioned hop index.
+- [bevy crate](https://docs.rs/bevy/latest/bevy/)  -  Unversioned API index.
+- [Examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples)  -  Example tree on the `latest` branch.
+- [Quick Start: ECS](https://bevy.org/learn/quick-start/getting-started/ecs/)  -  Entities, `Component`, systems, `Query`, `Commands`, and `.chain()`.
+- [bevy::time](https://docs.rs/bevy/latest/bevy/time/index.html)  -  `Time`, `Fixed`, and `run_fixed_main_schedule` (`FixedMain`).
+
+### Related Skills
+
+#### Prerequisites
+- [bevy-master](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-master/SKILL.md)  -  ECS ownership, schedules, and which Bevy skill to load.
+
+#### Complements
+- [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)  -  Collision and solver gaps. Player motion stays in this stub.
+- [godot-characterbody-2d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-characterbody-2d/SKILL.md)  -  Godot counterpart. Source idea only. Do not import Godot types.
+
+#### Downstream / consumers
+- None yet. Genre skills are not ported.
+
+#### Master
+- [bevy-master](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.

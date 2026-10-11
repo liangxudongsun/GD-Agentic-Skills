@@ -70,16 +70,36 @@ The matrix holds the rest.
 
 ## Reference
 
-- Living matrix: [parity-matrix.md](references/parity-matrix.md) (Phase-1 seed only).
-- Godot hub: [godot-master](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-master/SKILL.md).
-- Opened 2026-10-11:
-  - https://bevy.org/learn/quick-start/ (index; the legacy `/learn/book/` path returned 404)
-  - https://bevy.org/learn/quick-start/getting-started/
-  - https://bevy.org/learn/quick-start/getting-started/ecs/
-  - https://bevy.org/learn/quick-start/getting-started/plugins/
-  - https://docs.rs/bevy/0.20.0/bevy/
-  - https://docs.rs/bevy/0.20.0/bevy/time/index.html
-  - https://crates.io/crates/bevy (0.20.0, 2026-10-08)
+Living matrix: [parity-matrix.md](references/parity-matrix.md) (Phase-1 seed only).
+
+docs.rs links use the unversioned `latest` permalink (same role as Godot `/en/stable/`). The library pin above stays **0.20.0**.
+
+### Official Documentation
+- [Migration guides](https://bevy.org/learn/migration-guides/introduction/)  -  Unversioned hop index. Version numbers stay in prose; this link does not pin a release.
+- [bevy crate](https://docs.rs/bevy/latest/bevy/)  -  Unversioned API index. Feature samples on the pinned page may still show older version strings.
+- [Assets](https://bevy.org/assets/)  -  Official asset catalog.
+- [Examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples)  -  Example tree on the `latest` branch, not a release tag.
+- [Quick Start](https://bevy.org/learn/quick-start/)  -  Guide index. The legacy `/learn/book/` path returned 404 on 2026-10-11.
+- [Getting started](https://bevy.org/learn/quick-start/getting-started/)  -  App setup before ECS and plugins.
+- [ECS](https://bevy.org/learn/quick-start/getting-started/ecs/)  -  Entities, components, systems, `Query`, `Commands`, `Startup`, `Update`, and `.chain()`.
+- [Plugins](https://bevy.org/learn/quick-start/getting-started/plugins/)  -  `Plugin`, `DefaultPlugins`, `MinimalPlugins`, and `add_plugins`.
+- [bevy::time](https://docs.rs/bevy/latest/bevy/time/index.html)  -  `Fixed` and `run_fixed_main_schedule` (`FixedMain`).
+- [crates.io bevy](https://crates.io/crates/bevy)  -  Release pin source (0.20.0, 2026-10-08).
+
+### Related Skills
+
+#### Prerequisites
+- None. This hub is the Bevy entry point.
+
+#### Complements
+- [godot-master](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-master/SKILL.md)  -  Peer hub for Godot. Language, version hops, CLI, and project audit stay there (`n_a_godot_only` in the matrix).
+
+#### Downstream / consumers
+- [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md)  -  Player and actor motion on the fixed timestep.
+- [bevy-physics-3d](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-physics-3d/SKILL.md)  -  Simulated 3D bodies once a solver crate is verified.
+
+#### Master
+- This file. Do not route Bevy work through a parent that also owns Godot.
 
 Cipher rule titles only: Godot is source of truth; blockers on blocked and `n_a_godot_only` rows; runtime gameplay is Rust; do not pull Godot types into Bevy crates.
 
