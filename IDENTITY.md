@@ -3,8 +3,8 @@
 **Product:** GD Agentic Skills (GDSkills)
 **Public repo:** thedivergentai/GD-Agentic-Skills
 **Pillar:** Divergent AI
-**Owner agent:** Cipher (library); Kinetik consumes for game work
-**Path:** `D:\Divergent AI\Development\GDSkills`
+**Owner agent:** Forge (library); Cipher collaborates on architecture; Kinetik consumes for game work
+**Path:** P:\GDSkills (junction to P:\Divergent AI\Development\GDSkills)
 **Private ops:** `.agents/skills/gdskills-dev/SKILL.md`
 
 ## Positioning
