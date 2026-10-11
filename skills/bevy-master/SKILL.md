@@ -1,11 +1,11 @@
 ---
 name: bevy-master
-description: "Bevy ECS hub for this library. Orchestrates Bevy domain skills as they appear. Use when starting a Bevy game, choosing ECS boundaries, or routing to a Bevy skill. Phase-1 hub; the parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master."
+description: "Bevy ECS hub for this library. Routes the docs-first Bevy domain skills. Use when starting a Bevy game, choosing ECS boundaries, or picking a Bevy skill. The parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master, A-gate."
 ---
 
 # Bevy Master: ECS hub
 
-Phase-1 hub. Peer of the Godot hub, not a parent of it. The living matrix is the routing table. This file does not claim a port of the Godot library.
+Docs-first hub for the Bevy library (A-gate depth, not a Phase-1 flood lock). Peer of the Godot hub, not a parent of it. The living matrix is the routing table. This file does not claim a full port of the Godot library. Networking stays blocked until 2026-11-11. XR stays revisit until 2026-11-11.
 
 ## Library target
 
@@ -69,16 +69,52 @@ Data that is not simulated can be a plain Rust struct or a resource. The Quick S
 
 **(d) Performance.** The ECS page states systems run in parallel by default when they can, and `.chain()` forces order. Frame-time diagnostics and handle lifetimes are on `bevy-performance`. No numeric budget is copied here; the opened pages do not give one.
 
+
+## Expert Knowledge Delta
+
+Library target in prose: **Bevy 0.20.0**. Lattice URLs stay unversioned.
+
+Opened canon only: `Component`, `Resource`, `Query`, `Commands`, `Startup`, `Update`, `Fixed` / `FixedMain` (`bevy::time`), `.chain()`, `Plugin`, `DefaultPlugins`, `MinimalPlugins`. Messages and observers are an ownership slot. This file does not invent their struct APIs. Systems run in parallel unless `.chain()` orders the ones that conflict.
+
+### Who owns state
+
+| Piece | Owner | Who may mutate | Schedule |
+| --- | --- | --- | --- |
+| Data on one entity | `Component` | One system via `Query` | `Update` or `FixedMain` |
+| One value for the whole app | `Resource` | One system | `Startup` to insert, then the schedule that reads it |
+| Spawn | `Commands` | The spawning system | `Startup` for the initial world; later schedules for runtime spawn |
+| Order that must not race | `.chain()` | The chained systems only | Same schedule |
+| Plugin boundary | `Plugin` | `build` registers systems and resources | Before the app runs |
+
+Borrow rule: two systems that both mutably query the same component must be ordered (`.chain()`) or split so only one writes. Unrelated systems stay parallel. That is the ECS page rule, not a guess at a system-set API.
+
+### Decision
+
+| If you need | Do this | Do not |
+| --- | --- | --- |
+| Per-entity data | `Component` + `Query` | A Godot node script |
+| App-wide config or clock | `Resource` | Copy the value onto every entity |
+| Stable simulation step | `FixedMain` and the `Fixed` clock | Tie simulation to raw frame `Update` |
+| Startup spawn | `Commands` in `Startup` | Spawn from a render system |
+| Cross-system notice that is not shared state | Message or observer slot in `bevy-events-messaging` | A new event type invented in this file |
+| An API this skill did not open | A Gaps row | A fabricated crate (solver, navmesh module, net, XR) |
+
+Load `references/a-gate-notes.md` for the same table plus the gap rule.
+
 ## NEVER
 
-- No umbrella skill over Godot and Bevy.
-- No Godot or gdext type imports in Bevy code.
-- No GDScript line-translate.
-- No APIs that this file did not open.
-- No Coil or Ouroboros UI.
-- No Creation Station content.
-- No deleting Godot skills.
-- Do not mark any row `ported`. These stubs are `docs_mapped`.
+- Do not put `/0.20.0/` in lattice URLs. WHY: permalinks stay on `latest`. The 0.20.0 pin belongs in prose once.
+- Do not mutably query the same component from two unordered systems. WHY: the schedule runs systems in parallel unless `.chain()` orders them.
+- Do not invent a physics, navigation, networking, or XR crate here. WHY: those rows are gaps, blocked, or revisit.
+
+- No umbrella skill over Godot and Bevy. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No Godot or gdext type imports in Bevy code. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No GDScript line-translate. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No APIs that this file did not open. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No Coil or Ouroboros UI. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No Creation Station content. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- No deleting Godot skills. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
+- Do not mark any row `ported`. These stubs are `docs_mapped`. WHY: a Godot port, an unopened API, or a public lie fails the docs-first bar.
 
 ## Module directory
 
