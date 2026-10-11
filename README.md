@@ -23,6 +23,10 @@ Multi-engine agent skill library · **Godot 4.x** is the deep section today · *
 
 ## 📜 Updates
 
+### Bevy docs-first — October 11, 2026
+- **[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub, with a [parity matrix](skills/bevy-master/references/parity-matrix.md). Docs-first Domain Skills sit beside the Godot tree. This is not a full port.
+- Physics has no solver crate. Networking, MOBA, and battle royale stay blocked until 2026-11-11. XR is revisit until 2026-11-11.
+- Skills badge counts Godot + Bevy together (**181**). Install one engine master or one Domain Skill — never `--all`.
 
 <div align="center">
   <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
@@ -227,7 +231,7 @@ Either use **`godot-master`** (which orchestrates the other 98 skills via refere
 *   **Domain Skills** are "Surgical" skills (~2-5k tokens). They are fast, reliable, and keep the agent focused on one specific API.
 
 ### 2. Why "Install All" Fails
-Installing 99 skills simultaneously creates a **"Metadata Flood"**:
+Installing 181 skills simultaneously creates a **"Metadata Flood"**:
 - **Token Bleed**: ~15,000 tokens are "permanently" used just to tell the agent which skills exist.
 - **Instruction Conflicts**: Having multiple overlapping expert instructions (e.g., 20+ different genre blueprints) can cause the agent to lose its specific focus.
 - **Reasoning Lag**: The model has to sift through 100+ KB of text before deciding what to do.

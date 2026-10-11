@@ -33,10 +33,14 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 ## Bevy docs-first parity
 **October 11, 2026**
 
-- Bevy Domain Skills now carry A-gate depth: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, `bevy.org/learn`).
+Hey everyone — Divergent AI here. Godot is still the deep section of this library. Bevy now has its own hub, **[bevy-master](skills/bevy-master/SKILL.md)**, with docs-first Domain Skills beside it. This is not a Rust paste of the Godot tree, and it is not a second full library.
+
+- Bevy Domain Skills carry A-gate depth: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, `bevy.org/learn`).
 - Related Skills use GitHub blob URLs (Prerequisites, Complements, Downstream, Master).
 - Honest Gaps stay: no invented physics solver, networking blocked until 2026-11-11, XR revisit until 2026-11-11.
-- README Bevy section lists the hub, the parity matrix, and category samples. Skills badge tracks the combined Godot + Bevy index.
+- README lists the hub, the parity matrix, and category samples. The Skills badge tracks the combined Godot + Bevy index (181).
+
+> "A schedule is not a scene tree. Name the component, the system, and the gap — then stop." — *Anara*
 
 ## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
 **August 12, 2026**
