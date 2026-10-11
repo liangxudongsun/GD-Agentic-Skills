@@ -30,23 +30,6 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 ---
 
-## 🚀 Major Release: v0.1.0 — Creation Station
-**August 19, 2026**
-
-Meet **The Artificer** — your creative director for Godot 4.x game art. The parked `godot-asset-gen` skill has been reborn as **`godot-creation-station`**, a persona-driven art-direction partner that speaks in concrete game-art terms.
-
-- **5 Style Families**: `pixel`, `painted`, `flat`, `cel`, `ink` — each with a trained LoRA adapter on frozen ternary Bonsai (FLUX.2 Klein 4B gemlite). `generate.py --lora pixel` applies style-consistent generation.
-- **LoRA Training Pipeline**: CC0/CC-BY datasets curated from OpenGameArt, iterative bootstrap (real data → train → synthetic aug → retrain), SVD-downranked to minimum viable rank. FP16 side-adapters on frozen quantized backbone.
-- **The Artificer Persona**: Brainstorm → Art-Direct → Generate → QA. From "what does your game feel like?" to shipped assets.
-- **New `models/` folder**: LoRA adapters ship via GitHub releases (gitignored in tree).
-- **New hero banner**: Celebrating the biggest update yet.
-
-### Featured skill — Creation Station
-
-Load `godot-creation-station` whenever you need a creative director for game art. The Artificer guides style family selection, gamekit creation, LoRA-backed generation, and vision QA.
-
----
-
 ## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
 **August 12, 2026**
 
