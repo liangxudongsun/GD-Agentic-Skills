@@ -28,10 +28,10 @@ Load this for a 2D or top-down shooter loop: aim, projectiles as entities, and w
 
 ## Routing
 
-- - [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) - Aim and fire.
-- - [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Damage.
-- - [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Spawns.
-- - [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md) - Shots. Solver gap.
+- [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) - Aim and fire.
+- [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Damage.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Spawns.
+- [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md) - Shots. Solver gap.
 
 ## Gaps
 
@@ -103,10 +103,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-shooter](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-shooter/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) - Aim and fire.
-- - [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Damage.
-- - [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Spawns.
-- - [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md) - Shots. Solver gap.
+- [bevy-input-handling](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-input-handling/SKILL.md) - Aim and fire.
+- [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Damage.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Spawns.
+- [bevy-spatial-queries](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-spatial-queries/SKILL.md) - Shots. Solver gap.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

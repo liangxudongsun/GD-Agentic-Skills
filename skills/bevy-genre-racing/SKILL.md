@@ -28,9 +28,9 @@ Load this for laps, splits, and vehicle motion you own.
 
 ## Routing
 
-- - [bevy-game-loop-time-trial](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Splits.
-- - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Stand-in motion until a vehicle solver exists.
-- - [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Track.
+- [bevy-game-loop-time-trial](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Splits.
+- [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Stand-in motion until a vehicle solver exists.
+- [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Track.
 
 ## Gaps
 
@@ -102,9 +102,9 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-racing](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-racing/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-game-loop-time-trial](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Splits.
-- - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Stand-in motion until a vehicle solver exists.
-- - [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Track.
+- [bevy-game-loop-time-trial](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Splits.
+- [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Stand-in motion until a vehicle solver exists.
+- [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Track.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

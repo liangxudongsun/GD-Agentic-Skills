@@ -28,10 +28,10 @@ Load this for towers, creeps, and waves on a path.
 
 ## Routing
 
-- - [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
-- - [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md) - Path gap.
-- - [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
-- - [bevy-economy-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
+- [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md) - Path gap.
+- [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
+- [bevy-economy-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
 
 ## Gaps
 
@@ -103,10 +103,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-tower-defense](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-tower-defense/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
-- - [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md) - Path gap.
-- - [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
-- - [bevy-economy-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
+- [bevy-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-navigation/SKILL.md) - Path gap.
+- [bevy-combat-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
+- [bevy-economy-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

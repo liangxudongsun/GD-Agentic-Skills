@@ -28,10 +28,10 @@ Load this for sanity or detection as your components, plus lighting and audio.
 
 ## Routing
 
-- - [bevy-3d-lighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Darkness.
-- - [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Stingers.
-- - [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Stalker policy.
-- - [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Lore flags.
+- [bevy-3d-lighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Darkness.
+- [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Stingers.
+- [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Stalker policy.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Lore flags.
 
 ## Gaps
 
@@ -103,10 +103,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-horror](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-horror/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-3d-lighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Darkness.
-- - [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Stingers.
-- - [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Stalker policy.
-- - [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Lore flags.
+- [bevy-3d-lighting](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Darkness.
+- [bevy-audio-systems](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Stingers.
+- [bevy-ai-navigation](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Stalker policy.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Lore flags.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

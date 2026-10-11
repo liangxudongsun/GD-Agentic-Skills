@@ -28,10 +28,10 @@ Load this for ability-gated exploration and a map of rooms.
 
 ## Routing
 
-- - [bevy-ability-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
-- - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags. Format still a gap.
-- - [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
+- [bevy-ability-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
+- [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags. Format still a gap.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
 
 ## Gaps
 
@@ -102,10 +102,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-metroidvania](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-metroidvania/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-ability-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
-- - [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags. Format still a gap.
-- - [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
+- [bevy-ability-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
+- [bevy-character-movement](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags. Format still a gap.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

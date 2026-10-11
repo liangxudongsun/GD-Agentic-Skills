@@ -28,10 +28,10 @@ Load this for vitals, crafting inputs, and a day clock you own.
 
 ## Routing
 
-- - [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Vitals as stats.
-- - [bevy-inventory-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-inventory-system/SKILL.md) - Items.
-- - [bevy-game-loop-harvest](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-harvest/SKILL.md) - Gathering.
-- - [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Camps.
+- [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Vitals as stats.
+- [bevy-inventory-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-inventory-system/SKILL.md) - Items.
+- [bevy-game-loop-harvest](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-harvest/SKILL.md) - Gathering.
+- [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Camps.
 
 ## Gaps
 
@@ -102,10 +102,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-survival](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-survival/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Vitals as stats.
-- - [bevy-inventory-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-inventory-system/SKILL.md) - Items.
-- - [bevy-game-loop-harvest](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-harvest/SKILL.md) - Gathering.
-- - [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Camps.
+- [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Vitals as stats.
+- [bevy-inventory-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-inventory-system/SKILL.md) - Items.
+- [bevy-game-loop-harvest](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-game-loop-harvest/SKILL.md) - Gathering.
+- [bevy-3d-world-building](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-3d-world-building/SKILL.md) - Camps.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

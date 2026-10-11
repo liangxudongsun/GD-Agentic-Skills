@@ -28,10 +28,10 @@ Load this for dialogue, portraits, and choice flags.
 
 ## Routing
 
-- - [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Lines.
-- - [bevy-ui-text](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-text/SKILL.md) - Body text.
-- - [bevy-ui-layout](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Choice buttons.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
+- [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Lines.
+- [bevy-ui-text](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-text/SKILL.md) - Body text.
+- [bevy-ui-layout](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Choice buttons.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
 
 ## Gaps
 
@@ -102,10 +102,10 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-visual-novel](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-visual-novel/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Lines.
-- - [bevy-ui-text](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-text/SKILL.md) - Body text.
-- - [bevy-ui-layout](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Choice buttons.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
+- [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Lines.
+- [bevy-ui-text](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-text/SKILL.md) - Body text.
+- [bevy-ui-layout](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Choice buttons.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.

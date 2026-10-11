@@ -28,9 +28,9 @@ Load this for relationship values and scene routes on top of dialogue.
 
 ## Routing
 
-- - [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Scenes.
-- - [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Affection as a stat you name.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
+- [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Scenes.
+- [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Affection as a stat you name.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
 
 ## Gaps
 
@@ -101,9 +101,9 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 
 #### Complements
 - [godot-genre-romance](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/godot-genre-romance/SKILL.md) - Godot counterpart. Source idea only.
-- - [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Scenes.
-- - [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Affection as a stat you name.
-- - [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
+- [bevy-dialogue-system](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-dialogue-system/SKILL.md) - Scenes.
+- [bevy-rpg-stats](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-rpg-stats/SKILL.md) - Affection as a stat you name.
+- [bevy-save-load](https://github.com/thedivergentai/gd-agentic-skills/blob/main/skills/bevy-save-load/SKILL.md) - Route flags.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.
