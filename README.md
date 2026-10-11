@@ -1,7 +1,6 @@
-# GD Agentic Skills: The Godot 4 Mastery Ecosystem
-
+# Game-Design Agentic Skills
 <div align="center">
-  <img src="assets/hero_banner.webp" alt="GD Agentic Skills - Godot 4.x Mastery Library" width="100%" />
+  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot deep, multi-engine" width="100%" />
 
 [![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/gd-agentic-skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/gd-agentic-skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
@@ -9,6 +8,10 @@
 [![Skills](https://img.shields.io/badge/Skills-99-green?style=for-the-badge)](skills_index.json)
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/gd-agentic-skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/gd-agentic-skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/gd-agentic-skills)
+
+Multi-engine agent skill library · **Godot 4.x** is the deep section today · **Bevy** on the road to parity
+
+![Bevy](https://img.shields.io/badge/Bevy-parity_in_progress-lightgrey?style=for-the-badge)
 
 **"A skill forgotten is a power lost." — The Code Architect**
 
@@ -18,55 +21,23 @@
 
 ---
 
-## 💬 A Message from the Creator (Divergent AI)
-
-> **August 2026 — 500 stars**
->
-> Hey everyone, Divergent AI here. Thank you — seriously — for the amazing support. Hitting **500 stars** means the world to me, and it puts this library in roughly the **top 0.4% of all public GitHub repositories**. I don't take that lightly.
->
-> I've worked hard to keep these skills useful, true to **official Godot standards**, and aimed at one thing: helping you bring your vision to reality. A big part of that is making sure our coding agents can actually **see** the work — the menus, the HUD, the assets — not just guess from file paths.
->
-> That's why I'm proud to introduce **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**. It lets agents capture your various GUI elements and surfaces, then analyse whether what they see matches the intended output — so sight and design intent finally line up.
->
-> Please keep starring, sharing, and building. Have fun, and dream big.
-
-<details>
-<summary><b>Earlier message (March 19, 2026)</b></summary>
-
-> Hey everyone, Divergent AI here! I'm super happy that I'm seeing the project getting some love. It's motivated me to come back at it with a really strong update for you all. I've spent many hours working on updating all Domain Skills to be completely packed with top expert-level knowledge as learned directly from the robot's mouth—the Godot documentation.
->
-> The reason I did this was two-fold:
->
-> 1. I wanted all resources to be as true to the current documentation as possible and filled with top-level expert information.
-> 2. I think it's important to make AI useful and that includes avoiding slop. A big part of that is ensuring the code we write follows the best practices set out by the Godot documentation and team itself.
->
-> My hope is that this agentic skillset will allow anyone to make a game if they wish and have it be good and natively, and proactively follow best practices. Not everyone is gifted with the detailed vocabulary specific to Godot they may need to make their dream game come true. I hope GDSkills acts as an assistant and expert in making them quickly come to reality.
->
-> I have many things I want to add to this project and a lot of testing and things I would like to do to ensure it continues to improve in quality over time.
->
-> Please enjoy and remember to use AI for good. Most importantly, have fun and dream big!
-
-</details>
-
----
-
 ## 📜 Updates
 
-The last published library note is in the archive (v0.0.11 — Agent Eyes). A new live lead is not written yet.
+
+<div align="center">
+  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
+</div>
+
+### v0.0.11 — Agent Eyes
+- **500 stars** — thank you. That puts this repo in roughly the **top 0.4%** of all public GitHub repositories.
+- **New — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents get **eyes** — capture GUI / assets / editor viewports to budgeted WebP, then score what they see against a granular production rubric (typography-weighted, anti-slop, identity).
+- Cross-platform host CLI (Win / macOS / Linux) + TEMP editor bridge under `.gdskills/` — not an in-game Autoload.
 
 ---
 
 <details>
 <summary><b>📜 Update Archive</b></summary>
 
-<div align="center">
-  <img src="assets/banner_0_0_11.webp" alt="Agent Eyes Update - v0.0.11" width="100%" />
-</div>
-
-#### v0.0.11 — Agent Eyes
-- **500 stars** — thank you. That puts this repo in roughly the **top 0.4%** of all public GitHub repositories.
-- **New — [godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: agents get **eyes** — capture GUI / assets / editor viewports to budgeted WebP, then score what they see against a granular production rubric (typography-weighted, anti-slop, identity).
-- Cross-platform host CLI (Win / macOS / Linux) + TEMP editor bridge under `.gdskills/` — not an in-game Autoload.
 
 <div align="center">
   <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
@@ -165,6 +136,18 @@ The last published library note is in the archive (v0.0.11 — Agent Eyes). A ne
 
 ---
 
+
+## Engines
+
+This library is **Game-Design Agentic Skills**: one product, multiple engine trees.
+
+| Engine | Master entrypoint | Status |
+| --- | --- | --- |
+| Godot 4.x | `godot-master` | Deep section — full Domain Skills + workflows |
+| Bevy | `bevy-master` (coming) | Parity port from Godot via official Bevy docs — no fake skills |
+
+There is **no** singular product-wide master skill. Install **one** engine master or **one** Domain Skill — never `--all`. Godot ships Divergent AI products today; Bevy is additive — no dual-write UIs.
+
 ## 📍 Quick Navigation
 
 | 🚀 Get Started | 🏆 Godot Master | 🧩 Domain Skills | 🤖 Agent Protocol | ⭐ Star History |
@@ -175,15 +158,17 @@ The last published library note is in the archive (v0.0.11 — Agent Eyes). A ne
 
 ## The Philosophy
 
-**Godot Agentic Skills** is a high-density, **Agent-First** knowledge library for Godot 4.7+—designed as an external "Long-Term Memory" (LTM) for AI Coding Agents. It provides structured, deterministic patterns for professional game and application engineering.
+**Game-Design Agentic Skills** is an agent-first, multi-engine knowledge library. Today **Godot 4.7+** is the deep section — structured long-term memory for coding agents, packed from official Godot standards so agents ship real games instead of slop.
 
-Unlike generic AI responses, every skill in this repository follows strictly defined Godot 4 best practices, architectural patterns, and performance optimization techniques refined by shipping real products.
+Later engines grow under their own masters (**Bevy** first as `bevy-master`). Until that hub exists, **Godot is the source of truth** for parity. Domain Skills stay engine-scoped — there is no singular umbrella master skill.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
 
 ---
 
 ## ⚡ Quick Start
+
+Today the Architect path is **Godot**. When `bevy-master` ships, there will be a parallel Path A for Bevy.
 
 Choose your path to avoid a **"Context Storm"** (overloading your agent with too many instructions at once).
 
