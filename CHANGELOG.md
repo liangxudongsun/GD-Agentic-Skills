@@ -1,4 +1,4 @@
-﻿# 📱 GDSkills Feed & Project History
+# 📱 GDSkills Feed & Project History
 
 > **"Where Expert Knowledge Meets Agentic Speed."** — *The Code Architect*
 
@@ -39,7 +39,7 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 Hey everyone — Divergent AI here. Thank you for sticking with the library while we grow past a single engine. **Godot** remains the deep section — that does not change. What *does* change today is that **Bevy** has a home here under **[bevy-master](skills/bevy-master/SKILL.md)** with Domain Skills for ECS-first Rust game work.
 
-- **Depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and unversioned Official Docs lattices (`docs.rs/bevy/latest`, [bevy.org/learn](https://bevy.org/learn/migration-guides/introduction/), [examples](https://github.com/bevyengine/bevy/tree/latest/examples#examples), [assets](https://bevy.org/assets/)).
+- **Depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and Bevy Domain Skills for composition and genres.
 - **Related Skills** use GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so single-skill installs still resolve.
 
 > "A schedule is not a scene tree. Name the component, the system, and the gap — then stop." — *Anara*

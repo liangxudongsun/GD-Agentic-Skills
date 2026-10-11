@@ -32,7 +32,7 @@ API_ROOT = "https://api.github.com"
 ACCEPT_STAR = "application/vnd.github.star+json"
 PER_PAGE = 100
 MAX_PAGES = 400  # GitHub pagination cap (~40k stars)
-USER_AGENT = "gd-agentic-skills-star-history/1.0"
+USER_AGENT = "gdas-star-history/1.0"
 
 WIDTH = 1200
 HEIGHT = 440
@@ -478,42 +478,42 @@ def ensure_estimated_milestones(milestones: list[dict[str, Any]]) -> list[dict[s
 
 
 def theme_palette(theme: str) -> dict[str, str]:
+    """GDAS dither design system (navy/cyan dark, cream/navy light)."""
     if theme == "light":
         return {
-            "bg0": "#F3F7F4",
-            "bg1": "#E8F0EA",
-            "grid": "#B7D0BE",
-            "line": "#1A7F37",
-            "fill": "#3FB950",
-            "fill_opacity": "0.18",
-            "title": "#0B1A12",
-            "meta": "#4A6B55",
-            "axis": "#5E7A66",
-            "pill_bg": "#1A7F37",
-            "pill_fg": "#F3F7F4",
+            "bg0": "#F4F1EA",
+            "bg1": "#E8E2D6",
+            "grid": "#C4B8A4",
+            "line": "#0B3A5B",
+            "fill": "#1F6F8B",
+            "fill_opacity": "0.16",
+            "title": "#0A1628",
+            "meta": "#4A5564",
+            "axis": "#5A6574",
+            "pill_bg": "#0A1628",
+            "pill_fg": "#F4F1EA",
             "panel": "#FFFFFF",
-            "glow": "#3FB950",
-            "milestone": "#0F5132",
-            "milestone_label": "#0B1A12",
+            "glow": "#1F6F8B",
+            "milestone": "#C45C26",
+            "milestone_label": "#0A1628",
         }
     return {
-        "bg0": "#0B1A12",
-        "bg1": "#050A07",
-        "grid": "#1F6B3A",
-        "line": "#3FB950",
-        "fill": "#3FB950",
-        "fill_opacity": "0.28",
+        "bg0": "#061018",
+        "bg1": "#0A1628",
+        "grid": "#1F3A4F",
+        "line": "#3DB8C5",
+        "fill": "#3DB8C5",
+        "fill_opacity": "0.26",
         "title": "#F4F7FB",
-        "meta": "#6F9B7C",
-        "axis": "#5E8A6C",
-        "pill_bg": "#3FB950",
-        "pill_fg": "#041208",
-        "panel": "#0B1A12",
-        "glow": "#3FB950",
-        "milestone": "#86EFAC",
-        "milestone_label": "#D1FAE5",
+        "meta": "#8AA0B4",
+        "axis": "#7A90A4",
+        "pill_bg": "#0A1628",
+        "pill_fg": "#F4F7FB",
+        "panel": "#061018",
+        "glow": "#3DB8C5",
+        "milestone": "#F2A93B",
+        "milestone_label": "#F4F7FB",
     }
-
 
 def render_svg(
     points: list[dict[str, Any]],
@@ -586,13 +586,13 @@ def render_svg(
     # Axis titles
     axis_title_y = (
         f'<text x="18" y="{chart_y + chart_h / 2:.2f}" text-anchor="middle" '
-        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'fill="{pal["axis"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
         f'font-size="11" font-weight="700" letter-spacing="2" '
         f'transform="rotate(-90 18 {chart_y + chart_h / 2:.2f})">STARS</text>'
     )
     axis_title_x = (
         f'<text x="{chart_x + chart_w / 2:.2f}" y="{HEIGHT - 14}" text-anchor="middle" '
-        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'fill="{pal["axis"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
         f'font-size="11" font-weight="700" letter-spacing="2">DATE</text>'
     )
 
@@ -629,10 +629,10 @@ def render_svg(
             f'stroke="{pal["milestone"]}" stroke-width="2.2"/>'
             f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.2" fill="{pal["milestone"]}"/>'
             f'<text x="{x:.2f}" y="{label_y:.2f}" text-anchor="middle" '
-            f'fill="{pal["milestone_label"]}" font-family="Consolas, ui-monospace, monospace" '
+            f'fill="{pal["milestone_label"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
             f'font-size="10" font-weight="700">{ver}</text>'
             f'<text x="{x:.2f}" y="{label_y + 11:.2f}" text-anchor="middle" '
-            f'fill="{pal["meta"]}" font-family="Consolas, ui-monospace, monospace" '
+            f'fill="{pal["meta"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
             f'font-size="9">{stars_label}</text>'
         )
     milestones_svg = "".join(milestone_svg_parts)
@@ -640,14 +640,14 @@ def render_svg(
     uid = "d" if theme == "dark" else "l"
     repo_short = repo.split("/")[-1] if "/" in repo else repo
     title = "STAR HISTORY"
-    meta_right = "GD AGENTIC SKILLS"
+    meta_right = "GDAS"
     subtitle = f"{fmt_int(total)} stars · {start_d.isoformat()} → {end_d.isoformat()}"
 
     x_label_svg = "".join(
         f'<line x1="{x:.2f}" y1="{chart_y + chart_h}" x2="{x:.2f}" y2="{chart_y + chart_h + 6}" '
         f'stroke="{pal["axis"]}" stroke-width="1" opacity="0.55"/>'
         f'<text x="{x:.2f}" y="{HEIGHT - 36}" text-anchor="middle" '
-        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'fill="{pal["axis"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
         f'font-size="12">{escape(label)}</text>'
         for x, label in x_labels
     )
@@ -655,7 +655,7 @@ def render_svg(
         f'<line x1="{chart_x}" y1="{y:.2f}" x2="{chart_x + chart_w}" y2="{y:.2f}" '
         f'stroke="{pal["grid"]}" stroke-width="0.6" opacity="0.35"/>'
         f'<text x="{PAD_L - 14}" y="{y + 4:.2f}" text-anchor="end" '
-        f'fill="{pal["axis"]}" font-family="Consolas, ui-monospace, monospace" '
+        f'fill="{pal["axis"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" '
         f'font-size="11">{escape(label)}</text>'
         for y, label in y_labels
     )
@@ -663,7 +663,7 @@ def render_svg(
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="Star history for {escape(repo)}">
   <title>Star history — {escape(repo)} ({fmt_int(total)} stars)</title>
-  <desc>{escape(subtitle)}. Release milestones marked. Data: GitHub stargazers API. Style: Lattice Terminal.</desc>
+  <desc>{escape(subtitle)}. Release milestones marked. Data: GitHub stargazers API. Style: GDAS dither terminal.</desc>
   <defs>
     <linearGradient id="bg-{uid}" x1="0.2" y1="0" x2="0.8" y2="1">
       <stop offset="0%" stop-color="{pal["bg0"]}"/>
@@ -687,11 +687,11 @@ def render_svg(
   <rect width="{WIDTH}" height="{HEIGHT}" rx="14" fill="url(#bg-{uid})"/>
   <rect x="{chart_x}" y="{chart_y}" width="{chart_w}" height="{chart_h}" fill="url(#grid-{uid})" opacity="0.7"/>
   <rect x="48" y="22" width="52" height="20" rx="4" fill="{pal["pill_bg"]}"/>
-  <text x="74" y="36" text-anchor="middle" fill="{pal["pill_fg"]}" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">LIVE</text>
-  <text x="112" y="38" fill="{pal["title"]}" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="2.5">{title}</text>
-  <text x="{WIDTH - 48}" y="38" text-anchor="end" fill="{pal["meta"]}" font-family="Consolas, ui-monospace, monospace" font-size="12" letter-spacing="1">{escape(meta_right)}</text>
+  <text x="74" y="36" text-anchor="middle" fill="{pal["pill_fg"]}" font-family="Syne, Segoe UI, system-ui, sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">LIVE</text>
+  <text x="112" y="38" fill="{pal["title"]}" font-family="Syne, Segoe UI, system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="2.5">{title}</text>
+  <text x="{WIDTH - 48}" y="38" text-anchor="end" fill="{pal["meta"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" font-size="12" letter-spacing="1">{escape(meta_right)}</text>
   <line x1="48" y1="52" x2="320" y2="52" stroke="{pal["line"]}" stroke-width="1" opacity="0.75"/>
-  <text x="48" y="66" fill="{pal["meta"]}" font-family="Consolas, ui-monospace, monospace" font-size="12">{escape(subtitle)} · {escape(repo_short)}</text>
+  <text x="48" y="66" fill="{pal["meta"]}" font-family="JetBrains Mono, Consolas, ui-monospace, monospace" font-size="12">{escape(subtitle)} · {escape(repo_short)}</text>
   {axis_title_y}
   {y_label_svg}
   <path d="{path_area()}" fill="url(#fill-{uid})"/>
