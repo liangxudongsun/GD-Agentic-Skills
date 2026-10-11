@@ -52,13 +52,7 @@
 
 ## 📜 Updates
 
-### v0.1.0 — Creation Station
-
-- **Creation Station**: The parked `godot-asset-gen` skill has been renamed to **`godot-creation-station`** and elevated to a persona-driven creative director. Meet **The Artificer** — your art-direction partner who speaks in concrete game-art terms (palette roles, silhouette readability, tile seam rules).
-- **5 Style Families with trained LoRAs**: Every game gets a deliberate visual identity. Choose from `pixel`, `painted`, `flat`, `cel`, or `ink` — each backed by a LoRA adapter trained on frozen ternary Bonsai (FLUX.2 Klein 4B gemlite). `generate.py --lora pixel` applies the matching style signal.
-- **LoRA Training Pipeline**: CC0/CC-BY datasets curated from OpenGameArt + synthetic augmentation via iterative bootstrap. Trained directly on the ternary Bonsai checkpoint with FP16 side-adapters (frozen quantized backbone). SVD-downranked to minimum viable rank.
-- **New `models/` folder**: Ships LoRA adapters via GitHub release assets (gitignored in tree). `models/README.md` has manifest, checksums, and download instructions.
-- **Brainstorm → Art-Direct → Generate → QA**: The Artificer guides the full pipeline from "what does your game feel like?" through gamekit creation, style-consistent generation, and vision QA.
+The last published library note is in the archive (v0.0.11 — Agent Eyes). A new live lead is not written yet.
 
 ---
 
