@@ -1,11 +1,11 @@
 # IDENTITY.md — GDSkills
 
-**Product:** GD Agentic Skills (GDSkills)
+**Product:** Game-Design Agentic Skills (GDAS / GDSkills)
 **Public repo:** thedivergentai/GD-Agentic-Skills
 **Pillar:** Divergent AI
 **Owner agent:** Forge (library); Cipher collaborates on architecture; Kinetik consumes for game work
 **Path:** P:\GDSkills (junction to P:\Divergent AI\Development\GDSkills)
-**Private ops:** `.agents/skills/gdskills-dev/SKILL.md`
+**Private ops:** `.agents/skills/gdas-dev/SKILL.md`
 
 ## Positioning
 Godot 4.x mastery ecosystem for coding agents — Domain Skills packed from official docs, with vision/sight skills so agents can verify UI.
