@@ -30,19 +30,21 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
 
 ---
 
-## v0.1.0 — Bevy skills
+## v0.1.0 - Bevy skills
 **October 11, 2026**
 
 <div align="center">
   <img src="assets/banner_bevy.webp" alt="Bevy skills - v0.1.0" width="100%" />
 </div>
 
-Hey everyone — Divergent AI here. Thank you for sticking with the library while we grow past a single engine. **Godot** remains the deep section — that does not change. What *does* change today is that **Bevy** has a home here under **[bevy-master](skills/bevy-master/SKILL.md)** with Domain Skills for ECS-first Rust game work.
+Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot** stays the deep section, with the same hub, personas, and production scripts you already use. **Bevy 0.20+** is the second supported engine: its own hub, its own Domain Skills, and a straight install path. Pick the engine you are shipping.
 
-- **Depth**: ECS ownership (component, resource, system, schedule), NEVER lists with WHY, decision tables, and Bevy Domain Skills for composition and genres.
-- **Related Skills** use GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so single-skill installs still resolve.
+- **Bevy hub - [bevy-master](skills/bevy-master/SKILL.md)**: ECS ownership (component, resource, system, schedule), decision tables, and when to open a Domain Skill instead of the hub.
+- **Bevy Domain Skills**: composition, rendering, gameplay, UI, platforms, adaptation, and genre skills. Install one path. Do not use `--all`.
+- **Route by engine**: Godot work starts at [godot-master](skills/godot-master/SKILL.md). Bevy work starts at bevy-master. There is no singular product-wide master.
+- **Single-skill installs**: Related Skills keep GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so one installed skill still resolves its peers.
 
-> "A schedule is not a scene tree. Name the component, the system, and the gap — then stop." — *Anara*
+> "A schedule is not a scene tree. Name the component, the resource, and the system." - *Anara*
 
 ## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
 **August 12, 2026**
@@ -108,7 +110,7 @@ Load [godot-version-migration](skills/godot-version-migration/SKILL.md) whenever
 </div>
 
 <div align="center">
-  <img src="assets/feed_lattice_rail.webp" alt="Docs Lattice · Stable Permalinks · Research Footers" width="100%" />
+  <img src="assets/feed_lattice_rail.webp" alt="Reference Lattice - Stable Permalinks - Research Footers" width="100%" />
 </div>
 
 Agents shouldn't have to *guess* which doc page or peer skill owns the landmine. This release turns every Domain Skill into a **lattice node**: curated stable Godot docs on one side, progressive Related Skills on the other — plus research-link footers so scripts and phase refs stay one hop from the truth.

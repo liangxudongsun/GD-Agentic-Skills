@@ -10,7 +10,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/Game-Design-Agentic-Skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/Game-Design-Agentic-Skills/commits/main)
 [![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/Game-Design-Agentic-Skills)
 
-**Game-Design Agentic Skills (GDAS)** — multi-engine library for coding agents · **Godot 4.x** · **Bevy**
+**Game-Design Agentic Skills (GDAS)** - agent library for **Godot 4.7+** and **Bevy 0.20+**
 
 **"A skill forgotten is a power lost." — The Code Architect**
 
@@ -26,11 +26,12 @@
   <img src="assets/banner_bevy.webp" alt="Bevy skills - v0.1.0" width="100%" />
 </div>
 
-### v0.1.0 — Bevy skills
+### v0.1.0 - Bevy skills
 **October 11, 2026**
 
-- **Multi-engine GDAS**: Godot and Bevy side by side. Start Bevy work at **[bevy-master](skills/bevy-master/SKILL.md)** - ECS ownership, decision tables, and Domain Skills for composition, schedules, and genres.
-- **Domain Skills**: Bevy Domain Skills for composition, schedules, and genre samples — install one path at a time.
+- **Second engine**: Bevy 0.20+ is a supported home, with **[bevy-master](skills/bevy-master/SKILL.md)** as its hub. Godot stays the deep section under **[godot-master](skills/godot-master/SKILL.md)**.
+- **Route by engine**: Godot work starts at godot-master. Bevy work starts at bevy-master. There is no singular product-wide master.
+- **Bevy Domain Skills**: ECS ownership, rendering, gameplay, UI, platforms, and genre skills. Install one path at a time.
 
 ---
 
@@ -148,18 +149,18 @@
 
 **Game-Design Agentic Skills** is one product with per-engine trees. Pick the master for the engine you are shipping — there is **no** singular product-wide master.
 
-| Engine | Master | Status |
+| Engine | Master | What you get |
 | --- | --- | --- |
-| **Godot 4.x** | [godot-master](skills/godot-master/SKILL.md) | **Deep section** — full Domain Skills, personas, and workflows |
-| **Bevy** | [bevy-master](skills/bevy-master/SKILL.md) | Domain Skills + hub under **bevy-master** |
+| **Godot 4.7+** | [godot-master](skills/godot-master/SKILL.md) | **Deep section** - 98 Domain Skills, personas, workflows, production scripts |
+| **Bevy 0.20+** | [bevy-master](skills/bevy-master/SKILL.md) | **Second supported engine** - ECS hub plus 81 Domain Skills |
 
 Install **one** engine master or **one** Domain Skill — never `--all`. Pick the engine you are shipping; skills stay engine-scoped.
 
 ## 📍 Quick Navigation
 
-| 🚀 Get Started | 🏆 Godot Master | 🧩 Domain Skills | 🤖 Agent Protocol | ⭐ Star History |
-|:---:|:---:|:---:|:---:|:---:|
-| [Install](#-quick-start) | [All-in-One System](#-godot-master--your-lead-architect) | [Bite-Size Modules](#-domain-skills--bite-size-power) | [DIA Loop](#-for-agents--the-discovery-ingestion-application-protocol) | [Growth Chart](#-star-history) |
+| 🚀 Get Started | 🟦 Godot Master | 🦀 Bevy Master | 🧩 Domain Skills | 🤖 Agent Protocol | ⭐ Star History |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| [Install](#-quick-start) | [Godot hub](#-godot-master---godot-hub) | [Bevy hub](#-bevy-master---bevy-hub) | [Skills directory](#-domain-skills--bite-size-power) | [DIA Loop](#-for-agents--the-discovery-ingestion-application-protocol) | [Growth Chart](#-star-history) |
 
 ---
 
@@ -167,9 +168,9 @@ Install **one** engine master or **one** Domain Skill — never `--all`. Pick th
 
 **Game-Design Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
 
-- **Godot 4.7+** is the deep section today: official-doc-true patterns, personas, and production scripts.
-- **Bevy 0.20+** under `bevy-master`: Domain Skills for ECS-first Rust game work.
-- Skills stay engine-scoped — install one path, avoid a Context Storm.
+- **Godot 4.7+** is the deep section: doc-true patterns, personas, and production scripts under [godot-master](skills/godot-master/SKILL.md).
+- **Bevy 0.20+** is the second supported engine: ECS ownership and Domain Skills under [bevy-master](skills/bevy-master/SKILL.md).
+- Skills stay engine-scoped. Install one path so you do not trigger a Context Storm.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
 
@@ -179,24 +180,30 @@ Install **one** engine master or **one** Domain Skill — never `--all`. Pick th
 
 Choose **one** path so you do not trigger a **"Context Storm"** (flooding the agent with every skill at once).
 
-### 🏆 Path A: Godot Architect
-New Godot project, or an existing one that needs a modern **Godot 4.7+** standards check — install the **Godot Master** hub:
+### Path A: Godot
+New Godot project, or an existing one that needs a **Godot 4.7+** standards check - install the Godot hub **or** one Godot Domain Skill:
+
 ```bash
 npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-master
-```
-
-### 🧩 Path B: Specialist (any engine)
-Need one feature (movement, inventory, ECS composition) — install **only** that Domain Skill:
-```bash
+# or one Domain Skill:
 npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-characterbody-2d
-# Bevy example:
-# npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-ecs-composition
 ```
 
-### 🦀 Path C: Bevy hub
-Bevy work starts at **bevy-master**:
+### Path B: Bevy
+Bevy work starts at the Bevy hub **or** one Bevy Domain Skill:
+
 ```bash
 npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master
+# or one Domain Skill:
+npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-ecs-composition
+```
+
+### Path C: One specialist skill
+Need a single feature and already know which skill owns it - install only that path (either engine):
+
+```bash
+npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-inventory-system
+npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-inventory-system
 ```
 
 > [!DANGER]
@@ -219,7 +226,7 @@ Use this when installing via the [skills CLI](https://github.com/vercel-labs/ski
 | OpenCode | `opencode` | `.agents/skills/` | `~/.config/opencode/skills/` |
 
 **Rules**
-1. **Preferred install**: `npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-master -g -a <agent> -y` (swap the skill path for a Domain Skill when needed).
+1. **Preferred install**: one path only, for example `npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-master -g -a <agent> -y` or `npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master -g -a <agent> -y` (swap the skill path for a Domain Skill when needed).
 2. **Verify**: `npx skills list -g -a <agent>`
 3. **Restart** the host agent after install — most agents load skills once at session start.
 4. **Clone / DIA path** (no `npx skills add`): query [`skills_index.json`](skills_index.json), then read `skills/<name>/SKILL.md` with the agent's file tool. Do **not** hand-symlink into host skill dirs unless the user asks for that.
@@ -253,9 +260,9 @@ Installing 181 skills simultaneously creates a **"Metadata Flood"**:
 
 ---
 
-## 🏆 Godot Master — Your Lead Architect
+## 🏆 Godot Master - Godot hub
 
-The **[godot-master](skills/godot-master/SKILL.md)** skill is the crown jewel of this repository—a consolidated expert library that orchestrates all 99 specialized skills into a unified architectural framework.
+**[godot-master](skills/godot-master/SKILL.md)** is the Godot hub. It orchestrates the Godot Domain Skills into one architectural framework for Godot 4.7+ projects. It does not route Bevy work. Bevy starts at [bevy-master](skills/bevy-master/SKILL.md).
 
 ### 🎯 What Makes Godot Master Special?
 
@@ -342,36 +349,69 @@ skills/godot-master/SKILL.md
 
 ---
 
+
+## 🦀 Bevy Master - Bevy hub
+
+**[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub and a peer of godot-master. Use it when you are starting a Bevy 0.20+ app, choosing ECS boundaries, or picking which Bevy Domain Skill to load next. Library target: **Bevy 0.20+** (pinned 0.20.0 in the hub).
+
+Schedules replace a scene tree. For every piece of state, name which **component** or **resource** owns it, which **system** may mutate it, and which message or observer should see it. Do not import Godot types into a Bevy crate.
+
+### When to use Bevy Master vs Bevy Domain Skills
+
+**Use bevy-master when:**
+- Starting a new Bevy app
+- Deciding component vs resource vs schedule
+- Choosing which Domain Skill to open next
+- Checking that a task belongs on the Bevy side of the library (Godot language, version hops, and CLI stay on godot-master)
+
+**Use a Bevy Domain Skill when:**
+- You already know the feature (movement, inventory, a genre loop, UI layout)
+- You want one focused `SKILL.md` instead of the hub
+
+```bash
+npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master
+```
+
+### Decision matrix
+
+| Scenario | Route |
+| --- | --- |
+| New Bevy app, ECS boundaries, which skill to load | [bevy-master](skills/bevy-master/SKILL.md) |
+| Crate, Cargo features, feature folders | [bevy-project-foundations](skills/bevy-project-foundations/SKILL.md) |
+| Entity composition, components, systems | [bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md) |
+| Messages and observers | [bevy-events-messaging](skills/bevy-events-messaging/SKILL.md) |
+| Components and resources as data | [bevy-data-resources](skills/bevy-data-resources/SKILL.md) |
+| App states or a per-entity mode flag | [bevy-state-machines](skills/bevy-state-machines/SKILL.md) |
+| App-wide resources and schedules | [bevy-app-resources](skills/bevy-app-resources/SKILL.md) |
+| Character movement | [bevy-character-movement](skills/bevy-character-movement/SKILL.md) |
+| 3D physics / 2D physics | [bevy-physics-3d](skills/bevy-physics-3d/SKILL.md) / [bevy-physics-2d](skills/bevy-physics-2d/SKILL.md) |
+| Keyboard, mouse, gamepad | [bevy-input-handling](skills/bevy-input-handling/SKILL.md) |
+| Camera, audio, assets, save | [bevy-camera-systems](skills/bevy-camera-systems/SKILL.md), [bevy-audio-systems](skills/bevy-audio-systems/SKILL.md), [bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md), [bevy-save-load](skills/bevy-save-load/SKILL.md) |
+| Clips, lights, materials, UI, or a genre loop | Matching Domain Skill in the [Bevy directory](#-domain-skills--bite-size-power) |
+| Godot language, version hops, CLI, or project audit | [godot-master](skills/godot-master/SKILL.md) |
+
+Data that is not simulated can stay a plain Rust struct or a resource. Do not spawn an entity for every config value.
+
+---
+
 ## 🧩 Domain Skills — Bite-Size Power
 
-Individual Domain Skills are **modular add-ons** for targeted functionality. Each is atomic, self-contained, and production-ready—perfect for when you need a specific implementation pattern without the full architectural context.
+Domain Skills are modular, engine-scoped modules. Open **one** engine accordion below. Godot holds the deep catalog (98 Domain Skills + godot-master). Bevy holds the second catalog (81 Domain Skills + bevy-master). Together with the two hubs that is **181** skills.
 
-Think of Domain Skills as your **component library**: Drop them into your project for instant, expert-level functionality.
-
-<details>
-<summary><b>🟦 Bevy</b></summary>
-
-Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS ownership, schedules, and genre samples.
-
-- **[bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md)**: Components, `Query`, `Commands`, `Startup` / `Update`, `.chain()`
-- **[bevy-events-messaging](skills/bevy-events-messaging/SKILL.md)**: Messages and observers as an ownership slot (no invented event structs)
-- **[bevy-app-resources](skills/bevy-app-resources/SKILL.md)**: App-wide `Resource` ownership and plugin boundaries
-- **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Locomotion on `Fixed` / `FixedMain`. Not a Godot body port
-- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: 3D physics Domain Skill — routing and ownership patterns
-- **[bevy-physics-2d](skills/bevy-physics-2d/SKILL.md)**: 2D physics Domain Skill — routing and ownership patterns
-- **[bevy-ui-layout](skills/bevy-ui-layout/SKILL.md)**: UI layout routing without a Godot Control tree
-- **[bevy-input-handling](skills/bevy-input-handling/SKILL.md)**: Input as components and systems
-- **[bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md)**: Asset and scene loading boundaries
-- **[bevy-platform-desktop](skills/bevy-platform-desktop/SKILL.md)**, **[bevy-platform-web](skills/bevy-platform-web/SKILL.md)**, **[bevy-platform-mobile](skills/bevy-platform-mobile/SKILL.md)**: Platform axes
-- **[bevy-adapt-2d-to-3d](skills/bevy-adapt-2d-to-3d/SKILL.md)** and **[bevy-adapt-desktop-to-mobile](skills/bevy-adapt-desktop-to-mobile/SKILL.md)**: Adaptation routers
-- **[bevy-genre-platformer](skills/bevy-genre-platformer/SKILL.md)**, **[bevy-genre-roguelike](skills/bevy-genre-roguelike/SKILL.md)**, **[bevy-game-loop-waves](skills/bevy-game-loop-waves/SKILL.md)**: Genre and loop samples
-
-</details>
+Install the hub for the engine you are shipping, or one Domain Skill. Do not expand both engines into the agent's context at once.
 
 <details>
-<summary><b>🏗️ Architecture & Foundation (11 skills)</b></summary>
+<summary><b>🟦 Godot skills (99)</b> - hub + Domain Skills - open for Godot 4.7+ work</summary>
 
+Hub: **[godot-master](skills/godot-master/SKILL.md)**. The categories below are Godot Domain Skills (98). Install the hub or one Domain Skill.
+
+<details>
+<summary><b>🏗️ Architecture & Foundation (14 skills)</b></summary>
+
+- **[godot-analyst](skills/godot-analyst/SKILL.md)**: Anara - visionary scoring and certification for Godot 4.7+ architecture
+- **[godot-auditor](skills/godot-auditor/SKILL.md)**: Aurelius - never-list enforcement and architectural audit for Godot 4.7+
 - **[godot-autoload-architecture](skills/godot-autoload-architecture/SKILL.md)**: Singleton patterns, global state management, signal-based communication
+- **[godot-builder](skills/godot-builder/SKILL.md)**: Headless CLI scene scaffolding and build orchestration
 - **[godot-composition](skills/godot-composition/SKILL.md)**: Entity-Component architecture for scalable game systems (NPCs, weapons, actors)
 - **[godot-composition-apps](skills/godot-composition-apps/SKILL.md)**: Composition patterns for applications and tools (UI-focused)
 - **[godot-debugging-profiling](skills/godot-debugging-profiling/SKILL.md)**: Print debugging, breakpoints, profiler, memory leak detection
@@ -402,9 +442,10 @@ Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS owner
 </details>
 
 <details>
-<summary><b>🌍 3D Systems (7 skills)</b></summary>
+<summary><b>🌍 3D Systems (8 skills)</b></summary>
 
 - **[godot-3d-lighting](skills/godot-3d-lighting/SKILL.md)**: `DirectionalLight3D`, shadow cascades, `VoxelGI` vs `SDFGI`, `LightmapGI`
+- **[godot-ai-navigation](skills/godot-ai-navigation/SKILL.md)**: Chase, patrol, and crowd choices on NavigationAgent / NavigationServer
 - **[godot-3d-materials](skills/godot-3d-materials/SKILL.md)**: `StandardMaterial3D`, PBR workflows, ORM textures, transparency modes
 - **[godot-3d-world-building](skills/godot-3d-world-building/SKILL.md)**: `GridMap`, `CSG` geometry, `WorldEnvironment`, volumetric fog
 - **[godot-navigation-pathfinding](skills/godot-navigation-pathfinding/SKILL.md)**: `NavigationAgent2D/3D`, RVO avoidance, async NavMesh baking
@@ -438,7 +479,7 @@ Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS owner
 </details>
 
 <details>
-<summary><b>🎨 UI & UX (7 skills)</b></summary>
+<summary><b>🎨 UI & UX (6 skills)</b></summary>
 
 - **[godot-agent-vision](skills/godot-agent-vision/SKILL.md)**: Agentic eyes — host screenshot CLI → WebP, TEMP editor bridge, structured anti-slop vision review
 - **[godot-input-handling](skills/godot-input-handling/SKILL.md)**: `InputMap`, controller support, rebinding, input buffering
@@ -519,6 +560,139 @@ Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Domain Skills for ECS owner
 
 </details>
 
+</details>
+
+<details>
+<summary><b>🦀 Bevy skills (82)</b> - hub + Domain Skills - open for Rust / ECS work</summary>
+
+Hub: **[bevy-master](skills/bevy-master/SKILL.md)**. Install the hub or one Domain Skill. Schedules replace a scene tree: name the component, the resource, and the system.
+
+<details>
+<summary><b>ECS & ownership (11 skills)</b></summary>
+
+- **[bevy-project-foundations](skills/bevy-project-foundations/SKILL.md)**: Cargo crate layout, features, and folder habits
+- **[bevy-project-templates](skills/bevy-project-templates/SKILL.md)**: Template starting points for 2D and 3D apps
+- **[bevy-ecs-composition](skills/bevy-ecs-composition/SKILL.md)**: Components, `Query`, `Commands`, `Startup` / `Update`, `.chain()`
+- **[bevy-events-messaging](skills/bevy-events-messaging/SKILL.md)**: Messages and observers as an ownership slot
+- **[bevy-data-resources](skills/bevy-data-resources/SKILL.md)**: `Component` versus `Resource` as data
+- **[bevy-state-machines](skills/bevy-state-machines/SKILL.md)**: App states and per-entity mode flags
+- **[bevy-app-resources](skills/bevy-app-resources/SKILL.md)**: App-wide resources and plugin boundaries
+- **[bevy-save-load](skills/bevy-save-load/SKILL.md)**: Save-slot boundaries (scene spawn is not a save)
+- **[bevy-debugging-profiling](skills/bevy-debugging-profiling/SKILL.md)**: Logs and frame diagnostics
+- **[bevy-performance](skills/bevy-performance/SKILL.md)**: Parallel systems, fixed step, handle lifetimes
+- **[bevy-testing-patterns](skills/bevy-testing-patterns/SKILL.md)**: `cargo test` around Bevy apps
+
+</details>
+
+<details>
+<summary><b>Rendering, animation & world (11 skills)</b></summary>
+
+- **[bevy-2d-animation](skills/bevy-2d-animation/SKILL.md)**: Sprite clip playback
+- **[bevy-animation](skills/bevy-animation/SKILL.md)**: Animation clips and players
+- **[bevy-animation-graph](skills/bevy-animation-graph/SKILL.md)**: Blend graphs
+- **[bevy-particles](skills/bevy-particles/SKILL.md)**: Particle and VFX entities
+- **[bevy-shaders](skills/bevy-shaders/SKILL.md)**: Materials and shaders
+- **[bevy-tilemap](skills/bevy-tilemap/SKILL.md)**: Tile map entities
+- **[bevy-tweening](skills/bevy-tweening/SKILL.md)**: Curves and juice
+- **[bevy-camera-systems](skills/bevy-camera-systems/SKILL.md)**: `Camera2d` and `Camera3d`
+- **[bevy-3d-lighting](skills/bevy-3d-lighting/SKILL.md)**: Directional, point, and spot lights
+- **[bevy-3d-materials](skills/bevy-3d-materials/SKILL.md)**: PBR materials
+- **[bevy-3d-world-building](skills/bevy-3d-world-building/SKILL.md)**: Mesh and scene assembly for levels
+
+</details>
+
+<details>
+<summary><b>Simulation & gameplay (24 skills)</b></summary>
+
+- **[bevy-character-movement](skills/bevy-character-movement/SKILL.md)**: Locomotion on `Fixed` / `FixedMain`
+- **[bevy-physics-2d](skills/bevy-physics-2d/SKILL.md)**: 2D physics ownership
+- **[bevy-physics-3d](skills/bevy-physics-3d/SKILL.md)**: 3D physics ownership
+- **[bevy-spatial-queries](skills/bevy-spatial-queries/SKILL.md)**: Rays, overlaps, and picks
+- **[bevy-navigation](skills/bevy-navigation/SKILL.md)**: Path data
+- **[bevy-ai-navigation](skills/bevy-ai-navigation/SKILL.md)**: Chase, patrol, and retarget policy
+- **[bevy-procedural-generation](skills/bevy-procedural-generation/SKILL.md)**: Seeded layout and spawn
+- **[bevy-input-handling](skills/bevy-input-handling/SKILL.md)**: Keyboard, mouse, and gamepad
+- **[bevy-audio-systems](skills/bevy-audio-systems/SKILL.md)**: Play and control clips
+- **[bevy-asset-scenes](skills/bevy-asset-scenes/SKILL.md)**: Asset loading and scene spawn
+- **[bevy-ability-system](skills/bevy-ability-system/SKILL.md)**: Cooldowns and ability entities
+- **[bevy-combat-system](skills/bevy-combat-system/SKILL.md)**: Hits, damage, and health
+- **[bevy-dialogue-system](skills/bevy-dialogue-system/SKILL.md)**: Dialogue lines as data
+- **[bevy-economy-system](skills/bevy-economy-system/SKILL.md)**: Currency and prices
+- **[bevy-inventory-system](skills/bevy-inventory-system/SKILL.md)**: Stacks and item entities
+- **[bevy-mechanic-revival](skills/bevy-mechanic-revival/SKILL.md)**: Downed state and revival
+- **[bevy-mechanic-secrets](skills/bevy-mechanic-secrets/SKILL.md)**: Discovery flags
+- **[bevy-quest-system](skills/bevy-quest-system/SKILL.md)**: Objectives and quest state
+- **[bevy-rpg-stats](skills/bevy-rpg-stats/SKILL.md)**: Attributes and modifiers
+- **[bevy-turn-system](skills/bevy-turn-system/SKILL.md)**: Initiative and rounds
+- **[bevy-game-loop-collection](skills/bevy-game-loop-collection/SKILL.md)**: Pickups and collection tracking
+- **[bevy-game-loop-harvest](skills/bevy-game-loop-harvest/SKILL.md)**: Gathering and depletion
+- **[bevy-game-loop-time-trial](skills/bevy-game-loop-time-trial/SKILL.md)**: Timers and splits
+- **[bevy-game-loop-waves](skills/bevy-game-loop-waves/SKILL.md)**: Encounter waves and spawns
+
+</details>
+
+<details>
+<summary><b>UI (3 skills)</b></summary>
+
+- **[bevy-ui-layout](skills/bevy-ui-layout/SKILL.md)**: Flex layout, nodes, and buttons
+- **[bevy-ui-text](skills/bevy-ui-text/SKILL.md)**: UI and world text
+- **[bevy-ui-theming](skills/bevy-ui-theming/SKILL.md)**: Colors, borders, and theme tokens
+
+</details>
+
+<details>
+<summary><b>Platforms (3 skills)</b></summary>
+
+- **[bevy-platform-desktop](skills/bevy-platform-desktop/SKILL.md)**: Desktop windows
+- **[bevy-platform-web](skills/bevy-platform-web/SKILL.md)**: Wasm and browser targets
+- **[bevy-platform-mobile](skills/bevy-platform-mobile/SKILL.md)**: Touch and mobile targets
+
+</details>
+
+<details>
+<summary><b>Adaptation guides (4 skills)</b></summary>
+
+- **[bevy-adapt-2d-to-3d](skills/bevy-adapt-2d-to-3d/SKILL.md)**: Move a Bevy game from 2D to 3D
+- **[bevy-adapt-3d-to-2d](skills/bevy-adapt-3d-to-2d/SKILL.md)**: Flatten a Bevy game from 3D to 2D
+- **[bevy-adapt-desktop-to-mobile](skills/bevy-adapt-desktop-to-mobile/SKILL.md)**: Desktop to touch and mobile
+- **[bevy-adapt-mobile-to-desktop](skills/bevy-adapt-mobile-to-desktop/SKILL.md)**: Mobile to mouse, keyboard, and desktop
+
+</details>
+
+<details>
+<summary><b>Genre blueprints (25 skills)</b></summary>
+
+- **[bevy-genre-action-rpg](skills/bevy-genre-action-rpg/SKILL.md)**: Action RPG loop
+- **[bevy-genre-card-game](skills/bevy-genre-card-game/SKILL.md)**: Card game loop
+- **[bevy-genre-educational](skills/bevy-genre-educational/SKILL.md)**: Educational loop
+- **[bevy-genre-fighting](skills/bevy-genre-fighting/SKILL.md)**: Fighting loop
+- **[bevy-genre-horror](skills/bevy-genre-horror/SKILL.md)**: Horror loop
+- **[bevy-genre-idle-clicker](skills/bevy-genre-idle-clicker/SKILL.md)**: Idle / clicker loop
+- **[bevy-genre-metroidvania](skills/bevy-genre-metroidvania/SKILL.md)**: Metroidvania loop
+- **[bevy-genre-open-world](skills/bevy-genre-open-world/SKILL.md)**: Open world loop
+- **[bevy-genre-party](skills/bevy-genre-party/SKILL.md)**: Party / minigame loop
+- **[bevy-genre-platformer](skills/bevy-genre-platformer/SKILL.md)**: Platformer loop
+- **[bevy-genre-puzzle](skills/bevy-genre-puzzle/SKILL.md)**: Puzzle loop
+- **[bevy-genre-racing](skills/bevy-genre-racing/SKILL.md)**: Racing loop
+- **[bevy-genre-rhythm](skills/bevy-genre-rhythm/SKILL.md)**: Rhythm loop
+- **[bevy-genre-roguelike](skills/bevy-genre-roguelike/SKILL.md)**: Roguelike loop
+- **[bevy-genre-romance](skills/bevy-genre-romance/SKILL.md)**: Romance loop
+- **[bevy-genre-rts](skills/bevy-genre-rts/SKILL.md)**: RTS loop
+- **[bevy-genre-sandbox](skills/bevy-genre-sandbox/SKILL.md)**: Sandbox loop
+- **[bevy-genre-shooter](skills/bevy-genre-shooter/SKILL.md)**: Shooter loop
+- **[bevy-genre-shooter-fps](skills/bevy-genre-shooter-fps/SKILL.md)**: FPS shooter loop
+- **[bevy-genre-simulation](skills/bevy-genre-simulation/SKILL.md)**: Simulation loop
+- **[bevy-genre-sports](skills/bevy-genre-sports/SKILL.md)**: Sports loop
+- **[bevy-genre-stealth](skills/bevy-genre-stealth/SKILL.md)**: Stealth loop
+- **[bevy-genre-survival](skills/bevy-genre-survival/SKILL.md)**: Survival loop
+- **[bevy-genre-tower-defense](skills/bevy-genre-tower-defense/SKILL.md)**: Tower defense loop
+- **[bevy-genre-visual-novel](skills/bevy-genre-visual-novel/SKILL.md)**: Visual novel loop
+
+</details>
+
+</details>
+
+
 ### 📂 Full Skill Index
 
 All skills are catalogued in the machine-readable [`skills_index.json`](skills_index.json) with keywords, descriptions, and dependency chains.
@@ -532,46 +706,58 @@ All skills are catalogued in the machine-readable [`skills_index.json`](skills_i
 
 AI agents must follow the **DIA loop** for maximum quality:
 
-### 1️⃣ Discovery
-Query [`skills_index.json`](skills_index.json) to find the skill matching the user's intent.
+### 1. Discovery
+Query [`skills_index.json`](skills_index.json) and pick the **engine** first.
 
-**Example**: User wants "smooth character movement" → Agent finds `godot-characterbody-2d` and `godot-tweening`.
+**Godot example**: "smooth character movement" -> `godot-characterbody-2d`, then `godot-master` if the project needs architecture.
 
-### 2️⃣ Ingestion
-**CRITICAL**: Agents MUST NOT implement from general training data alone. 
+**Bevy example**: "ECS player movement" -> `bevy-character-movement`, then `bevy-master` if ownership and schedules are still open.
 
-**Required**: Read the skill's `SKILL.md` with the agent's file tool to catch Godot 4-specific nuances (e.g., `AudioServer.get_time_since_last_mix()` for rhythm sync, `StringName` for O(1) dictionary lookups).
+### 2. Ingestion
+Agents must not implement from general training data alone.
 
-**For complex projects**: Load `godot-master` for architectural workflows and anti-patterns.
+Read the chosen `SKILL.md` with the file tool. Godot skills carry Godot 4.7+ nuances (`StringName` lookups, signal direction). Bevy skills carry ECS ownership (`Component`, `Resource`, `Query`, `Commands`, `.chain()`, `Fixed` / `FixedMain`).
 
-### 3️⃣ Application
-Follow the **Skill Chain** documented in the skill header. Apply patterns recursively, starting from the deepest dependency.
+**Complex Godot projects**: load `godot-master`.
+**Complex Bevy projects**: load `bevy-master`.
+Do not load both hubs for one task.
 
-**Example Workflow**:
+### 3. Application
+Follow the skill chain in the skill header. Apply patterns from the deepest dependency upward, staying inside the same engine.
+
+**Godot workflow**:
 ```
-User: "Build a player controller"
-Agent: Query skills_index.json → Find godot-characterbody-2d
-Agent: Read godot-characterbody-2d/SKILL.md → See dependencies: godot-composition, godot-state-machine-advanced
-Agent: Read godot-composition/SKILL.md → Implement component architecture first
-Agent: Read godot-state-machine-advanced/SKILL.md → Build state machine layer
-Agent: Return to godot-characterbody-2d → Implement movement with components + states
+User: "Build a player controller" (Godot)
+Agent: Query skills_index.json -> godot-characterbody-2d
+Agent: Read dependencies (godot-composition, godot-state-machine-advanced) first
+Agent: Implement movement on top of those patterns
 ```
 
-### 🚨 Anti-Erosion Policy
+**Bevy workflow**:
+```
+User: "Build a player controller" (Bevy)
+Agent: Query skills_index.json -> bevy-character-movement
+Agent: Read bevy-master if component vs resource is unclear
+Agent: Implement locomotion on Fixed / FixedMain
+```
 
-**Documentation MUST remain in sync with implementation.** If a Godot 4 API changes, update the relevant `SKILL.md` immediately.
+### Anti-Erosion Policy
+
+Documentation stays in sync with implementation. When a Godot 4 or Bevy 0.20 API changes, update the relevant `SKILL.md`.
 
 ---
 
 ## 🏗️ Infrastructure Integration
 
-### Programmatic Building (`godot-builder`)
+### Godot programmatic building (`godot-builder`)
 
-Scene scaffolding and headless automation go through **[godot-builder](skills/godot-builder/SKILL.md)** (also mirrored in `godot-master` Workflow 11). Use Godot CLI scripts such as `create_scene.py`, `add_node.py`, and `run_project.py`.
+Godot scene scaffolding and headless automation go through **[godot-builder](skills/godot-builder/SKILL.md)** (also mirrored in `godot-master` Workflow 11). Use Godot CLI scripts such as `create_scene.py`, `add_node.py`, and `run_project.py`.
 
-### Project Standards
+Bevy apps scaffold through Cargo and **[bevy-project-foundations](skills/bevy-project-foundations/SKILL.md)** (`App::new()`, `DefaultPlugins` / `MinimalPlugins`). Do not point Bevy tasks at godot-builder.
 
-All code follows **Godot 4.7+ conventions**:
+### Project standards
+
+**Godot** code follows **Godot 4.7+** conventions:
 - Static typing: `func move(vec: Vector2) -> void:`
 - `Signal` / `Callable` / `Tween` (Godot 4 syntax)
 - `StringName` for performance-critical lookups
@@ -588,8 +774,8 @@ We welcome contributions from developers and agents!
 **Quick Guidelines**:
 - Every skill must provide **Expert Knowledge Delta** (not tutorials)
 - Include anti-patterns with non-obvious explanations
-- Code must be Godot 4.7+ native, statically typed
-- Scripts must parse without warnings
+- Godot skills: Godot 4.7+ GDScript, statically typed, scripts parse without warnings
+- Bevy skills: Bevy 0.20+ Rust, ECS ownership explicit, no Godot types in Bevy crates
 
 **Submit**: Open an issue with `[Request]` tag or submit a PR describing the knowledge delta your skill adds.
 
@@ -597,7 +783,7 @@ We welcome contributions from developers and agents!
 
 ## ⭐ Star History
 
-If this project accelerates your Godot development or empowers your AI agents, consider starring the repository! ⭐
+If this project accelerates your Godot or Bevy work, or empowers your AI agents, consider starring the repository!
 
 <div align="center">
   <a href="https://github.com/thedivergentai/Game-Design-Agentic-Skills/stargazers">
@@ -616,17 +802,20 @@ If this project accelerates your Godot development or empowers your AI agents, c
 | Metric | Value |
 |:---|:---|
 | **Total Skills** | 181 |
-| **Genre Blueprints** | 27 |
-| **Production Scripts** | 982 |
-| **Reference Documents** | 99 |
-| **Target Engine** | Godot 4.7+ |
+| **Godot skills** | 99 (godot-master + 98 Domain Skills) |
+| **Bevy skills** | 82 (bevy-master + 81 Domain Skills) |
+| **Godot genre blueprints** | 27 |
+| **Bevy genre skills** | 25 |
+| **Godot production scripts** | 982 |
+| **Godot reference documents** | 99 |
+| **Target engines** | Godot 4.7+ and Bevy 0.20+ |
 | **License** | LGPLv3 |
 
 ---
 
 ## 💖 Sponsorship & Support
 
-We are seeking **financial sponsors and infrastructure partners** to sustain the Game-Design Agentic Skills (Godot deep section). Every contribution helps us maintain these skills and keep them free for the community.
+We are seeking **financial sponsors and infrastructure partners** to sustain Game-Design Agentic Skills across Godot and Bevy. Every contribution helps us maintain these skills and keep them free for the community.
 
 🚀 **View our [Sponsorship & Support Opportunities](PARTNERS.md)**
 
@@ -654,6 +843,6 @@ We chose this license because it strikes the perfect balance for an open ecosyst
 ---
 
 > [!IMPORTANT]
-> **Anti-Erosion Policy**: Documentation MUST remain in sync with implementation. If a Godot 4 API changes, update the relevant `SKILL.md` immediately.
+> **Anti-Erosion Policy**: Documentation stays in sync with implementation. When a Godot 4 or Bevy 0.20 API changes, update the relevant `SKILL.md`.
 
 </div>
