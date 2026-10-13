@@ -385,8 +385,8 @@ def fetch_milestones_from_git() -> list[dict[str, Any]]:
         if not m:
             continue
         ver = m.group(1)
-        # Only this project's 0.0.x release train (ignore random semver in deps/docs).
-        if not ver.startswith("0.0."):
+        # Only this project's 0.x.y release train (ignore random semver in deps/docs).
+        if not re.match(r"^0\.\d+\.\d+$", ver):
             continue
         # Skip tooling/meta commits that mention versions (e.g. star-history estimates).
         if re.search(r"(?i)star-history|estimated milestone|milestone between", subject):
@@ -424,7 +424,8 @@ def fetch_milestones_from_api(repo: str, tokens: list[str]) -> list[dict[str, An
             if not m:
                 continue
             ver = m.group(1)
-            if not ver.startswith("0.0."):
+            # Only this project's 0.x.y release train (ignore random semver in deps/docs).
+            if not re.match(r"^0\.\d+\.\d+$", ver):
                 continue
             if re.search(r"(?i)star-history|estimated milestone|milestone between", subject):
                 continue
@@ -455,11 +456,18 @@ def fetch_milestones(repo: str, tokens: list[str]) -> list[dict[str, Any]]:
 def ensure_estimated_milestones(milestones: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Force known estimated dates (override bad git matches, e.g. meta commits)."""
     # Master Skill Evolution — between v0.0.1 (2026-02-07) and v0.0.3 (2026-02-15).
+    # Bevy skills ship — public v0.1.0 marker (banner/CHANGELOG date).
     force: dict[str, dict[str, Any]] = {
         "0.0.2": {
             "version": "v0.0.2",
             "date": "2026-02-14",
             "subject": "estimated: Master Skill Evolution (between v0.0.1 and v0.0.3)",
+            "estimated": True,
+        },
+        "0.1.0": {
+            "version": "v0.1.0",
+            "date": "2026-10-11",
+            "subject": "estimated: Bevy skills (second supported engine)",
             "estimated": True,
         },
     }
