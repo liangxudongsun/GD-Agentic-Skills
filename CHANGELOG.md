@@ -37,7 +37,7 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
   <img src="assets/banner_bevy.webp" alt="Bevy skills - v0.1.0" width="100%" />
 </div>
 
-Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot** stays the deep section, with the same hub, personas, and production scripts you already use. **Bevy 0.20+** is the second supported engine: its own hub, its own Domain Skills, and a straight install path. Pick the engine you are shipping.
+Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot 4.7+** keeps its hub, personas, and production scripts. **Bevy 0.20+** gets its own hub, its own Domain Skills, and a straight install path. Pick the engine you are shipping.
 
 - **Bevy hub - [bevy-master](skills/bevy-master/SKILL.md)**: ECS ownership (component, resource, system, schedule), decision tables, and when to open a Domain Skill instead of the hub.
 - **Bevy Domain Skills**: composition, rendering, gameplay, UI, platforms, adaptation, and genre skills. Install one path. Do not use `--all`.

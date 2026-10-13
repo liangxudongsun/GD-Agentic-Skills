@@ -29,7 +29,7 @@
 ### v0.1.0 - Bevy skills
 **October 11, 2026**
 
-- **Second engine**: Bevy 0.20+ is a supported home, with **[bevy-master](skills/bevy-master/SKILL.md)** as its hub. Godot stays the deep section under **[godot-master](skills/godot-master/SKILL.md)**.
+- **Two engines**: Godot 4.7+ under **[godot-master](skills/godot-master/SKILL.md)** and Bevy 0.20+ under **[bevy-master](skills/bevy-master/SKILL.md)**, each with its own hub and Domain Skills.
 - **Route by engine**: Godot work starts at godot-master. Bevy work starts at bevy-master. There is no singular product-wide master.
 - **Bevy Domain Skills**: ECS ownership, rendering, gameplay, UI, platforms, and genre skills. Install one path at a time.
 
@@ -151,8 +151,8 @@
 
 | Engine | Master | What you get |
 | --- | --- | --- |
-| **Godot 4.7+** | [godot-master](skills/godot-master/SKILL.md) | **Deep section** - 98 Domain Skills, personas, workflows, production scripts |
-| **Bevy 0.20+** | [bevy-master](skills/bevy-master/SKILL.md) | **Second supported engine** - ECS hub plus 81 Domain Skills |
+| **Godot 4.7+** | [godot-master](skills/godot-master/SKILL.md) | 98 Domain Skills, personas, workflows, production scripts |
+| **Bevy 0.20+** | [bevy-master](skills/bevy-master/SKILL.md) | ECS hub plus 81 Domain Skills |
 
 Install **one** engine master or **one** Domain Skill — never `--all`. Pick the engine you are shipping; skills stay engine-scoped.
 
@@ -168,8 +168,8 @@ Install **one** engine master or **one** Domain Skill — never `--all`. Pick th
 
 **Game-Design Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
 
-- **Godot 4.7+** is the deep section: doc-true patterns, personas, and production scripts under [godot-master](skills/godot-master/SKILL.md).
-- **Bevy 0.20+** is the second supported engine: ECS ownership and Domain Skills under [bevy-master](skills/bevy-master/SKILL.md).
+- **Godot 4.7+** is fully supported: doc-true patterns, personas, and production scripts under [godot-master](skills/godot-master/SKILL.md).
+- **Bevy 0.20+** is fully supported: ECS ownership and Domain Skills under [bevy-master](skills/bevy-master/SKILL.md).
 - Skills stay engine-scoped. Install one path so you do not trigger a Context Storm.
 
 **If this project helps your development or empowers your agents, please give it a star! 🌟**
@@ -352,7 +352,7 @@ skills/godot-master/SKILL.md
 
 ## 🦀 Bevy Master - Bevy hub
 
-**[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub and a peer of godot-master. Use it when you are starting a Bevy 0.20+ app, choosing ECS boundaries, or picking which Bevy Domain Skill to load next. Library target: **Bevy 0.20+** (pinned 0.20.0 in the hub).
+**[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub. Use it when you are starting a Bevy 0.20+ app, choosing ECS boundaries, or picking which Bevy Domain Skill to load next. Library target: **Bevy 0.20+**.
 
 Schedules replace a scene tree. For every piece of state, name which **component** or **resource** owns it, which **system** may mutate it, and which message or observer should see it. Do not import Godot types into a Bevy crate.
 

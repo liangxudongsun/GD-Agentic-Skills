@@ -467,7 +467,7 @@ def ensure_estimated_milestones(milestones: list[dict[str, Any]]) -> list[dict[s
         "0.1.0": {
             "version": "v0.1.0",
             "date": "2026-10-11",
-            "subject": "estimated: Bevy skills (second supported engine)",
+            "subject": "estimated: Bevy 0.20+ skills",
             "estimated": True,
         },
     }

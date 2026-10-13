@@ -79,3 +79,8 @@ docs/internal/
 
 # GDSkills agent vision scratch (do not commit)
 .gdskills/
+
+# Internal agent workspace files (private)
+AGENT.md
+IDENTITY.md
+SOUL.md

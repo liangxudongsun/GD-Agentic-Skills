@@ -1,7 +1,7 @@
 [
   {
     "name": "bevy-2d-animation",
-    "description": "\"Docs-first stub for Bevy 2D sprite animation. Godot counterpart: godot-2d-animation. Keywords: Bevy, sprite, animation, AnimationPlayer, AnimationClip, 2D.\"",
+    "description": "\"Bevy ECS skill for 2D sprite animation. Keywords: Bevy, sprite, animation, AnimationPlayer, AnimationClip, 2D.\"",
     "keywords": [
       "Bevy",
       "sprite",
@@ -13,7 +13,7 @@
   },
   {
     "name": "bevy-3d-lighting",
-    "description": "\"Docs-first stub for Bevy 3D lights. Godot counterpart: godot-3d-lighting. Keywords: Bevy, lighting, directional, point, spot, bevy_light, PBR.\"",
+    "description": "\"Bevy ECS skill for 3D lights. Keywords: Bevy, lighting, directional, point, spot, bevy_light, PBR.\"",
     "keywords": [
       "Bevy",
       "lighting",
@@ -26,7 +26,7 @@
   },
   {
     "name": "bevy-3d-materials",
-    "description": "\"Docs-first stub for Bevy PBR materials. Godot counterpart: godot-3d-materials. Keywords: Bevy, StandardMaterial, PBR, material, ExtendedMaterial.\"",
+    "description": "\"Bevy ECS skill for PBR materials. Keywords: Bevy, StandardMaterial, PBR, material, ExtendedMaterial.\"",
     "keywords": [
       "Bevy",
       "StandardMaterial",
@@ -37,7 +37,7 @@
   },
   {
     "name": "bevy-3d-world-building",
-    "description": "\"Docs-first stub for Bevy 3D level assembly. Godot counterpart: godot-3d-world-building. Keywords: Bevy, level, scene, mesh, world, ECS.\"",
+    "description": "\"Bevy ECS skill for 3D level assembly. Keywords: Bevy, level, scene, mesh, world, ECS.\"",
     "keywords": [
       "Bevy",
       "level",
@@ -49,7 +49,7 @@
   },
   {
     "name": "bevy-ability-system",
-    "description": "\"Docs-first stub for Bevy abilities. Godot counterpart: godot-ability-system. Keywords: Bevy, ability, cooldown, ECS, gameplay.\"",
+    "description": "\"Bevy ECS skill for abilities. Keywords: Bevy, ability, cooldown, ECS, gameplay.\"",
     "keywords": [
       "Bevy",
       "ability",
@@ -60,7 +60,7 @@
   },
   {
     "name": "bevy-adapt-2d-to-3d",
-    "description": "\"Docs-first stub for moving a Bevy game from 2D to 3D. Godot counterpart: godot-adapt-2d-to-3d. Keywords: Bevy, 2D, 3D, adapt, camera, sprite.\"",
+    "description": "\"Bevy ECS skill for moving a Bevy game from 2D to 3D. Keywords: Bevy, 2D, 3D, adapt, camera, sprite.\"",
     "keywords": [
       "Bevy",
       "2D",
@@ -72,7 +72,7 @@
   },
   {
     "name": "bevy-adapt-3d-to-2d",
-    "description": "\"Docs-first stub for moving a Bevy game from 3D to 2D. Godot counterpart: godot-adapt-3d-to-2d. Keywords: Bevy, 3D, 2D, adapt, sprite, camera.\"",
+    "description": "\"Bevy ECS skill for moving a Bevy game from 3D to 2D. Keywords: Bevy, 3D, 2D, adapt, sprite, camera.\"",
     "keywords": [
       "Bevy",
       "3D",
@@ -84,7 +84,7 @@
   },
   {
     "name": "bevy-adapt-desktop-to-mobile",
-    "description": "\"Docs-first stub for adapting a Bevy desktop game to mobile. Godot counterpart: godot-adapt-desktop-to-mobile. Keywords: Bevy, mobile, touch, UI, adapt.\"",
+    "description": "\"Bevy ECS skill for adapting a Bevy desktop game to mobile. Keywords: Bevy, mobile, touch, UI, adapt.\"",
     "keywords": [
       "Bevy",
       "mobile",
@@ -95,7 +95,7 @@
   },
   {
     "name": "bevy-adapt-mobile-to-desktop",
-    "description": "\"Docs-first stub for adapting a Bevy mobile game to desktop. Godot counterpart: godot-adapt-mobile-to-desktop. Keywords: Bevy, desktop, mouse, keyboard, adapt, window.\"",
+    "description": "\"Bevy ECS skill for adapting a Bevy mobile game to desktop. Keywords: Bevy, desktop, mouse, keyboard, adapt, window.\"",
     "keywords": [
       "Bevy",
       "desktop",
@@ -107,20 +107,19 @@
   },
   {
     "name": "bevy-ai-navigation",
-    "description": "\"Docs-first stub for Bevy AI navigation policy. Godot counterpart: godot-ai-navigation. Not a full port. Keywords: Bevy, AI, chase, patrol, navigation, ECS, gaps.\"",
+    "description": "\"Bevy ECS skill for AI navigation policy. Keywords: Bevy, AI, chase, patrol, navigation, ECS.\"",
     "keywords": [
       "Bevy",
       "AI",
       "chase",
       "patrol",
       "navigation",
-      "ECS",
-      "gaps"
+      "ECS"
     ]
   },
   {
     "name": "bevy-animation",
-    "description": "\"Docs-first stub for Bevy animation playback. Godot counterpart: godot-animation-player. Keywords: Bevy, AnimationPlayer, AnimationClip, AnimationPlugin, animate_targets.\"",
+    "description": "\"Bevy ECS skill for animation playback. Keywords: Bevy, AnimationPlayer, AnimationClip, AnimationPlugin, animate_targets.\"",
     "keywords": [
       "Bevy",
       "AnimationPlayer",
@@ -131,7 +130,7 @@
   },
   {
     "name": "bevy-animation-graph",
-    "description": "\"Docs-first stub for Bevy animation blending. Godot counterpart: godot-animation-tree-mastery. Keywords: Bevy, AnimationGraph, blend, AnimationGraphHandle, AnimationNodeType.\"",
+    "description": "\"Bevy ECS skill for animation blending. Keywords: Bevy, AnimationGraph, blend, AnimationGraphHandle, AnimationNodeType.\"",
     "keywords": [
       "Bevy",
       "AnimationGraph",
@@ -142,7 +141,7 @@
   },
   {
     "name": "bevy-app-resources",
-    "description": "\"Docs-first stub for Bevy app-wide resources and schedules. Godot counterpart: godot-autoload-architecture. Not a full port. Keywords: Bevy, Resource, App, Schedule, Plugin.\"",
+    "description": "\"Bevy ECS skill for app-wide resources and schedules. Keywords: Bevy, Resource, App, Schedule, Plugin.\"",
     "keywords": [
       "Bevy",
       "Resource",
@@ -153,7 +152,7 @@
   },
   {
     "name": "bevy-asset-scenes",
-    "description": "\"Docs-first stub for Bevy assets and scene spawning. Godot counterpart: godot-scene-management. Not a full port. Keywords: Bevy, AssetServer, Handle, Scene, bsn, spawn_scene.\"",
+    "description": "\"Bevy ECS skill for assets and scene spawning. Keywords: Bevy, AssetServer, Handle, Scene, bsn, spawn_scene.\"",
     "keywords": [
       "Bevy",
       "AssetServer",
@@ -165,7 +164,7 @@
   },
   {
     "name": "bevy-audio-systems",
-    "description": "\"Docs-first stub for Bevy audio playback. Godot counterpart: godot-audio-systems. Not a full port. Keywords: Bevy, AudioPlayer, AudioSink, PlaybackSettings, AssetServer.\"",
+    "description": "\"Bevy ECS skill for audio playback. Keywords: Bevy, AudioPlayer, AudioSink, PlaybackSettings, AssetServer.\"",
     "keywords": [
       "Bevy",
       "AudioPlayer",
@@ -176,7 +175,7 @@
   },
   {
     "name": "bevy-camera-systems",
-    "description": "\"Docs-first stub for Bevy cameras. Godot counterpart: godot-camera-systems. Not a full port. Keywords: Bevy, Camera, Camera2d, Camera3d, Transform.\"",
+    "description": "\"Bevy ECS skill for cameras. Keywords: Bevy, Camera, Camera2d, Camera3d, Transform.\"",
     "keywords": [
       "Bevy",
       "Camera",
@@ -187,7 +186,7 @@
   },
   {
     "name": "bevy-character-movement",
-    "description": "\"Docs-first stub for Bevy character movement. Godot counterpart: godot-characterbody-2d. Not a full port. Keywords: Bevy, movement, ECS, fixed timestep.\"",
+    "description": "\"Bevy ECS skill for character movement. Keywords: Bevy, movement, ECS, fixed timestep.\"",
     "keywords": [
       "Bevy",
       "movement",
@@ -197,7 +196,7 @@
   },
   {
     "name": "bevy-combat-system",
-    "description": "\"Docs-first stub for Bevy combat. Godot counterpart: godot-combat-system. Keywords: Bevy, combat, damage, hit, health, ECS.\"",
+    "description": "\"Bevy ECS skill for combat. Keywords: Bevy, combat, damage, hit, health, ECS.\"",
     "keywords": [
       "Bevy",
       "combat",
@@ -209,7 +208,7 @@
   },
   {
     "name": "bevy-data-resources",
-    "description": "\"Docs-first stub for Bevy components and resources as data. Godot counterpart: godot-resource-data-patterns. Not a full port. Keywords: Bevy, Resource, Res, Component, data.\"",
+    "description": "\"Bevy ECS skill for components and resources as data. Keywords: Bevy, Resource, Res, Component, data.\"",
     "keywords": [
       "Bevy",
       "Resource",
@@ -220,7 +219,7 @@
   },
   {
     "name": "bevy-debugging-profiling",
-    "description": "\"Docs-first stub for Bevy logs and diagnostics. Godot counterpart: godot-debugging-profiling. Not a full port. Keywords: Bevy, LogPlugin, DiagnosticsPlugin, FrameTimeDiagnosticsPlugin.\"",
+    "description": "\"Bevy ECS skill for logs and diagnostics. Keywords: Bevy, LogPlugin, DiagnosticsPlugin, FrameTimeDiagnosticsPlugin.\"",
     "keywords": [
       "Bevy",
       "LogPlugin",
@@ -230,7 +229,7 @@
   },
   {
     "name": "bevy-dialogue-system",
-    "description": "\"Docs-first stub for Bevy dialogue. Godot counterpart: godot-dialogue-system. Keywords: Bevy, dialogue, lines, ECS, UI text.\"",
+    "description": "\"Bevy ECS skill for dialogue. Keywords: Bevy, dialogue, lines, ECS, UI text.\"",
     "keywords": [
       "Bevy",
       "dialogue",
@@ -241,7 +240,7 @@
   },
   {
     "name": "bevy-economy-system",
-    "description": "\"Docs-first stub for Bevy currency and prices. Godot counterpart: godot-economy-system. Keywords: Bevy, economy, currency, price, ECS.\"",
+    "description": "\"Bevy ECS skill for currency and prices. Keywords: Bevy, economy, currency, price, ECS.\"",
     "keywords": [
       "Bevy",
       "economy",
@@ -252,7 +251,7 @@
   },
   {
     "name": "bevy-ecs-composition",
-    "description": "\"Docs-first stub for Bevy entity composition. Godot counterpart: godot-composition. Not a full port. Keywords: Bevy, ECS, Component, Query, systems.\"",
+    "description": "\"Bevy ECS skill for entity composition. Keywords: Bevy, ECS, Component, Query, systems.\"",
     "keywords": [
       "Bevy",
       "ECS",
@@ -263,7 +262,7 @@
   },
   {
     "name": "bevy-events-messaging",
-    "description": "\"Docs-first stub for Bevy messages and observers. Godot counterpart: godot-signal-architecture. Not a full port. Keywords: Bevy, Message, Event, Observer.\"",
+    "description": "\"Bevy ECS skill for messages and observers. Keywords: Bevy, Message, Event, Observer.\"",
     "keywords": [
       "Bevy",
       "Message",
@@ -273,7 +272,7 @@
   },
   {
     "name": "bevy-game-loop-collection",
-    "description": "\"Docs-first stub for a Bevy collection loop. Godot counterpart: godot-game-loop-collection. Keywords: Bevy, collection, pickup, score, ECS.\"",
+    "description": "\"Bevy ECS skill for a Bevy collection loop. Keywords: Bevy, collection, pickup, score, ECS.\"",
     "keywords": [
       "Bevy",
       "collection",
@@ -284,7 +283,7 @@
   },
   {
     "name": "bevy-game-loop-harvest",
-    "description": "\"Docs-first stub for a Bevy harvest loop. Godot counterpart: godot-game-loop-harvest. Keywords: Bevy, harvest, grow, timer, ECS.\"",
+    "description": "\"Bevy ECS skill for a Bevy harvest loop. Keywords: Bevy, harvest, grow, timer, ECS.\"",
     "keywords": [
       "Bevy",
       "harvest",
@@ -295,7 +294,7 @@
   },
   {
     "name": "bevy-game-loop-time-trial",
-    "description": "\"Docs-first stub for a Bevy time trial. Godot counterpart: godot-game-loop-time-trial. Keywords: Bevy, time trial, timer, split, ECS.\"",
+    "description": "\"Bevy ECS skill for a Bevy time trial. Keywords: Bevy, time trial, timer, split, ECS.\"",
     "keywords": [
       "Bevy",
       "time trial",
@@ -306,7 +305,7 @@
   },
   {
     "name": "bevy-game-loop-waves",
-    "description": "\"Docs-first stub for Bevy encounter waves. Godot counterpart: godot-game-loop-waves. Keywords: Bevy, waves, spawn, encounter, ECS.\"",
+    "description": "\"Bevy ECS skill for encounter waves. Keywords: Bevy, waves, spawn, encounter, ECS.\"",
     "keywords": [
       "Bevy",
       "waves",
@@ -317,7 +316,7 @@
   },
   {
     "name": "bevy-genre-action-rpg",
-    "description": "\"Thin Bevy genre router for Action RPG. Godot counterpart: godot-genre-action-rpg. Keywords: Bevy, Action RPG, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Action RPG. Keywords: Bevy, Action RPG, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Action RPG",
@@ -328,7 +327,7 @@
   },
   {
     "name": "bevy-genre-card-game",
-    "description": "\"Thin Bevy genre router for Card game. Godot counterpart: godot-genre-card-game. Keywords: Bevy, Card game, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Card game. Keywords: Bevy, Card game, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Card game",
@@ -339,7 +338,7 @@
   },
   {
     "name": "bevy-genre-educational",
-    "description": "\"Thin Bevy genre router for Educational. Godot counterpart: godot-genre-educational. Keywords: Bevy, Educational, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Educational. Keywords: Bevy, Educational, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Educational",
@@ -350,7 +349,7 @@
   },
   {
     "name": "bevy-genre-fighting",
-    "description": "\"Thin Bevy genre router for Fighting. Godot counterpart: godot-genre-fighting. Keywords: Bevy, Fighting, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Fighting. Keywords: Bevy, Fighting, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Fighting",
@@ -361,7 +360,7 @@
   },
   {
     "name": "bevy-genre-horror",
-    "description": "\"Thin Bevy genre router for Horror. Godot counterpart: godot-genre-horror. Keywords: Bevy, Horror, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Horror. Keywords: Bevy, Horror, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Horror",
@@ -372,7 +371,7 @@
   },
   {
     "name": "bevy-genre-idle-clicker",
-    "description": "\"Thin Bevy genre router for Idle clicker. Godot counterpart: godot-genre-idle-clicker. Keywords: Bevy, Idle clicker, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Idle clicker. Keywords: Bevy, Idle clicker, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Idle clicker",
@@ -383,7 +382,7 @@
   },
   {
     "name": "bevy-genre-metroidvania",
-    "description": "\"Thin Bevy genre router for Metroidvania. Godot counterpart: godot-genre-metroidvania. Keywords: Bevy, Metroidvania, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Metroidvania. Keywords: Bevy, Metroidvania, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Metroidvania",
@@ -394,7 +393,7 @@
   },
   {
     "name": "bevy-genre-open-world",
-    "description": "\"Thin Bevy genre router for Open world. Godot counterpart: godot-genre-open-world. Keywords: Bevy, Open world, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Open world. Keywords: Bevy, Open world, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Open world",
@@ -405,7 +404,7 @@
   },
   {
     "name": "bevy-genre-party",
-    "description": "\"Thin Bevy genre router for Party. Godot counterpart: godot-genre-party. Keywords: Bevy, Party, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Party. Keywords: Bevy, Party, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Party",
@@ -416,7 +415,7 @@
   },
   {
     "name": "bevy-genre-platformer",
-    "description": "\"Thin Bevy genre router for Platformer. Godot counterpart: godot-genre-platformer. Keywords: Bevy, Platformer, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Platformer. Keywords: Bevy, Platformer, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Platformer",
@@ -427,7 +426,7 @@
   },
   {
     "name": "bevy-genre-puzzle",
-    "description": "\"Thin Bevy genre router for Puzzle. Godot counterpart: godot-genre-puzzle. Keywords: Bevy, Puzzle, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Puzzle. Keywords: Bevy, Puzzle, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Puzzle",
@@ -438,7 +437,7 @@
   },
   {
     "name": "bevy-genre-racing",
-    "description": "\"Thin Bevy genre router for Racing. Godot counterpart: godot-genre-racing. Keywords: Bevy, Racing, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Racing. Keywords: Bevy, Racing, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Racing",
@@ -449,7 +448,7 @@
   },
   {
     "name": "bevy-genre-rhythm",
-    "description": "\"Thin Bevy genre router for Rhythm. Godot counterpart: godot-genre-rhythm. Keywords: Bevy, Rhythm, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Rhythm. Keywords: Bevy, Rhythm, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Rhythm",
@@ -460,7 +459,7 @@
   },
   {
     "name": "bevy-genre-roguelike",
-    "description": "\"Thin Bevy genre router for Roguelike. Godot counterpart: godot-genre-roguelike. Keywords: Bevy, Roguelike, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Roguelike. Keywords: Bevy, Roguelike, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Roguelike",
@@ -471,7 +470,7 @@
   },
   {
     "name": "bevy-genre-romance",
-    "description": "\"Thin Bevy genre router for Romance. Godot counterpart: godot-genre-romance. Keywords: Bevy, Romance, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Romance. Keywords: Bevy, Romance, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Romance",
@@ -482,7 +481,7 @@
   },
   {
     "name": "bevy-genre-rts",
-    "description": "\"Thin Bevy genre router for RTS. Godot counterpart: godot-genre-rts. Keywords: Bevy, RTS, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for RTS. Keywords: Bevy, RTS, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "RTS",
@@ -493,7 +492,7 @@
   },
   {
     "name": "bevy-genre-sandbox",
-    "description": "\"Thin Bevy genre router for Sandbox. Godot counterpart: godot-genre-sandbox. Keywords: Bevy, Sandbox, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Sandbox. Keywords: Bevy, Sandbox, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Sandbox",
@@ -504,7 +503,7 @@
   },
   {
     "name": "bevy-genre-shooter",
-    "description": "\"Thin Bevy genre router for Shooter. Godot counterpart: godot-genre-shooter. Keywords: Bevy, Shooter, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Shooter. Keywords: Bevy, Shooter, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Shooter",
@@ -515,7 +514,7 @@
   },
   {
     "name": "bevy-genre-shooter-fps",
-    "description": "\"Thin Bevy genre router for FPS shooter. Godot counterpart: godot-genre-shooter-fps. Keywords: Bevy, FPS shooter, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for FPS shooter. Keywords: Bevy, FPS shooter, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "FPS shooter",
@@ -526,7 +525,7 @@
   },
   {
     "name": "bevy-genre-simulation",
-    "description": "\"Thin Bevy genre router for Simulation. Godot counterpart: godot-genre-simulation. Keywords: Bevy, Simulation, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Simulation. Keywords: Bevy, Simulation, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Simulation",
@@ -537,7 +536,7 @@
   },
   {
     "name": "bevy-genre-sports",
-    "description": "\"Thin Bevy genre router for Sports. Godot counterpart: godot-genre-sports. Keywords: Bevy, Sports, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Sports. Keywords: Bevy, Sports, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Sports",
@@ -548,7 +547,7 @@
   },
   {
     "name": "bevy-genre-stealth",
-    "description": "\"Thin Bevy genre router for Stealth. Godot counterpart: godot-genre-stealth. Keywords: Bevy, Stealth, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Stealth. Keywords: Bevy, Stealth, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Stealth",
@@ -559,7 +558,7 @@
   },
   {
     "name": "bevy-genre-survival",
-    "description": "\"Thin Bevy genre router for Survival. Godot counterpart: godot-genre-survival. Keywords: Bevy, Survival, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Survival. Keywords: Bevy, Survival, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Survival",
@@ -570,7 +569,7 @@
   },
   {
     "name": "bevy-genre-tower-defense",
-    "description": "\"Thin Bevy genre router for Tower defense. Godot counterpart: godot-genre-tower-defense. Keywords: Bevy, Tower defense, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Tower defense. Keywords: Bevy, Tower defense, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Tower defense",
@@ -581,7 +580,7 @@
   },
   {
     "name": "bevy-genre-visual-novel",
-    "description": "\"Thin Bevy genre router for Visual novel. Godot counterpart: godot-genre-visual-novel. Keywords: Bevy, Visual novel, genre, ECS, router.\"",
+    "description": "\"Thin Bevy genre router for Visual novel. Keywords: Bevy, Visual novel, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Visual novel",
@@ -592,7 +591,7 @@
   },
   {
     "name": "bevy-input-handling",
-    "description": "\"Docs-first stub for Bevy player input. Godot counterpart: godot-input-handling. Not a full port. Keywords: Bevy, ButtonInput, KeyCode, MouseButton, Gamepad.\"",
+    "description": "\"Bevy ECS skill for player input. Keywords: Bevy, ButtonInput, KeyCode, MouseButton, Gamepad.\"",
     "keywords": [
       "Bevy",
       "ButtonInput",
@@ -603,7 +602,7 @@
   },
   {
     "name": "bevy-inventory-system",
-    "description": "\"Docs-first stub for Bevy inventories. Godot counterpart: godot-inventory-system. Keywords: Bevy, inventory, stack, item, ECS.\"",
+    "description": "\"Bevy ECS skill for inventories. Keywords: Bevy, inventory, stack, item, ECS.\"",
     "keywords": [
       "Bevy",
       "inventory",
@@ -614,17 +613,18 @@
   },
   {
     "name": "bevy-master",
-    "description": "\"Bevy ECS hub for this library. Routes the docs-first Bevy domain skills. Use when starting a Bevy game, choosing ECS boundaries, or picking a Bevy skill. The parity matrix is the routing table. Keywords: Bevy, ECS, bevy-master, A-gate.\"",
+    "description": "\"Bevy ECS hub for Bevy 0.20+. Use when starting a Bevy game, choosing ECS boundaries, or picking a Bevy skill. Keywords: Bevy, ECS, bevy-master, schedules, plugins.\"",
     "keywords": [
       "Bevy",
       "ECS",
       "bevy-master",
-      "A-gate"
+      "schedules",
+      "plugins"
     ]
   },
   {
     "name": "bevy-mechanic-revival",
-    "description": "\"Docs-first stub for a Bevy downed and revival loop. Godot counterpart: godot-mechanic-revival. Keywords: Bevy, revival, downed, respawn, ECS.\"",
+    "description": "\"Bevy ECS skill for a Bevy downed and revival loop. Keywords: Bevy, revival, downed, respawn, ECS.\"",
     "keywords": [
       "Bevy",
       "revival",
@@ -635,7 +635,7 @@
   },
   {
     "name": "bevy-mechanic-secrets",
-    "description": "\"Docs-first stub for Bevy secrets and discovery flags. Godot counterpart: godot-mechanic-secrets. Keywords: Bevy, secrets, discovery, flags, ECS.\"",
+    "description": "\"Bevy ECS skill for secrets and discovery flags. Keywords: Bevy, secrets, discovery, flags, ECS.\"",
     "keywords": [
       "Bevy",
       "secrets",
@@ -646,29 +646,27 @@
   },
   {
     "name": "bevy-navigation",
-    "description": "\"Docs-first stub for Bevy navigation. Godot counterpart: godot-navigation-pathfinding. Not a full port. Keywords: Bevy, navigation, pathfinding, ECS, gaps.\"",
+    "description": "\"Bevy ECS skill for navigation. Keywords: Bevy, navigation, pathfinding, ECS.\"",
     "keywords": [
       "Bevy",
       "navigation",
       "pathfinding",
-      "ECS",
-      "gaps"
+      "ECS"
     ]
   },
   {
     "name": "bevy-particles",
-    "description": "\"Docs-first stub for Bevy particle effects. Godot counterpart: godot-particles. Keywords: Bevy, particles, VFX, gaps, ECS.\"",
+    "description": "\"Bevy ECS skill for particle effects. Keywords: Bevy, particles, VFX, ECS.\"",
     "keywords": [
       "Bevy",
       "particles",
       "VFX",
-      "gaps",
       "ECS"
     ]
   },
   {
     "name": "bevy-performance",
-    "description": "\"Docs-first stub for Bevy runtime cost. Godot counterpart: godot-performance-optimization. Not a full port. Keywords: Bevy, parallel systems, chain, FrameTimeDiagnosticsPlugin, Handles.\"",
+    "description": "\"Bevy ECS skill for runtime cost. Keywords: Bevy, parallel systems, chain, FrameTimeDiagnosticsPlugin, Handles.\"",
     "keywords": [
       "Bevy",
       "parallel systems",
@@ -679,19 +677,18 @@
   },
   {
     "name": "bevy-physics-2d",
-    "description": "\"Docs-first stub for Bevy 2D physics. Godot counterpart: godot-2d-physics. Not a full port. Keywords: Bevy, physics, 2D, ECS, collision, gaps.\"",
+    "description": "\"Bevy ECS skill for 2D physics. Keywords: Bevy, physics, 2D, ECS, collision.\"",
     "keywords": [
       "Bevy",
       "physics",
       "2D",
       "ECS",
-      "collision",
-      "gaps"
+      "collision"
     ]
   },
   {
     "name": "bevy-physics-3d",
-    "description": "\"Docs-first stub for Bevy 3D physics. Godot counterpart: godot-physics-3d. Not a full port. Keywords: Bevy, physics, ECS, 3D.\"",
+    "description": "\"Bevy ECS skill for 3D physics. Keywords: Bevy, physics, ECS, 3D.\"",
     "keywords": [
       "Bevy",
       "physics",
@@ -701,7 +698,7 @@
   },
   {
     "name": "bevy-platform-desktop",
-    "description": "\"Docs-first stub for Bevy desktop windows. Godot counterpart: godot-platform-desktop. Keywords: Bevy, window, desktop, WindowPlugin, PrimaryWindow, winit.\"",
+    "description": "\"Bevy ECS skill for desktop windows. Keywords: Bevy, window, desktop, WindowPlugin, PrimaryWindow, winit.\"",
     "keywords": [
       "Bevy",
       "window",
@@ -713,7 +710,7 @@
   },
   {
     "name": "bevy-platform-mobile",
-    "description": "\"Docs-first stub for Bevy mobile. Godot counterpart: godot-platform-mobile. Keywords: Bevy, mobile, android, touch, ASTC, gestures.\"",
+    "description": "\"Bevy ECS skill for mobile. Keywords: Bevy, mobile, android, touch, ASTC, gestures.\"",
     "keywords": [
       "Bevy",
       "mobile",
@@ -725,7 +722,7 @@
   },
   {
     "name": "bevy-platform-web",
-    "description": "\"Docs-first stub for Bevy web and Wasm. Godot counterpart: godot-platform-web. Keywords: Bevy, wasm, web, webgl2, webgpu, browser.\"",
+    "description": "\"Bevy ECS skill for web and Wasm. Keywords: Bevy, wasm, web, webgl2, webgpu, browser.\"",
     "keywords": [
       "Bevy",
       "wasm",
@@ -737,20 +734,19 @@
   },
   {
     "name": "bevy-procedural-generation",
-    "description": "\"Docs-first stub for Bevy procedural generation. Godot counterpart: godot-procedural-generation. Not a full port. Keywords: Bevy, procedural, seed, dungeon, terrain, ECS, gaps.\"",
+    "description": "\"Bevy ECS skill for procedural generation. Keywords: Bevy, procedural, seed, dungeon, terrain, ECS.\"",
     "keywords": [
       "Bevy",
       "procedural",
       "seed",
       "dungeon",
       "terrain",
-      "ECS",
-      "gaps"
+      "ECS"
     ]
   },
   {
     "name": "bevy-project-foundations",
-    "description": "\"Docs-first stub for a Bevy Rust project layout. Godot counterpart: godot-project-foundations. Not a full port. Keywords: Bevy, Cargo, features, project layout.\"",
+    "description": "\"Bevy ECS skill for a Bevy Rust project layout. Keywords: Bevy, Cargo, features, project layout.\"",
     "keywords": [
       "Bevy",
       "Cargo",
@@ -760,7 +756,7 @@
   },
   {
     "name": "bevy-project-templates",
-    "description": "\"Docs-first stub for Bevy project templates. Godot counterpart: godot-project-templates. Keywords: Bevy, template, cargo, features, 2d, 3d, ui.\"",
+    "description": "\"Bevy ECS skill for project templates. Keywords: Bevy, template, cargo, features, 2d, 3d, ui.\"",
     "keywords": [
       "Bevy",
       "template",
@@ -773,7 +769,7 @@
   },
   {
     "name": "bevy-quest-system",
-    "description": "\"Docs-first stub for Bevy quests. Godot counterpart: godot-quest-system. Keywords: Bevy, quest, objective, ECS, state.\"",
+    "description": "\"Bevy ECS skill for quests. Keywords: Bevy, quest, objective, ECS, state.\"",
     "keywords": [
       "Bevy",
       "quest",
@@ -784,7 +780,7 @@
   },
   {
     "name": "bevy-rpg-stats",
-    "description": "\"Docs-first stub for Bevy character stats. Godot counterpart: godot-rpg-stats. Keywords: Bevy, stats, attributes, modifiers, ECS.\"",
+    "description": "\"Bevy ECS skill for character stats. Keywords: Bevy, stats, attributes, modifiers, ECS.\"",
     "keywords": [
       "Bevy",
       "stats",
@@ -795,19 +791,18 @@
   },
   {
     "name": "bevy-save-load",
-    "description": "\"Docs-first stub for Bevy persistence boundaries. Godot counterpart: godot-save-load-systems. Not a full port. Keywords: Bevy, save, Resource, Scene, AssetServer, gaps.\"",
+    "description": "\"Bevy ECS skill for persistence boundaries. Keywords: Bevy, save, Resource, Scene, AssetServer.\"",
     "keywords": [
       "Bevy",
       "save",
       "Resource",
       "Scene",
-      "AssetServer",
-      "gaps"
+      "AssetServer"
     ]
   },
   {
     "name": "bevy-shaders",
-    "description": "\"Docs-first stub for Bevy shaders. Godot counterpart: godot-shaders-basics. Keywords: Bevy, shader, material, bevy_shader, bevy_material, StandardMaterial.\"",
+    "description": "\"Bevy ECS skill for shaders. Keywords: Bevy, shader, material, bevy_shader, bevy_material, StandardMaterial.\"",
     "keywords": [
       "Bevy",
       "shader",
@@ -819,19 +814,18 @@
   },
   {
     "name": "bevy-spatial-queries",
-    "description": "\"Docs-first stub for Bevy spatial queries. Godot counterpart: godot-raycasting-queries. Not a full port. Keywords: Bevy, raycast, shapecast, picking, physics query, gaps.\"",
+    "description": "\"Bevy ECS skill for spatial queries. Keywords: Bevy, raycast, shapecast, picking, physics query.\"",
     "keywords": [
       "Bevy",
       "raycast",
       "shapecast",
       "picking",
-      "physics query",
-      "gaps"
+      "physics query"
     ]
   },
   {
     "name": "bevy-state-machines",
-    "description": "\"Docs-first stub for Bevy app states and per-entity state data. Godot counterpart: godot-state-machine-advanced. Not a full port. Keywords: Bevy, States, NextState, OnEnter.\"",
+    "description": "\"Bevy ECS skill for app states and per-entity state data. Keywords: Bevy, States, NextState, OnEnter.\"",
     "keywords": [
       "Bevy",
       "States",
@@ -841,7 +835,7 @@
   },
   {
     "name": "bevy-testing-patterns",
-    "description": "\"Docs-first stub for Cargo tests around Bevy work. Godot counterpart: godot-testing-patterns. Not a GdUnit port. Keywords: Bevy, cargo test, Rust, libtest.\"",
+    "description": "\"Bevy ECS skill for Cargo tests around Bevy work. Keywords: Bevy, cargo test, Rust, libtest.\"",
     "keywords": [
       "Bevy",
       "cargo test",
@@ -851,19 +845,18 @@
   },
   {
     "name": "bevy-tilemap",
-    "description": "\"Docs-first stub for Bevy tile maps. Godot counterpart: godot-tilemap-mastery. Keywords: Bevy, tilemap, tiles, gaps, ECS, Sprite.\"",
+    "description": "\"Bevy ECS skill for tile maps. Keywords: Bevy, tilemap, tiles, ECS, Sprite.\"",
     "keywords": [
       "Bevy",
       "tilemap",
       "tiles",
-      "gaps",
       "ECS",
       "Sprite"
     ]
   },
   {
     "name": "bevy-turn-system",
-    "description": "\"Docs-first stub for Bevy turn order. Godot counterpart: godot-turn-system. Keywords: Bevy, turns, initiative, round, ECS.\"",
+    "description": "\"Bevy ECS skill for turn order. Keywords: Bevy, turns, initiative, round, ECS.\"",
     "keywords": [
       "Bevy",
       "turns",
@@ -874,19 +867,18 @@
   },
   {
     "name": "bevy-tweening",
-    "description": "\"Docs-first stub for Bevy tween and juice. Godot counterpart: godot-tweening. Keywords: Bevy, tween, juice, curve, gaps, ECS.\"",
+    "description": "\"Bevy ECS skill for tween and juice. Keywords: Bevy, tween, juice, curve, ECS.\"",
     "keywords": [
       "Bevy",
       "tween",
       "juice",
       "curve",
-      "gaps",
       "ECS"
     ]
   },
   {
     "name": "bevy-ui-layout",
-    "description": "\"Docs-first stub for Bevy UI layout. Godot counterpart: godot-ui-containers. Keywords: Bevy, UI, Node, Flexbox, BackgroundColor, Button.\"",
+    "description": "\"Bevy ECS skill for UI layout. Keywords: Bevy, UI, Node, Flexbox, BackgroundColor, Button.\"",
     "keywords": [
       "Bevy",
       "UI",
@@ -898,7 +890,7 @@
   },
   {
     "name": "bevy-ui-text",
-    "description": "\"Docs-first stub for Bevy UI text. Godot counterpart: godot-ui-rich-text. Keywords: Bevy, text, UI, Text, bevy_text, Text2d.\"",
+    "description": "\"Bevy ECS skill for UI text. Keywords: Bevy, text, UI, Text, bevy_text, Text2d.\"",
     "keywords": [
       "Bevy",
       "text",
@@ -910,7 +902,7 @@
   },
   {
     "name": "bevy-ui-theming",
-    "description": "\"Docs-first stub for Bevy UI theming. Godot counterpart: godot-ui-theming. Keywords: Bevy, UI theme, BackgroundColor, BorderColor, feathers.\"",
+    "description": "\"Bevy ECS skill for UI theming. Keywords: Bevy, UI theme, BackgroundColor, BorderColor, feathers.\"",
     "keywords": [
       "Bevy",
       "UI theme",
@@ -1406,49 +1398,49 @@
     "name": "godot-game-loop-time-trial",
     "description": "Expert patterns for racing mechanics, checkpoint tracking, and ghost recording/playback in Godot 4. Use when building racing games, speed-run platformers, or arcade trials.",
     "keywords": [
-      "tracking",
       "godot",
-      "when",
+      "tracking",
       "trials",
       "racing",
-      "checkpoint",
-      "games",
-      "arcade",
+      "patterns",
+      "platformers",
       "building",
+      "arcade",
+      "checkpoint",
+      "when",
+      "ghost",
       "mechanics",
+      "games",
       "speed",
-      "recording",
       "expert",
       "playback",
-      "platformers",
-      "patterns",
-      "ghost"
+      "recording"
     ]
   },
   {
     "name": "godot-game-loop-waves",
     "description": "Expert patterns for managing combat waves, difficulty scaling, and automated enemy spawning in Godot 4. Use when building wave-based shooters, tower defense, or arena games.",
     "keywords": [
-      "arena",
-      "difficulty",
-      "wave",
-      "games",
-      "enemy",
-      "building",
-      "expert",
-      "defense",
-      "based",
-      "waves",
+      "godot",
       "managing",
       "automated",
-      "godot",
+      "waves",
+      "based",
       "scaling",
+      "games",
+      "shooters",
+      "arena",
+      "defense",
+      "building",
+      "wave",
+      "enemy",
       "patterns",
-      "when",
-      "tower",
       "spawning",
+      "tower",
+      "difficulty",
       "combat",
-      "shooters"
+      "when",
+      "expert"
     ]
   },
   {
