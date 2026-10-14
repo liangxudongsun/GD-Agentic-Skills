@@ -13,15 +13,14 @@
   },
   {
     "name": "bevy-3d-lighting",
-    "description": "\"Bevy ECS skill for 3D lights. Keywords: Bevy, lighting, directional, point, spot, bevy_light, PBR.\"",
+    "description": "\"Spawn and tune Bevy 0.20 directional, point, and spot lights, cascade shadows, distance fog, and a nearest-light shadow budget. Use when a 3D scene needs a sun, local lights, or fog on the camera. Keywords: DirectionalLight, PointLight, SpotLight, CascadeShadowConfig, DistanceFog, bevy_light.\"",
     "keywords": [
-      "Bevy",
-      "lighting",
-      "directional",
-      "point",
-      "spot",
-      "bevy_light",
-      "PBR"
+      "DirectionalLight",
+      "PointLight",
+      "SpotLight",
+      "CascadeShadowConfig",
+      "DistanceFog",
+      "bevy_light"
     ]
   },
   {
@@ -60,14 +59,14 @@
   },
   {
     "name": "bevy-adapt-2d-to-3d",
-    "description": "\"Bevy ECS skill for moving a Bevy game from 2D to 3D. Keywords: Bevy, 2D, 3D, adapt, camera, sprite.\"",
+    "description": "\"Rewrite Bevy 2D actors and cameras into 3D meshes and Camera3d while keeping gameplay components. Use when a Bevy 2D game should gain a perspective camera, mesh draw, and a planar velocity lifted onto XZ. Keywords: Camera2d, Camera3d, Sprite, Mesh3d, StandardMaterial, WishVelocity.\"",
     "keywords": [
-      "Bevy",
-      "2D",
-      "3D",
-      "adapt",
-      "camera",
-      "sprite"
+      "Camera2d",
+      "Camera3d",
+      "Sprite",
+      "Mesh3d",
+      "StandardMaterial",
+      "WishVelocity"
     ]
   },
   {
@@ -107,14 +106,15 @@
   },
   {
     "name": "bevy-ai-navigation",
-    "description": "\"Bevy ECS skill for AI navigation policy. Keywords: Bevy, AI, chase, patrol, navigation, ECS.\"",
+    "description": "\"Bevy 0.20 chase, patrol, and wait policy: an enum brain, a goal, a desired velocity, and a retarget timer on FixedUpdate. Use when an actor must choose a goal before movement. Paths stay on bevy-navigation. Keywords: Brain, Goal, DesiredVelocity, PatrolRoute, FixedUpdate, chase, patrol.\"",
     "keywords": [
-      "Bevy",
-      "AI",
+      "Brain",
+      "Goal",
+      "DesiredVelocity",
+      "PatrolRoute",
+      "FixedUpdate",
       "chase",
-      "patrol",
-      "navigation",
-      "ECS"
+      "patrol"
     ]
   },
   {
@@ -152,14 +152,15 @@
   },
   {
     "name": "bevy-asset-scenes",
-    "description": "\"Bevy ECS skill for assets and scene spawning. Keywords: Bevy, AssetServer, Handle, Scene, bsn, spawn_scene.\"",
+    "description": "\"Load Bevy 0.20 assets with AssetServer and spawn scenes with bsn!, spawn_scene, and queue_spawn_scene. Use when content comes from disk, a handle must be ready, or a level root should be replaced. Keywords: AssetServer, Handle, is_loaded_with_dependencies, bsn, Scene, file_watcher, LevelRoot.\"",
     "keywords": [
-      "Bevy",
       "AssetServer",
       "Handle",
-      "Scene",
+      "is_loaded_with_dependencies",
       "bsn",
-      "spawn_scene"
+      "Scene",
+      "file_watcher",
+      "LevelRoot"
     ]
   },
   {
@@ -186,35 +187,40 @@
   },
   {
     "name": "bevy-character-movement",
-    "description": "\"Bevy ECS skill for character movement. Keywords: Bevy, movement, ECS, fixed timestep.\"",
+    "description": "\"Bevy 0.20 kinematic character movement: intent components, FixedUpdate integration, coyote time, and jump buffer. Use when a player or actor walks or jumps and the step must stay stable. Keywords: Bevy, movement, FixedUpdate, coyote, jump buffer, ECS.\"",
     "keywords": [
       "Bevy",
       "movement",
-      "ECS",
-      "fixed timestep"
-    ]
-  },
-  {
-    "name": "bevy-combat-system",
-    "description": "\"Bevy ECS skill for combat. Keywords: Bevy, combat, damage, hit, health, ECS.\"",
-    "keywords": [
-      "Bevy",
-      "combat",
-      "damage",
-      "hit",
-      "health",
+      "FixedUpdate",
+      "coyote",
+      "jump buffer",
       "ECS"
     ]
   },
   {
+    "name": "bevy-combat-system",
+    "description": "\"Bevy ECS combat: Health, Team, and Invuln on actors, Hit messages, melee reach, despawn on FixedUpdate after damage. Use when a hit must change health before death. Keywords: Bevy, combat, health, Hit, Invuln, chain, FixedUpdate.\"",
+    "keywords": [
+      "Bevy",
+      "combat",
+      "health",
+      "Hit",
+      "Invuln",
+      "chain",
+      "FixedUpdate"
+    ]
+  },
+  {
     "name": "bevy-data-resources",
-    "description": "\"Bevy ECS skill for components and resources as data. Keywords: Bevy, Resource, Res, Component, data.\"",
+    "description": "\"Place Bevy 0.20 gameplay data on a Component or a Resource. Use when choosing Query versus Res/ResMut, insert_resource, Time and Timer, or a RON/asset handle stored once for the app. Keywords: Bevy, Resource, Res, ResMut, Component, Timer, AssetServer.\"",
     "keywords": [
       "Bevy",
       "Resource",
       "Res",
+      "ResMut",
       "Component",
-      "data"
+      "Timer",
+      "AssetServer"
     ]
   },
   {
@@ -229,35 +235,38 @@
   },
   {
     "name": "bevy-dialogue-system",
-    "description": "\"Bevy ECS skill for dialogue. Keywords: Bevy, dialogue, lines, ECS, UI text.\"",
+    "description": "\"Bevy 0.20 dialogue data: line tables in a resource, the current line index on a component, and choice flags filtered before the write. Use when lines or choices advance. Keywords: Bevy, dialogue, line index, choices, ECS.\"",
     "keywords": [
       "Bevy",
       "dialogue",
-      "lines",
-      "ECS",
-      "UI text"
-    ]
-  },
-  {
-    "name": "bevy-economy-system",
-    "description": "\"Bevy ECS skill for currency and prices. Keywords: Bevy, economy, currency, price, ECS.\"",
-    "keywords": [
-      "Bevy",
-      "economy",
-      "currency",
-      "price",
+      "line index",
+      "choices",
       "ECS"
     ]
   },
   {
+    "name": "bevy-economy-system",
+    "description": "\"Bevy ECS economy: Wallet components, a PriceTable resource, Purchase and Transfer messages, vendor stock. Use when a debit must see the price row and two wallets must not be written by unordered systems. Keywords: Bevy, economy, wallet, price, Purchase, get_many_mut.\"",
+    "keywords": [
+      "Bevy",
+      "economy",
+      "wallet",
+      "price",
+      "Purchase",
+      "get_many_mut"
+    ]
+  },
+  {
     "name": "bevy-ecs-composition",
-    "description": "\"Bevy ECS skill for entity composition. Keywords: Bevy, ECS, Component, Query, systems.\"",
+    "description": "\"Compose Bevy 0.20 entities from small components and systems. Use when spawning tuples with Commands, filtering Query with With, ordering writers with chain, or attaching ChildOf. Keywords: Bevy, ECS, Component, Query, Commands, chain, ChildOf.\"",
     "keywords": [
       "Bevy",
       "ECS",
       "Component",
       "Query",
-      "systems"
+      "Commands",
+      "chain",
+      "ChildOf"
     ]
   },
   {
@@ -272,35 +281,38 @@
   },
   {
     "name": "bevy-game-loop-collection",
-    "description": "\"Bevy ECS skill for a Bevy collection loop. Keywords: Bevy, collection, pickup, score, ECS.\"",
+    "description": "\"Bevy 0.20 collection loop: pickup markers, a quota resource, one score per entity per pass, and NextState when the quota is met. Use when the run is about collecting objects. Keywords: Bevy, collection, pickup, quota, NextState, ECS.\"",
     "keywords": [
       "Bevy",
       "collection",
       "pickup",
-      "score",
+      "quota",
+      "NextState",
       "ECS"
     ]
   },
   {
     "name": "bevy-game-loop-harvest",
-    "description": "\"Bevy ECS skill for a Bevy harvest loop. Keywords: Bevy, harvest, grow, timer, ECS.\"",
+    "description": "\"Bevy ECS harvest loop: Crop stage on Time<Fixed>, season scale, catch-up from a LastVisit resource, Harvested messages. Use when growth must finish before the yield message. Keywords: Bevy, harvest, crop, FixedUpdate, season, catch-up.\"",
     "keywords": [
       "Bevy",
       "harvest",
-      "grow",
-      "timer",
-      "ECS"
+      "crop",
+      "FixedUpdate",
+      "season",
+      "catch-up"
     ]
   },
   {
     "name": "bevy-game-loop-time-trial",
-    "description": "\"Bevy ECS skill for a Bevy time trial. Keywords: Bevy, time trial, timer, split, ECS.\"",
+    "description": "\"Run a Bevy 0.20 time trial as ECS data. Use when a race clock, split gates, and a finish line share one resource and must be chained, while movement steps on FixedUpdate. Keywords: Bevy, time trial, RaceClock, SplitGate, FixedUpdate, chain.\"",
     "keywords": [
       "Bevy",
       "time trial",
-      "timer",
-      "split",
-      "ECS"
+      "RaceClock",
+      "SplitGate",
+      "FixedUpdate",
+      "chain"
     ]
   },
   {
@@ -316,40 +328,45 @@
   },
   {
     "name": "bevy-genre-action-rpg",
-    "description": "\"Thin Bevy genre router for Action RPG. Keywords: Bevy, Action RPG, genre, ECS, router.\"",
+    "description": "\"Bevy 0.20 action-RPG router: real-time hits, stats, inventory, and quests as ECS joins, with domain work in the linked skills. Use when routing an action RPG. Keywords: Bevy, action RPG, hits, stamina, quests, ECS, router.\"",
     "keywords": [
       "Bevy",
-      "Action RPG",
-      "genre",
+      "action RPG",
+      "hits",
+      "stamina",
+      "quests",
       "ECS",
       "router"
     ]
   },
   {
     "name": "bevy-genre-card-game",
-    "description": "\"Thin Bevy genre router for Card game. Keywords: Bevy, Card game, genre, ECS, router.\"",
+    "description": "\"Bevy card-game router: zones, turn resource, deck order, catalog costs, EndTurn and PlayCard messages. Use for a local hand, board, and seat order. Keywords: Bevy, card game, zone, turn, deck, energy, chain.\"",
     "keywords": [
       "Bevy",
-      "Card game",
-      "genre",
-      "ECS",
-      "router"
+      "card game",
+      "zone",
+      "turn",
+      "deck",
+      "energy",
+      "chain"
     ]
   },
   {
     "name": "bevy-genre-educational",
-    "description": "\"Thin Bevy genre router for Educational. Keywords: Bevy, Educational, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 educational loop. Use when prompts and choices are components, lesson totals are one resource, and grading must run after selection in one chain. Keywords: Bevy, Educational, LessonProgress, Choice, chain, genre.\"",
     "keywords": [
       "Bevy",
       "Educational",
-      "genre",
-      "ECS",
-      "router"
+      "LessonProgress",
+      "Choice",
+      "chain",
+      "genre"
     ]
   },
   {
     "name": "bevy-genre-fighting",
-    "description": "\"Thin Bevy genre router for Fighting. Keywords: Bevy, Fighting, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for fighting. Keywords: Bevy, Fighting, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Fighting",
@@ -360,29 +377,33 @@
   },
   {
     "name": "bevy-genre-horror",
-    "description": "\"Thin Bevy genre router for Horror. Keywords: Bevy, Horror, genre, ECS, router.\"",
+    "description": "\"Bevy 0.20 horror router: sanity, stalker suspicion, and light energy as ECS data, with lighting, audio, and navigation in the linked skills. Use when routing a horror game. Keywords: Bevy, Horror, sanity, stalker, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Horror",
-      "genre",
+      "sanity",
+      "stalker",
       "ECS",
       "router"
     ]
   },
   {
     "name": "bevy-genre-idle-clicker",
-    "description": "\"Thin Bevy genre router for Idle clicker. Keywords: Bevy, Idle clicker, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 idle clicker: one Wallet resource, generator entities, click on Update, offline bank capped in hours. Keywords: Bevy, idle, clicker, Wallet, Generator, offline, chain, ECS.\"",
     "keywords": [
       "Bevy",
-      "Idle clicker",
-      "genre",
-      "ECS",
-      "router"
+      "idle",
+      "clicker",
+      "Wallet",
+      "Generator",
+      "offline",
+      "chain",
+      "ECS"
     ]
   },
   {
     "name": "bevy-genre-metroidvania",
-    "description": "\"Thin Bevy genre router for Metroidvania. Keywords: Bevy, Metroidvania, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for Metroidvania. Keywords: Bevy, Metroidvania, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Metroidvania",
@@ -393,40 +414,45 @@
   },
   {
     "name": "bevy-genre-open-world",
-    "description": "\"Thin Bevy genre router for Open world. Keywords: Bevy, Open world, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 open world. Use when region membership is a component, the player cell is one resource, and activation runs after the cell write in one chain. Keywords: Bevy, Open world, Resident, PlayerCell, Active, chain, genre.\"",
     "keywords": [
       "Bevy",
       "Open world",
-      "genre",
-      "ECS",
-      "router"
+      "Resident",
+      "PlayerCell",
+      "Active",
+      "chain",
+      "genre"
     ]
   },
   {
     "name": "bevy-genre-party",
-    "description": "\"Thin Bevy genre router for Party. Keywords: Bevy, Party, genre, ECS, router.\"",
+    "description": "\"Bevy 0.20 party router: local seats, shared scores, and minigame swaps as ECS data. Use when routing a local party game. Keywords: Bevy, Party, minigame, score, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Party",
-      "genre",
+      "minigame",
+      "score",
       "ECS",
       "router"
     ]
   },
   {
     "name": "bevy-genre-platformer",
-    "description": "\"Thin Bevy genre router for Platformer. Keywords: Bevy, Platformer, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 platformer: coyote time and jump buffer on Mover, gravity on FixedUpdate, one-way ledges, follow camera. Keywords: Bevy, platformer, coyote, Mover, FixedUpdate, Camera2d, ECS.\"",
     "keywords": [
       "Bevy",
-      "Platformer",
-      "genre",
-      "ECS",
-      "router"
+      "platformer",
+      "coyote",
+      "Mover",
+      "FixedUpdate",
+      "Camera2d",
+      "ECS"
     ]
   },
   {
     "name": "bevy-genre-puzzle",
-    "description": "\"Thin Bevy genre router for Puzzle. Keywords: Bevy, Puzzle, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for Puzzle. Keywords: Bevy, Puzzle, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Puzzle",
@@ -437,40 +463,45 @@
   },
   {
     "name": "bevy-genre-racing",
-    "description": "\"Thin Bevy genre router for Racing. Keywords: Bevy, Racing, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 race. Use when lap and gate index live on the racer, the race clock is one resource, and gate checks run after the clock step in one chain. Keywords: Bevy, Racing, Racer, RaceClock, FixedUpdate, chain, genre.\"",
     "keywords": [
       "Bevy",
       "Racing",
-      "genre",
-      "ECS",
-      "router"
+      "Racer",
+      "RaceClock",
+      "FixedUpdate",
+      "chain",
+      "genre"
     ]
   },
   {
     "name": "bevy-genre-rhythm",
-    "description": "\"Thin Bevy genre router for Rhythm. Keywords: Bevy, Rhythm, genre, ECS, router.\"",
+    "description": "\"Bevy 0.20 rhythm router: chart notes, a song clock, and hit windows as ECS data. Use when routing a rhythm game. Keywords: Bevy, Rhythm, chart, hit window, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Rhythm",
-      "genre",
+      "chart",
+      "hit window",
       "ECS",
       "router"
     ]
   },
   {
     "name": "bevy-genre-roguelike",
-    "description": "\"Thin Bevy genre router for Roguelike. Keywords: Bevy, Roguelike, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 roguelike: RunSeed resource, room entities, permadeath flag, turn energy, grid pickup. Keywords: Bevy, roguelike, RunSeed, permadeath, turn, loot, ECS.\"",
     "keywords": [
       "Bevy",
-      "Roguelike",
-      "genre",
-      "ECS",
-      "router"
+      "roguelike",
+      "RunSeed",
+      "permadeath",
+      "turn",
+      "loot",
+      "ECS"
     ]
   },
   {
     "name": "bevy-genre-romance",
-    "description": "\"Thin Bevy genre router for Romance. Keywords: Bevy, Romance, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for Romance. Keywords: Bevy, Romance, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Romance",
@@ -481,40 +512,45 @@
   },
   {
     "name": "bevy-genre-rts",
-    "description": "\"Thin Bevy genre router for RTS. Keywords: Bevy, RTS, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 RTS. Use when selection and move orders are components, a control group is one resource, and marching runs after the order write in one chain. Keywords: Bevy, RTS, Selected, MoveOrder, ControlGroup, chain, genre.\"",
     "keywords": [
       "Bevy",
       "RTS",
-      "genre",
-      "ECS",
-      "router"
+      "Selected",
+      "MoveOrder",
+      "ControlGroup",
+      "chain",
+      "genre"
     ]
   },
   {
     "name": "bevy-genre-sandbox",
-    "description": "\"Thin Bevy genre router for Sandbox. Keywords: Bevy, Sandbox, genre, ECS, router.\"",
+    "description": "\"Bevy 0.20 sandbox router: placed cells, remove, and a serde snapshot of the build. Use when routing a sandbox. Keywords: Bevy, Sandbox, place, save, ECS, router.\"",
     "keywords": [
       "Bevy",
       "Sandbox",
-      "genre",
+      "place",
+      "save",
       "ECS",
       "router"
     ]
   },
   {
     "name": "bevy-genre-shooter",
-    "description": "\"Thin Bevy genre router for Shooter. Keywords: Bevy, Shooter, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 shooter: projectile entities, hitscan by translation, collide-and-despawn, wave budget resource. Keywords: Bevy, shooter, Projectile, hitscan, Wave, despawn, ECS.\"",
     "keywords": [
       "Bevy",
-      "Shooter",
-      "genre",
-      "ECS",
-      "router"
+      "shooter",
+      "Projectile",
+      "hitscan",
+      "Wave",
+      "despawn",
+      "ECS"
     ]
   },
   {
     "name": "bevy-genre-shooter-fps",
-    "description": "\"Thin Bevy genre router for FPS shooter. Keywords: Bevy, FPS shooter, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for FPS shooter. Keywords: Bevy, FPS shooter, genre, ECS, router.\"",
     "keywords": [
       "Bevy",
       "FPS shooter",
@@ -525,13 +561,16 @@
   },
   {
     "name": "bevy-genre-simulation",
-    "description": "\"Thin Bevy genre router for Simulation. Keywords: Bevy, Simulation, genre, ECS, router.\"",
+    "description": "\"Route a Bevy 0.20 simulation. Use when hunger and jobs are components, the sim hour is one resource, and needs run after the clock step in one chain. Keywords: Bevy, Simulation, SimClock, Hunger, Job, FixedUpdate, chain, genre.\"",
     "keywords": [
       "Bevy",
       "Simulation",
-      "genre",
-      "ECS",
-      "router"
+      "SimClock",
+      "Hunger",
+      "Job",
+      "FixedUpdate",
+      "chain",
+      "genre"
     ]
   },
   {
@@ -558,24 +597,27 @@
   },
   {
     "name": "bevy-genre-survival",
-    "description": "\"Thin Bevy genre router for Survival. Keywords: Bevy, Survival, genre, ECS, router.\"",
+    "description": "\"Bevy ECS skill for survival loops. Keywords: Bevy, survival, hunger, warmth, day clock, crafting, ECS.\"",
     "keywords": [
       "Bevy",
-      "Survival",
-      "genre",
-      "ECS",
-      "router"
+      "survival",
+      "hunger",
+      "warmth",
+      "day clock",
+      "crafting",
+      "ECS"
     ]
   },
   {
     "name": "bevy-genre-tower-defense",
-    "description": "\"Thin Bevy genre router for Tower defense. Keywords: Bevy, Tower defense, genre, ECS, router.\"",
+    "description": "\"Bevy genre router for tower defense. Use when placing towers, marching creeps along waypoints, and spending gold on a fixed timestep. Keywords: Bevy, tower defense, creep, waypoint, gold, ECS.\"",
     "keywords": [
       "Bevy",
-      "Tower defense",
-      "genre",
-      "ECS",
-      "router"
+      "tower defense",
+      "creep",
+      "waypoint",
+      "gold",
+      "ECS"
     ]
   },
   {
@@ -656,11 +698,13 @@
   },
   {
     "name": "bevy-particles",
-    "description": "\"Bevy ECS skill for particle effects. Keywords: Bevy, particles, VFX, ECS.\"",
+    "description": "\"Bevy ECS skill for particle effects. Use when spawning a one-shot burst or a trail of sprite motes with life and velocity. Keywords: Bevy, particles, burst, trail, Sprite, ECS.\"",
     "keywords": [
       "Bevy",
       "particles",
-      "VFX",
+      "burst",
+      "trail",
+      "Sprite",
       "ECS"
     ]
   },
@@ -698,14 +742,14 @@
   },
   {
     "name": "bevy-platform-desktop",
-    "description": "\"Bevy ECS skill for desktop windows. Keywords: Bevy, window, desktop, WindowPlugin, PrimaryWindow, winit.\"",
+    "description": "\"Bevy ECS skill for desktop windows. Use when setting the primary window size, present mode, fullscreen, or close behavior. Keywords: Bevy, window, desktop, WindowPlugin, PrimaryWindow, WindowMode.\"",
     "keywords": [
       "Bevy",
       "window",
       "desktop",
       "WindowPlugin",
       "PrimaryWindow",
-      "winit"
+      "WindowMode"
     ]
   },
   {
@@ -722,14 +766,15 @@
   },
   {
     "name": "bevy-platform-web",
-    "description": "\"Bevy ECS skill for web and Wasm. Keywords: Bevy, wasm, web, webgl2, webgpu, browser.\"",
+    "description": "\"Ship a Bevy 0.20 app to the browser: wasm32 canvas Window, one of webgl2 or webgpu, and asset paths the page can serve. Use when the same ECS app must run in a browser. Keywords: Bevy, wasm, web, webgl2, webgpu, canvas, Window.\"",
     "keywords": [
       "Bevy",
       "wasm",
       "web",
       "webgl2",
       "webgpu",
-      "browser"
+      "canvas",
+      "Window"
     ]
   },
   {
@@ -746,12 +791,10 @@
   },
   {
     "name": "bevy-project-foundations",
-    "description": "\"Bevy ECS skill for a Bevy Rust project layout. Keywords: Bevy, Cargo, features, project layout.\"",
+    "description": "\"Pins a Bevy 0.20 crate, dev-profile opt-level, and plugin boundaries before gameplay systems exist. Use when starting a windowed or headless Bevy app. Keywords: Bevy, Cargo.toml, DefaultPlugins, MinimalPlugins, opt-level.\"",
     "keywords": [
       "Bevy",
-      "Cargo",
-      "features",
-      "project layout"
+      "Cargo"
     ]
   },
   {
@@ -769,13 +812,14 @@
   },
   {
     "name": "bevy-quest-system",
-    "description": "\"Bevy ECS skill for quests. Keywords: Bevy, quest, objective, ECS, state.\"",
+    "description": "\"Track Bevy 0.20 quest definitions in a Resource and per-party progress in a Component, advanced by Messages. Use when objectives must change stage without inventing a quest crate. Keywords: Bevy, quest, objective, QuestProgress, Message, ECS.\"",
     "keywords": [
       "Bevy",
       "quest",
       "objective",
-      "ECS",
-      "state"
+      "QuestProgress",
+      "Message",
+      "ECS"
     ]
   },
   {
@@ -791,13 +835,15 @@
   },
   {
     "name": "bevy-save-load",
-    "description": "\"Bevy ECS skill for persistence boundaries. Keywords: Bevy, save, Resource, Scene, AssetServer.\"",
+    "description": "\"Persists a versioned Bevy Resource as RON when a SaveRequest exists. Use for player slots; scene spawn stays on bevy-asset-scenes. Keywords: Bevy, save, load, RON, serde, Resource, SaveRequest.\"",
     "keywords": [
       "Bevy",
       "save",
+      "load",
+      "RON",
+      "serde",
       "Resource",
-      "Scene",
-      "AssetServer"
+      "SaveRequest"
     ]
   },
   {
@@ -814,13 +860,14 @@
   },
   {
     "name": "bevy-spatial-queries",
-    "description": "\"Bevy ECS skill for spatial queries. Keywords: Bevy, raycast, shapecast, picking, physics query.\"",
+    "description": "\"Answer Bevy 0.20 line-of-sight, radius, and cursor picks with Transform distance and facing. Use when a design needs a probe and collider casts belong on the physics skills. Keywords: Bevy, spatial query, viewport_to_world_2d, GlobalTransform, facing, radius.\"",
     "keywords": [
       "Bevy",
-      "raycast",
-      "shapecast",
-      "picking",
-      "physics query"
+      "spatial query",
+      "viewport_to_world_2d",
+      "GlobalTransform",
+      "facing",
+      "radius"
     ]
   },
   {
@@ -835,11 +882,12 @@
   },
   {
     "name": "bevy-testing-patterns",
-    "description": "\"Bevy ECS skill for Cargo tests around Bevy work. Keywords: Bevy, cargo test, Rust, libtest.\"",
+    "description": "\"Tests Bevy schedule logic with cargo test, MinimalPlugins, and app.update(). Use for unit tests of systems, resources, and .chain() order. Keywords: Bevy, cargo test, MinimalPlugins, world, libtest.\"",
     "keywords": [
       "Bevy",
       "cargo test",
-      "Rust",
+      "MinimalPlugins",
+      "world",
       "libtest"
     ]
   },
@@ -856,12 +904,13 @@
   },
   {
     "name": "bevy-turn-system",
-    "description": "\"Bevy ECS skill for turn order. Keywords: Bevy, turns, initiative, round, ECS.\"",
+    "description": "\"Run Bevy 0.20 turns with initiative on components and the active entity plus round on one resource. Use when play steps by turn instead of every frame. Keywords: Bevy, turns, initiative, TurnClock, chain, ECS.\"",
     "keywords": [
       "Bevy",
       "turns",
       "initiative",
-      "round",
+      "TurnClock",
+      "chain",
       "ECS"
     ]
   },
@@ -878,36 +927,42 @@
   },
   {
     "name": "bevy-ui-layout",
-    "description": "\"Bevy ECS skill for UI layout. Keywords: Bevy, UI, Node, Flexbox, BackgroundColor, Button.\"",
+    "description": "\"Lays out Bevy HUD and menu nodes with Flexbox, CSS Grid, Button, and ImageNode. Use when spawning Node trees; text and theming stay on their own skills. Keywords: Bevy, UI, Node, Flexbox, GridTrack, Button, Pressed, ImageNode.\"",
     "keywords": [
       "Bevy",
       "UI",
       "Node",
       "Flexbox",
-      "BackgroundColor",
-      "Button"
+      "GridTrack",
+      "Button",
+      "Pressed",
+      "ImageNode"
     ]
   },
   {
     "name": "bevy-ui-text",
-    "description": "\"Bevy ECS skill for UI text. Keywords: Bevy, text, UI, Text, bevy_text, Text2d.\"",
+    "description": "\"Bevy 0.20 UI and world text: Text, Text2d, TextSpan, TextFont, TextColor, TextLayout, TextShadow, Text2dShadow. Use when a HUD node or a 2D nameplate shows a string. Keywords: Bevy, text, UI, Text, TextSpan, bevy_text, Text2d, TextFont.\"",
     "keywords": [
       "Bevy",
       "text",
       "UI",
       "Text",
+      "TextSpan",
       "bevy_text",
-      "Text2d"
+      "Text2d",
+      "TextFont"
     ]
   },
   {
     "name": "bevy-ui-theming",
-    "description": "\"Bevy ECS skill for UI theming. Keywords: Bevy, UI theme, BackgroundColor, BorderColor, feathers.\"",
+    "description": "\"Theme a Bevy HUD from one palette resource copied onto BackgroundColor, BorderColor, BoxShadow, and BackgroundGradient. Use when many nodes share colors or a marker such as Danger picks a different fill. WindowTheme is OS chrome only. Keywords: Bevy, UI theme, UiPalette, BackgroundColor, BorderColor, BackgroundGradient, feathers.\"",
     "keywords": [
       "Bevy",
       "UI theme",
+      "UiPalette",
       "BackgroundColor",
       "BorderColor",
+      "BackgroundGradient",
       "feathers"
     ]
   },
@@ -1299,7 +1354,7 @@
   },
   {
     "name": "godot-composition-apps",
-    "description": "\"Expert architectural standards for scalable Godot Apps, Tools, EditorPlugins, and Control-dense UIs using Composition (Has-A Orchestrator + components). Use when building dashboards, tool windows, forms, settings panels, or EditorPlugin UIs. Do NOT use for gameplay entities (Player/Enemy/Weapon/Hitbox) \u2014 route those to godot-composition. Trigger keywords: Control, EditorPlugin, tool UI, Orchestrator, VLS, rock test, AuthComponent, ThemeManager, Saveable component, dependency injection.\"",
+    "description": "\"Expert architectural standards for scalable Godot Apps, Tools, EditorPlugins, and Control-heavy UIs using Composition (Has-A Orchestrator + components). Use when building dashboards, tool windows, forms, settings panels, or EditorPlugin UIs. Do NOT use for gameplay entities (Player/Enemy/Weapon/Hitbox) \u2014 route those to godot-composition. Trigger keywords: Control, EditorPlugin, tool UI, Orchestrator, VLS, rock test, AuthComponent, ThemeManager, Saveable component, dependency injection.\"",
     "keywords": [
       "Control",
       "EditorPlugin",
@@ -1398,49 +1453,49 @@
     "name": "godot-game-loop-time-trial",
     "description": "Expert patterns for racing mechanics, checkpoint tracking, and ghost recording/playback in Godot 4. Use when building racing games, speed-run platformers, or arcade trials.",
     "keywords": [
-      "godot",
+      "when",
       "tracking",
+      "building",
+      "recording",
+      "ghost",
+      "arcade",
       "trials",
-      "racing",
+      "mechanics",
       "patterns",
       "platformers",
-      "building",
-      "arcade",
-      "checkpoint",
-      "when",
-      "ghost",
-      "mechanics",
-      "games",
-      "speed",
-      "expert",
       "playback",
-      "recording"
+      "checkpoint",
+      "godot",
+      "games",
+      "racing",
+      "expert",
+      "speed"
     ]
   },
   {
     "name": "godot-game-loop-waves",
     "description": "Expert patterns for managing combat waves, difficulty scaling, and automated enemy spawning in Godot 4. Use when building wave-based shooters, tower defense, or arena games.",
     "keywords": [
-      "godot",
-      "managing",
-      "automated",
+      "when",
+      "shooters",
+      "patterns",
       "waves",
+      "tower",
+      "enemy",
+      "defense",
+      "automated",
+      "arena",
+      "godot",
+      "combat",
+      "managing",
+      "expert",
+      "building",
       "based",
       "scaling",
-      "games",
-      "shooters",
-      "arena",
-      "defense",
-      "building",
-      "wave",
-      "enemy",
-      "patterns",
-      "spawning",
-      "tower",
       "difficulty",
-      "combat",
-      "when",
-      "expert"
+      "games",
+      "wave",
+      "spawning"
     ]
   },
   {
