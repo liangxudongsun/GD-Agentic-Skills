@@ -28,10 +28,10 @@ Load this for ability-gated exploration and a map of rooms.
 
 ## Routing
 
-- [bevy-ability-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
-- [bevy-character-movement](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
-- [bevy-save-load](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags.
-- [bevy-mechanic-secrets](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
+- [bevy-ability-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
+- [bevy-character-movement](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
+- [bevy-save-load](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
 
 ## Scope
 
@@ -93,18 +93,18 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
 
 #### Complements
-- [godot-genre-metroidvania](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-genre-metroidvania/SKILL.md) - Equivalent Godot skill.
-- [bevy-ability-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
-- [bevy-character-movement](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
-- [bevy-save-load](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags.
-- [bevy-mechanic-secrets](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
+- [godot-genre-metroidvania](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-genre-metroidvania/SKILL.md) - Equivalent Godot skill.
+- [bevy-ability-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ability-system/SKILL.md) - Traversal abilities.
+- [bevy-character-movement](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Motion.
+- [bevy-save-load](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-save-load/SKILL.md) - Map flags.
+- [bevy-mechanic-secrets](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-mechanic-secrets/SKILL.md) - Optional rooms.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

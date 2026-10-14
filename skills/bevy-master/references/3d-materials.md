@@ -87,16 +87,16 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
-- [bevy-shaders](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-shaders/SKILL.md) - Custom shaders and material extensions.
-- [bevy-3d-lighting](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Lights that shade the material.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
+- [bevy-shaders](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-shaders/SKILL.md) - Custom shaders and material extensions.
+- [bevy-3d-lighting](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-3d-lighting/SKILL.md) - Lights that shade the material.
 
 #### Complements
-- [godot-3d-materials](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-3d-materials/SKILL.md) - Equivalent Godot skill.
+- [godot-3d-materials](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-3d-materials/SKILL.md) - Equivalent Godot skill.
 
 #### Downstream / consumers
 - None yet.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

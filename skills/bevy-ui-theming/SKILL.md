@@ -88,16 +88,16 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
-- [bevy-ui-layout](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Nodes being styled.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
+- [bevy-ui-layout](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Nodes being styled.
 
 #### Complements
-- [bevy-ui-text](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ui-text/SKILL.md) - Font choices.
-- [godot-ui-theming](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-ui-theming/SKILL.md) - Equivalent Godot skill.
+- [bevy-ui-text](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ui-text/SKILL.md) - Font choices.
+- [godot-ui-theming](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-ui-theming/SKILL.md) - Equivalent Godot skill.
 
 #### Downstream / consumers
 - None yet.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

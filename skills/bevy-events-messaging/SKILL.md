@@ -87,15 +87,15 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  ECS ownership before adding a notice channel.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Systems that write or read the notice.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  ECS ownership before adding a notice channel.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Systems that write or read the notice.
 
 #### Complements
-- [bevy-state-machines](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-state-machines/SKILL.md)  -  `StateTransitionEvent` for app-wide state changes.
-- [godot-signal-architecture](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-signal-architecture/SKILL.md)  -  Equivalent Godot skill. Do not import Godot types.
+- [bevy-state-machines](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-state-machines/SKILL.md)  -  `StateTransitionEvent` for app-wide state changes.
+- [godot-signal-architecture](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-signal-architecture/SKILL.md)  -  Equivalent Godot skill. Do not import Godot types.
 
 #### Downstream / consumers
 - Gameplay skills cover combat, abilities, and similar loops.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.

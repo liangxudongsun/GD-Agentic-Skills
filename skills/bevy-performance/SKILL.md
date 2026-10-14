@@ -89,17 +89,17 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Who owns which piece of state.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Systems and `.chain()`.
-- [bevy-debugging-profiling](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-debugging-profiling/SKILL.md)  -  How those diagnostics are plugged in.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Who owns which piece of state.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Systems and `.chain()`.
+- [bevy-debugging-profiling](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-debugging-profiling/SKILL.md)  -  How those diagnostics are plugged in.
 
 #### Complements
-- [bevy-asset-scenes](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-asset-scenes/SKILL.md)  -  When handles are loaded and dropped.
-- [bevy-character-movement](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md)  -  Work that belongs on the fixed timestep.
-- [godot-performance-optimization](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-performance-optimization/SKILL.md)  -  Equivalent Godot skill.
+- [bevy-asset-scenes](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-asset-scenes/SKILL.md)  -  When handles are loaded and dropped.
+- [bevy-character-movement](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md)  -  Work that belongs on the fixed timestep.
+- [godot-performance-optimization](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-performance-optimization/SKILL.md)  -  Equivalent Godot skill.
 
 #### Downstream / consumers
 - None yet.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.

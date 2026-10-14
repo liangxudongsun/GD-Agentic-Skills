@@ -1,16 +1,16 @@
-# Game-Design Agentic Skills
+# Game Dev Agentic Skills
 <div align="center">
-  <img src="assets/hero_banner.webp" alt="Game-Design Agentic Skills — Godot & Bevy" width="100%" />
+  <img src="assets/hero_banner.webp" alt="Game Dev Agentic Skills — Godot & Bevy" width="100%" />
 
-[![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/Game-Design-Agentic-Skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/Game-Design-Agentic-Skills/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/thedivergentai/Game-Dev-Agentic-Skills?style=for-the-badge&logo=github&color=58A6FF)](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/stargazers)
 [![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Godot Version](https://img.shields.io/badge/Godot-4.7%2B-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
 [![Bevy Version](https://img.shields.io/badge/Bevy-0.20%2B-232323?style=for-the-badge&logo=bevy&logoColor=white)](https://bevyengine.org/)
 [![Skills](https://img.shields.io/badge/Skills-181-green?style=for-the-badge)](skills_index.json)
-[![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/Game-Design-Agentic-Skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/Game-Design-Agentic-Skills/commits/main)
-[![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/Game-Design-Agentic-Skills)
+[![Last Commit](https://img.shields.io/github/last-commit/thedivergentai/Game-Dev-Agentic-Skills?style=for-the-badge&color=purple)](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/commits/main)
+[![Installs](https://img.shields.io/endpoint?url=https://skills.sh/api/badge/thedivergentai/gd-agentic-skills&style=for-the-badge&label=INSTALLS&color=FFC107)](https://skills.sh/thedivergentai/Game-Dev-Agentic-Skills)
 
-**Game-Design Agentic Skills (GDAS)** - agent library for **Godot 4.7+** and **Bevy 0.20+**
+**Game Dev Agentic Skills (GDAS)** - agent library for **Godot 4.7+** and **Bevy 0.20+**
 
 **"A skill forgotten is a power lost." — The Code Architect**
 
@@ -51,18 +51,18 @@
   <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
 </div>
 
-#### v0.0.10 — Migration Station
-- **Migration Station**: New Architecture skill — [godot-version-migration](skills/godot-version-migration/SKILL.md) — full-history engine upgrades from early Godot through **4.7** (legacy eras → official 3→4 → hop-by-hop 4.x).
-- **Per-skill migration notes**: Every Domain Skill ships `references/migration-notes.md`; Domain `SKILL.md` bodies stay on **current** APIs.
-- **Lattice routing**: Analyst, Auditor, Builder, foundations, GDScript, and TileMap point engine-version work at the migration hub; `godot-master` routes upgrades there (not as a changelog dump).
+#### v0.0.10 — Version Station
+- **Version Station**: New Architecture skill - [godot-version-migration](skills/godot-version-migration/SKILL.md) - full-history engine upgrades from early Godot through **4.7** (legacy eras, official 3 to 4, then hop-by-hop 4.x).
+- **Per-skill version notes**: Every Domain Skill ships `references/migration-notes.md`; Domain `SKILL.md` bodies stay on **current** APIs.
+- **Routing**: Analyst, Auditor, Builder, foundations, GDScript, and TileMap point engine-version work at that hub; `godot-master` routes upgrades there.
 
 <div align="center">
-  <img src="assets/banner_0_0_9.webp" alt="The Reference Lattice Update - v0.0.9" width="100%" />
+  <img src="assets/banner_0_0_9.webp" alt="The Reference Rail Update - v0.0.9" width="100%" />
 </div>
 
-#### v0.0.9 — The Reference Lattice Update
-- **The Reference Lattice**: Every Domain Skill now ends with a curated Official Documentation lattice (`docs.godotengine.org/en/stable/…`) plus detailed Related Skills (Prerequisites / Complements / Downstream / Master), so agents can research deeper without leaving the skill graph.
-- **Script & reference footers**: Research-link comment blocks on Domain Skill scripts and phase docs (marker `GDSkills research links (agents)`) — non-executing, file-specific, progressive disclosure.
+#### v0.0.9 — The Reference Rail Update
+- **The reference rail**: Every Domain Skill now ends with curated official documentation (`docs.godotengine.org/en/stable/`) plus Related Skills (Prerequisites / Complements / Downstream / Master), so agents can research deeper without leaving the skill graph.
+- **Script and reference footers**: Research-link comment blocks on Domain Skill scripts and reference notes (marker `GDSkills research links (agents)`) - non-executing, file-specific, progressive disclosure.
 - **SPECIAL MENTION —** <a href="https://github.com/DedInc"><img src="https://wsrv.nl/?url=github.com/DedInc.png&w=64&h=64&mask=circle&fit=cover&maxage=1w" width="22" height="22" alt="@DedInc" /></a> [**@DedInc**](https://github.com/DedInc): First external Domain Skill — [godot-monte-carlo-balancer](skills/godot-monte-carlo-balancer/SKILL.md) — source-driven Monte Carlo balance lab (Rust + rayon), Resource-first extract, playstyle CI bands, economy careers, and headless Godot calibration. Thank you!
 
 <div align="center">
@@ -70,8 +70,8 @@
 </div>
 
 #### v0.0.8 — The Director's Cut Update
-- **Godot 4.7 Director's Cut**: Full library upgrade to Godot 4.7+ — AreaLight3D, HDR output, Asset Store, built-in virtual joystick, and migration digest for 4.6→4.7 projects.
-- **Domain Skills**: Renamed "Micro-Skills" to **Domain Skills** — 92 modular topic skills, each with 4.7 baseline and targeted migration deltas.
+- **Godot 4.7 Director's Cut**: Full library upgrade to Godot 4.7+ - AreaLight3D, HDR output, Asset Store, built-in virtual joystick, and a version digest for 4.6 to 4.7 projects.
+- **Domain Skills**: Renamed "Micro-Skills" to **Domain Skills** - 92 modular topic skills, each with a 4.7 baseline and targeted version deltas.
 - **Persona Squad**: Anara, Aurelius, and Builder updated for 4.7 scoring, never-lists, and `GODOT_PATH` CLI overrides.
 
 <div align="center">
@@ -91,7 +91,7 @@
 #### v0.0.6 — The Expert Augmentation & Master Orchestration Update
 - **Microskill Overhaul**: We spent many hours updating *all* microskills to contain top expert-level knowledge, directly extracted from the Godot documentation. This massive update ensures all resources are true to the current engine state, empowering developers with best practices and reducing AI slop.
 - **Godot Master Takes Control**: We updated the `godot-master` skill to fully orchestrate and integrate this major skill update. It is now a true, all-in-one Godot Master skill!
-- **Feedback Requested**: We'd love your feedback on the new updates! The easiest way to share your thoughts is to [open an issue or start a discussion on our GitHub](https://github.com/thedivergentai/Game-Design-Agentic-Skills/issues).
+- **Feedback Requested**: We'd love your feedback on the new updates! The easiest way to share your thoughts is to [open an issue or start a discussion on our GitHub](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/issues).
 
 <div align="center">
   <img src="assets/banner_0_0_5.webp" alt="The Looper Update - v0.0.5" width="100%" />
@@ -128,7 +128,7 @@
 
 #### v0.0.2 — Master Skill Evolution
 - **Unified Architecture**: Upgraded `godot-master` to an all-in-one orchestration layer for all 87 specialized skills.
-- **Decision Matrix**: Integrated expert-level Godot 4 architectural decision trees and anti-pattern guides.
+- **Decision trees**: Integrated expert-level Godot 4 architectural decision trees and anti-pattern guides.
 - **Workflow Scaffolding**: Added programmatic scene building and project initialization patterns.
 
 <div align="center">
@@ -147,7 +147,7 @@
 
 ## Engines
 
-**Game-Design Agentic Skills** is one product with per-engine trees. Pick the master for the engine you are shipping — there is **no** singular product-wide master.
+**Game Dev Agentic Skills** is one product with per-engine trees. Pick the master for the engine you are shipping — there is **no** singular product-wide master.
 
 | Engine | Master | What you get |
 | --- | --- | --- |
@@ -166,7 +166,7 @@ Install **one** engine master or **one** Domain Skill — never `--all`. Pick th
 
 ## The Philosophy
 
-**Game-Design Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
+**Game Dev Agentic Skills (GDAS)** is an agent-first knowledge library for shipping real games — not AI slop. Each engine gets its own master and Domain Skills.
 
 - **Godot 4.7+** is fully supported: doc-true patterns, personas, and production scripts under [godot-master](skills/godot-master/SKILL.md).
 - **Bevy 0.20+** is fully supported: ECS ownership and Domain Skills under [bevy-master](skills/bevy-master/SKILL.md).
@@ -184,26 +184,26 @@ Choose **one** path so you do not trigger a **"Context Storm"** (flooding the ag
 New Godot project, or an existing one that needs a **Godot 4.7+** standards check - install the Godot hub **or** one Godot Domain Skill:
 
 ```bash
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-master
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/godot-master
 # or one Domain Skill:
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-characterbody-2d
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/godot-characterbody-2d
 ```
 
 ### Path B: Bevy
 Bevy work starts at the Bevy hub **or** one Bevy Domain Skill:
 
 ```bash
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/bevy-master
 # or one Domain Skill:
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-ecs-composition
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/bevy-ecs-composition
 ```
 
 ### Path C: One specialist skill
 Need a single feature and already know which skill owns it - install only that path (either engine):
 
 ```bash
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-inventory-system
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-inventory-system
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/godot-inventory-system
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/bevy-inventory-system
 ```
 
 > [!DANGER]
@@ -226,7 +226,7 @@ Use this when installing via the [skills CLI](https://github.com/vercel-labs/ski
 | OpenCode | `opencode` | `.agents/skills/` | `~/.config/opencode/skills/` |
 
 **Rules**
-1. **Preferred install**: one path only, for example `npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/godot-master -g -a <agent> -y` or `npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master -g -a <agent> -y` (swap the skill path for a Domain Skill when needed).
+1. **Preferred install**: one path only, for example `npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/godot-master -g -a <agent> -y` or `npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/bevy-master -g -a <agent> -y` (swap the skill path for a Domain Skill when needed).
 2. **Verify**: `npx skills list -g -a <agent>`
 3. **Restart** the host agent after install — most agents load skills once at session start.
 4. **Clone / DIA path** (no `npx skills add`): query [`skills_index.json`](skills_index.json), then read `skills/<name>/SKILL.md` with the agent's file tool. Do **not** hand-symlink into host skill dirs unless the user asks for that.
@@ -260,6 +260,13 @@ Installing 181 skills simultaneously creates a **"Metadata Flood"**:
 
 ---
 
+<details>
+<summary><b>Godot hub - godot-master</b></summary>
+
+<div align="center">
+  <img src="assets/engine_godot.webp" alt="Godot hub" width="100%" />
+</div>
+
 ## 🏆 Godot Master - Godot hub
 
 **[godot-master](skills/godot-master/SKILL.md)** is the Godot hub. It orchestrates the Godot Domain Skills into one architectural framework for Godot 4.7+ projects. It does not route Bevy work. Bevy starts at [bevy-master](skills/bevy-master/SKILL.md).
@@ -274,7 +281,7 @@ Unlike individual Domain Skills that focus on isolated features, **godot-master*
 - **11 Workflow Patterns**: Step-by-step architectural workflows (scaffolding, entity orchestration, persistence, optimization, multiplayer, Builder CLI scene builds, etc.)
 
 **🧠 Expert Frameworks**
-- **Architectural Decision Matrix**: Choose the right pattern for your project (component-driven, event-driven, resource-streaming, deterministic networking)
+- **Architectural decision guide**: Choose the right pattern for your project (component-driven, event-driven, resource-streaming, deterministic networking)
 - **15 Anti-Patterns**: Explicit "NEVER DO THIS" rules with non-obvious explanations (e.g., why `get_tree().root.get_node()` breaks, why `load()` in `_process` kills performance)
 - **Performance Budgets**: Concrete numbers for mobile/desktop targets (draw calls, triangle counts, script time)
 - **Server API Patterns**: Expert escape hatch for 10K+ entities using RenderingServer/PhysicsServer RIDs
@@ -328,7 +335,7 @@ flowchart LR
 - Choosing between 2D/3D approaches
 - Implementing multiplayer
 - Optimizing draw calls or script time
-- Porting between platforms
+- Shipping the same design on more than one platform
 
 **Use Domain Skills when:**
 - Adding a specific feature to an existing codebase
@@ -347,32 +354,102 @@ skills/godot-master/SKILL.md
 └── Complete architectural decision trees
 ```
 
----
+</details>
 
 
-## 🦀 Bevy Master - Bevy hub
+<details>
+<summary><b>Bevy hub - bevy-master</b></summary>
 
-**[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub. Use it when you are starting a Bevy 0.20+ app, choosing ECS boundaries, or picking which Bevy Domain Skill to load next. Library target: **Bevy 0.20+**.
+<div align="center">
+  <img src="assets/engine_bevy.webp" alt="Bevy hub" width="100%" />
+</div>
 
-Schedules replace a scene tree. For every piece of state, name which **component** or **resource** owns it, which **system** may mutate it, and which message or observer should see it. Do not import Godot types into a Bevy crate.
+## Bevy Master - Bevy hub
 
-### When to use Bevy Master vs Bevy Domain Skills
+**[bevy-master](skills/bevy-master/SKILL.md)** is the Bevy hub. It orchestrates the Bevy Domain Skills into one architectural framework for Bevy 0.20+ apps. It does not route Godot work. Godot starts at [godot-master](skills/godot-master/SKILL.md).
 
-**Use bevy-master when:**
-- Starting a new Bevy app
-- Deciding component vs resource vs schedule
-- Choosing which Domain Skill to open next
-- Checking that a task belongs on the Bevy side of the library (Godot language, version hops, and CLI stay on godot-master)
+### What makes Bevy Master special?
 
-**Use a Bevy Domain Skill when:**
-- You already know the feature (movement, inventory, a genre loop, UI layout)
-- You want one focused `SKILL.md` instead of the hub
+Unlike individual Domain Skills that focus on isolated features, **bevy-master** is your *system architect*. It provides:
 
-```bash
-npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master
+**Comprehensive knowledge base**
+- **Hub plus 81 Domain Skills**: composition, rendering, gameplay, UI, platforms, adaptation, and genre skills
+- **ECS ownership**: every piece of state names a component or resource, a system that may mutate it, and the message or observer that should see it
+- **Schedule literacy**: app setup, plugins, states, and the order systems actually run
+
+**Expert frameworks**
+- **Architectural decision guide**: component vs resource vs plain struct, app state vs per-entity mode, messages vs observers
+- **Anti-patterns**: Godot types inside a Bevy crate, an entity spawned for every config value, systems that mutate data they do not own
+- **Plugin boundaries**: features live in plugins; the hub tells you which Domain Skill to open next
+- **Data rules**: data that is not simulated stays a resource or a plain Rust struct
+
+**The schedule architecture**
+
+Bevy Master enforces ownership along the schedule, not a scene tree:
+
+```mermaid
+graph TD
+    APP[APP SETUP<br/>App / plugins / states] --> ECS[COMPONENTS / RESOURCES / SYSTEMS]
+    PLUG[PLUGINS AND STATES] --> APP
+    ECS --> DOMAIN[DOMAIN BEVY SKILLS<br/>one feature at a time]
+
+    style APP fill:#1f2937,stroke:#58A6FF,stroke-width:2px,color:#fff
+    style PLUG fill:#1f2937,stroke:#79C0FF,stroke-width:2px,color:#fff
+    style ECS fill:#1f2937,stroke:#A371F7,stroke-width:2px,color:#fff
+    style DOMAIN fill:#1f2937,stroke:#F778BA,stroke-width:2px,color:#fff
 ```
 
-### Decision matrix
+**Critical rule**: Name the owner before you write the system. A system reads and writes only the data it owns.
+
+### When to use Bevy Master vs Domain Skills
+
+```mermaid
+flowchart LR
+    START([New Task]) --> Q1{Starting a<br/>new app?}
+    Q1 -->|Yes| MASTER[Use bevy-master]
+    Q1 -->|No| Q2{Need ECS<br/>boundaries?}
+    Q2 -->|Yes| MASTER
+    Q2 -->|No| Q3{Building a<br/>complete system?}
+    Q3 -->|Yes| MASTER
+    Q3 -->|No| MICRO[Use Domain Skill:<br/>targeted implementation]
+
+    MASTER --> DESC1[Full schedule context<br/>Decision frameworks<br/>Ownership rules<br/>Which skill next]
+    MICRO --> DESC2[Quick implementation<br/>Focused feature<br/>Standalone pattern]
+
+    style START fill:#1f2937,stroke:#58A6FF,stroke-width:3px,color:#fff
+    style MASTER fill:#0d1117,stroke:#58A6FF,stroke-width:3px,color:#79C0FF
+    style MICRO fill:#0d1117,stroke:#A371F7,stroke-width:3px,color:#F778BA
+    style DESC1 fill:#1f2937,stroke:#58A6FF,stroke-width:2px,color:#fff
+    style DESC2 fill:#1f2937,stroke:#A371F7,stroke-width:2px,color:#fff
+```
+
+**Use bevy-master when:**
+- Starting a new Bevy app from scratch
+- **Auditing an existing app** for ownership mistakes or schedule sprawl
+- Designing ECS architecture
+- Choosing component vs resource vs schedule
+- Deciding messages vs observers
+- Choosing which Domain Skill to open next
+- Implementing gameplay that spans several systems
+- Checking that a task belongs on the Bevy side of the library
+- Wiring plugins, states, and feature folders
+
+**Use Domain Skills when:**
+- Adding a specific feature to an existing crate
+- Learning a targeted Bevy pattern
+- Implementing standalone functionality (movement, inventory, UI layout, a genre loop)
+
+### Access Bevy Master
+
+```bash
+# Skill path
+skills/bevy-master/SKILL.md
+
+# Install
+npx skills add thedivergentai/Game-Dev-Agentic-Skills/skills/bevy-master
+```
+
+### Routing table
 
 | Scenario | Route |
 | --- | --- |
@@ -392,11 +469,11 @@ npx skills add thedivergentai/Game-Design-Agentic-Skills/skills/bevy-master
 
 Data that is not simulated can stay a plain Rust struct or a resource. Do not spawn an entity for every config value.
 
----
+</details>
 
 ## 🧩 Domain Skills — Bite-Size Power
 
-Domain Skills are modular, engine-scoped modules. Open **one** engine accordion below. Godot holds the deep catalog (98 Domain Skills + godot-master). Bevy holds the second catalog (81 Domain Skills + bevy-master). Together with the two hubs that is **181** skills.
+Domain Skills are modular, engine-scoped modules. Open **one** engine accordion below. Godot holds 98 Domain Skills plus godot-master. Bevy holds 81 Domain Skills plus bevy-master. Together with the two hubs that is **181** skills.
 
 Install the hub for the engine you are shipping, or one Domain Skill. Do not expand both engines into the agent's context at once.
 
@@ -786,11 +863,11 @@ We welcome contributions from developers and agents!
 If this project accelerates your Godot or Bevy work, or empowers your AI agents, consider starring the repository!
 
 <div align="center">
-  <a href="https://github.com/thedivergentai/Game-Design-Agentic-Skills/stargazers">
+  <a href="https://github.com/thedivergentai/Game-Dev-Agentic-Skills/stargazers">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://thedivergentai.github.io/Game-Design-Agentic-Skills/star-history-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://thedivergentai.github.io/Game-Design-Agentic-Skills/star-history-light.svg" />
-      <img alt="GDAS Star History Chart" src="https://thedivergentai.github.io/Game-Design-Agentic-Skills/star-history-dark.svg" width="100%" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://thedivergentai.github.io/Game-Dev-Agentic-Skills/star-history-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://thedivergentai.github.io/Game-Dev-Agentic-Skills/star-history-light.svg" />
+      <img alt="GDAS Star History Chart" src="https://thedivergentai.github.io/Game-Dev-Agentic-Skills/star-history-dark.svg" width="100%" />
     </picture>
   </a>
 </div>
@@ -815,7 +892,7 @@ If this project accelerates your Godot or Bevy work, or empowers your AI agents,
 
 ## 💖 Sponsorship & Support
 
-We are seeking **financial sponsors and infrastructure partners** to sustain Game-Design Agentic Skills across Godot and Bevy. Every contribution helps us maintain these skills and keep them free for the community.
+We are seeking **financial sponsors and infrastructure partners** to sustain Game Dev Agentic Skills across Godot and Bevy. Every contribution helps us maintain these skills and keep them free for the community.
 
 🚀 **View our [Sponsorship & Support Opportunities](PARTNERS.md)**
 

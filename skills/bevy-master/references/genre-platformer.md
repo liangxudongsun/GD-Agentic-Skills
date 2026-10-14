@@ -28,10 +28,10 @@ Load this to route a platformer to movement, camera, and tiles.
 
 ## Routing
 
-- [bevy-character-movement](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Locomotion.
-- [bevy-camera-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Follow camera.
-- [bevy-tilemap](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-tilemap/SKILL.md) - Ground tiles.
-- [bevy-2d-animation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
+- [bevy-character-movement](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Locomotion.
+- [bevy-camera-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Follow camera.
+- [bevy-tilemap](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-tilemap/SKILL.md) - Ground tiles.
+- [bevy-2d-animation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
 
 ## Scope
 
@@ -94,18 +94,18 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
 
 #### Complements
-- [godot-genre-platformer](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-genre-platformer/SKILL.md) - Equivalent Godot skill.
-- [bevy-character-movement](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Locomotion.
-- [bevy-camera-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Follow camera.
-- [bevy-tilemap](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-tilemap/SKILL.md) - Ground tiles.
-- [bevy-2d-animation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
+- [godot-genre-platformer](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-genre-platformer/SKILL.md) - Equivalent Godot skill.
+- [bevy-character-movement](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-character-movement/SKILL.md) - Locomotion.
+- [bevy-camera-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Follow camera.
+- [bevy-tilemap](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-tilemap/SKILL.md) - Ground tiles.
+- [bevy-2d-animation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

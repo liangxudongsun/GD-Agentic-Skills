@@ -85,17 +85,17 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
-- [bevy-platform-mobile](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-platform-mobile/SKILL.md) - Android and touch features.
-- [bevy-ui-layout](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Reflow the HUD.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
+- [bevy-platform-mobile](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-platform-mobile/SKILL.md) - Android and touch features.
+- [bevy-ui-layout](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ui-layout/SKILL.md) - Reflow the HUD.
 
 #### Complements
-- [bevy-adapt-mobile-to-desktop](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-adapt-mobile-to-desktop/SKILL.md) - The reverse adapt.
-- [godot-adapt-desktop-to-mobile](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-adapt-desktop-to-mobile/SKILL.md) - Equivalent Godot skill.
+- [bevy-adapt-mobile-to-desktop](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-adapt-mobile-to-desktop/SKILL.md) - The reverse adapt.
+- [godot-adapt-desktop-to-mobile](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-adapt-desktop-to-mobile/SKILL.md) - Equivalent Godot skill.
 
 #### Downstream / consumers
 - None yet.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

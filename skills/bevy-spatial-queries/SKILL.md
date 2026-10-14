@@ -88,16 +88,16 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership.
-- [bevy-camera-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Viewport to 2D world, without a hit test.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership.
+- [bevy-camera-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Viewport to 2D world, without a hit test.
 
 #### Complements
-- [bevy-physics-2d](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-physics-2d/SKILL.md) - 2D physics and solver choice.
-- [bevy-physics-3d](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-physics-3d/SKILL.md) - 3D physics and solver choice.
-- [godot-raycasting-queries](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-raycasting-queries/SKILL.md) - Equivalent Godot skill.
+- [bevy-physics-2d](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-physics-2d/SKILL.md) - 2D physics and solver choice.
+- [bevy-physics-3d](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-physics-3d/SKILL.md) - 3D physics and solver choice.
+- [godot-raycasting-queries](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-raycasting-queries/SKILL.md) - Equivalent Godot skill.
 
 #### Downstream / consumers
-- [bevy-ai-navigation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Sensors that need a cast.
+- [bevy-ai-navigation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ai-navigation/SKILL.md) - Sensors that need a cast.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

@@ -86,14 +86,14 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Library pin and which Bevy skill to load next.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Library pin and which Bevy skill to load next.
 
 #### Complements
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Entities, components, and systems after the crate exists.
-- [godot-project-foundations](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-project-foundations/SKILL.md)  -  Equivalent Godot skill. Do not import Godot types.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md)  -  Entities, components, and systems after the crate exists.
+- [godot-project-foundations](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-project-foundations/SKILL.md)  -  Equivalent Godot skill. Do not import Godot types.
 
 #### Downstream / consumers
-- [bevy-app-resources](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-app-resources/SKILL.md)  -  App-wide resources once the `App` exists.
+- [bevy-app-resources](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-app-resources/SKILL.md)  -  App-wide resources once the `App` exists.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md)  -  Bevy router.

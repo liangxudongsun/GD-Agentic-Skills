@@ -28,9 +28,9 @@ Load this for chart time and hit windows aligned to audio.
 
 ## Routing
 
-- [bevy-audio-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Music playback.
-- [bevy-input-handling](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-input-handling/SKILL.md) - Hits.
-- [bevy-game-loop-time-trial](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Score time.
+- [bevy-audio-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Music playback.
+- [bevy-input-handling](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-input-handling/SKILL.md) - Hits.
+- [bevy-game-loop-time-trial](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Score time.
 
 ## Scope
 
@@ -93,17 +93,17 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
 
 #### Complements
-- [godot-genre-rhythm](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-genre-rhythm/SKILL.md) - Equivalent Godot skill.
-- [bevy-audio-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Music playback.
-- [bevy-input-handling](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-input-handling/SKILL.md) - Hits.
-- [bevy-game-loop-time-trial](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Score time.
+- [godot-genre-rhythm](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-genre-rhythm/SKILL.md) - Equivalent Godot skill.
+- [bevy-audio-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-audio-systems/SKILL.md) - Music playback.
+- [bevy-input-handling](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-input-handling/SKILL.md) - Hits.
+- [bevy-game-loop-time-trial](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-game-loop-time-trial/SKILL.md) - Score time.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

@@ -37,7 +37,7 @@ I want this library to be the "Long-Term Memory" your agents need to build your 
   <img src="assets/banner_bevy.webp" alt="Bevy skills - v0.1.0" width="100%" />
 </div>
 
-Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot 4.7+** keeps its hub, personas, and production scripts. **Bevy 0.20+** gets its own hub, its own Domain Skills, and a straight install path. Pick the engine you are shipping.
+Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot 4.7+** and **Bevy 0.20+** each have a full hub, a full set of Domain Skills, and a straight install path. Pick the engine you are shipping.
 
 - **Bevy hub - [bevy-master](skills/bevy-master/SKILL.md)**: ECS ownership (component, resource, system, schedule), decision tables, and when to open a Domain Skill instead of the hub.
 - **Bevy Domain Skills**: composition, rendering, gameplay, UI, platforms, adaptation, and genre skills. Install one path. Do not use `--all`.
@@ -45,6 +45,30 @@ Hey everyone - Divergent AI here. GDAS is a multi-engine library now. **Godot 4.
 - **Single-skill installs**: Related Skills keep GitHub blob URLs (Prerequisites / Complements / Downstream / Master) so one installed skill still resolves its peers.
 
 > "A schedule is not a scene tree. Name the component, the resource, and the system." - *Anara*
+
+<div align="center">
+  <img src="assets/feed_callout_anara.webp" alt="Speaking Anara" width="100%" />
+</div>
+
+> **Speaking Anara** - "Two hubs, two engines, one standard: name the owner of the data before you name the feature."
+
+<div align="center">
+  <img src="assets/feed_callout_aurelius.webp" alt="Speaking Aurelius" width="100%" />
+</div>
+
+> **Speaking Aurelius** - "Do not smuggle Godot types into a Bevy crate, and do not smuggle ECS folklore into a Godot scene. I will cite both."
+
+<div align="center">
+  <img src="assets/feed_callout_builder.webp" alt="Speaking Builder" width="100%" />
+</div>
+
+> **Speaking Builder** - "One install path. `bevy-master` or `godot-master`. I will not preload 181 skills so a button can exist."
+
+> [!TIP]
+> Install the hub for the engine you are shipping. Open one Domain Skill when the feature is already named.
+
+<details>
+<summary><b>Earlier posts</b></summary>
 
 ## 🚀 Major Release: v0.0.11 — Agent Eyes (500-star celebration)
 **August 12, 2026**
@@ -74,19 +98,19 @@ Load [godot-agent-vision](skills/godot-agent-vision/SKILL.md) whenever agents mu
 
 ---
 
-## 🚀 Major Release: v0.0.10 — Migration Station
+## 🚀 Major Release: v0.0.10 — Version Station
 **August 10, 2026**
 
 <div align="center">
   <img src="assets/banner_0_0_10.webp" alt="Migration Station Update - v0.0.10" width="100%" />
 </div>
 
-Engine upgrades used to mean scavenger hunts across blog posts, half-remembered renames, and “just open it in the new editor.” **Migration Station** is the library’s dedicated stop for that journey: detect the era, take the right bridge, hop one minor at a time, and only then return to Domain Skills for current-API work.
+Engine upgrades used to mean scavenger hunts across blog posts, half-remembered renames, and "just open it in the new editor." **Version Station** is the library's dedicated stop for that journey: detect the era, take the right bridge, hop one minor at a time, and only then return to Domain Skills for current-API work.
 
 - **New skill — [godot-version-migration](skills/godot-version-migration/SKILL.md)**: Full-history router from early Godot through **4.7** — archaeology (1.x), legacy 2→3, official 3→4 converter bridge, then 4.0→4.7 minor hops.
 - **Per-skill notes**: Every Domain Skill carries `references/migration-notes.md`; bodies stay on **current** APIs so agents are not fed changelogs as tutorials.
 - **Corpus-backed**: Official migrating guides where they exist, plus docs changelog, interactive changelog, download archive, and GitHub releases for eras without a dedicated `upgrading_to_*` page.
-- **Lattice**: Analyst / Auditor / Builder (and foundations, GDScript, TileMap) route engine-version jobs here; `godot-master` points upgrades at the hub instead of mirroring a changelog.
+- **Routing**: Analyst / Auditor / Builder (and foundations, GDScript, TileMap) send engine-version jobs here; `godot-master` points upgrades at the hub instead of mirroring a changelog.
 
 ### Featured skill — Version Migration
 
@@ -94,7 +118,7 @@ Load [godot-version-migration](skills/godot-version-migration/SKILL.md) whenever
 
 ### Squad desk
 
-> "Score the *destination* APIs. If the project is still speaking Godot 3, buy a ticket at Migration Station first — then ask me for a Visionary Certificate." — *Anara*
+> "Score the *destination* APIs. If the project is still speaking Godot 3, buy a ticket at Version Station first - then ask me for a Visionary Certificate." - *Anara*
 
 > "String `connect`, legacy TileMap, `SCREEN_TEXTURE` nostalgia: those are never-list citations *after* you finish the hops. Do not invent rename folklore in the audit." — *Aurelius*
 
@@ -102,20 +126,20 @@ Load [godot-version-migration](skills/godot-version-migration/SKILL.md) whenever
 
 ---
 
-## 🚀 Major Release: v0.0.9 — The Reference Lattice Update
+## 🚀 Major Release: v0.0.9 — The Reference Rail Update
 **July 22, 2026**
 
 <div align="center">
-  <img src="assets/banner_0_0_9.webp" alt="The Reference Lattice Update - v0.0.9" width="100%" />
+  <img src="assets/banner_0_0_9.webp" alt="The Reference Rail Update - v0.0.9" width="100%" />
 </div>
 
 <div align="center">
-  <img src="assets/feed_lattice_rail.webp" alt="Reference Lattice - Stable Permalinks - Research Footers" width="100%" />
+  <img src="assets/feed_reference_rail.webp" alt="Reference rail - stable permalinks - research footers" width="100%" />
 </div>
 
-Agents shouldn't have to *guess* which doc page or peer skill owns the landmine. This release turns every Domain Skill into a **lattice node**: curated stable Godot docs on one side, progressive Related Skills on the other — plus research-link footers so scripts and phase refs stay one hop from the truth.
+Agents shouldn't have to *guess* which doc page or peer skill owns the landmine. This release turns every Domain Skill into a **rail stop**: curated stable Godot docs on one side, progressive Related Skills on the other, plus research-link footers so scripts and reference notes stay one hop from the truth.
 
-- **Reference Lattice**: Official Documentation (`/en/stable/` only — never versioned `/en/4.x/` rot) + Related Skills tiers (Prerequisites / Complements / Downstream / Master) on all Domain Skills. Peer links use GitHub blob URLs so single-skill installs still resolve.
+- **Reference rail**: Official Documentation (`/en/stable/` only - never versioned `/en/4.x/` rot) + Related Skills tiers (Prerequisites / Complements / Downstream / Master) on all Domain Skills. Peer links use GitHub blob URLs so single-skill installs still resolve.
 - **Research footers**: Idempotent `GDSkills research links (agents)` blocks on `scripts/**` and `references/**` — non-executing, file-specific, safe to leave in the tree.
 
 ### Featured skill — Monte Carlo Balancer
@@ -137,7 +161,13 @@ Load [godot-monte-carlo-balancer](skills/godot-monte-carlo-balancer/SKILL.md) wh
   <img src="assets/feed_squad_desk.webp" alt="Squad Desk — Anara, Aurelius, Builder" width="100%" />
 </div>
 
-> "Start at the skill. Fan out only when the agent *earns* the next node. That is progressive disclosure — not a scavenger hunt." — *Anara*
+> "Start at the skill. Fan out only when the agent *earns* the next stop. That is progressive disclosure - not a scavenger hunt." - *Anara*
+
+<div align="center">
+  <img src="assets/feed_callout_anara.webp" alt="Speaking Anara" width="100%" />
+</div>
+
+> **Speaking Anara** - "Stable links are a scoring signal. Rotting versioned URLs are how a library forgets its own sources."
 
 > "`/en/stable/` only. Versioned doc URLs are how libraries quietly rot while nobody is looking. I will not bless rot." — *Aurelius*
 
@@ -513,5 +543,7 @@ Day one: ship a usable agent-first Godot skill library — 80+ skills, the DIA l
 <div align="center">
   <a href="https://github.com/thedivergentai"><img src="https://wsrv.nl/?url=github.com/thedivergentai.png&w=96&h=96&mask=circle&fit=cover&maxage=1w" width="36" height="36" alt="Divergent AI" /></a>
   &nbsp;<b>Authored by <a href="https://github.com/thedivergentai">Divergent AI</a></b><br/>
-  <em>Keeping Godot development social, fast, and slop-free.</em>
+  <em>Keeping Godot and Bevy development social, fast, and slop-free.</em>
 </div>
+
+</details>

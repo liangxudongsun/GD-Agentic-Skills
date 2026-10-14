@@ -28,10 +28,10 @@ Load this for towers, creeps, and waves on a path.
 
 ## Routing
 
-- [bevy-game-loop-waves](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
-- [bevy-navigation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-navigation/SKILL.md) - Paths and navigation meshes.
-- [bevy-combat-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
-- [bevy-economy-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
+- [bevy-navigation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-navigation/SKILL.md) - Paths and navigation meshes.
+- [bevy-combat-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
+- [bevy-economy-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
 
 ## Scope
 
@@ -94,18 +94,18 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - ECS ownership and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Spawn and query shape.
 
 #### Complements
-- [godot-genre-tower-defense](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-genre-tower-defense/SKILL.md) - Equivalent Godot skill.
-- [bevy-game-loop-waves](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
-- [bevy-navigation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-navigation/SKILL.md) - Paths and navigation meshes.
-- [bevy-combat-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
-- [bevy-economy-system](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
+- [godot-genre-tower-defense](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-genre-tower-defense/SKILL.md) - Equivalent Godot skill.
+- [bevy-game-loop-waves](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-game-loop-waves/SKILL.md) - Creep waves.
+- [bevy-navigation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-navigation/SKILL.md) - Paths and navigation meshes.
+- [bevy-combat-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-combat-system/SKILL.md) - Tower shots.
+- [bevy-economy-system](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-economy-system/SKILL.md) - Build costs.
 
 #### Downstream / consumers
 - None. This router does not own a second implementation.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.

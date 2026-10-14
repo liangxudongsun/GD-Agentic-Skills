@@ -85,17 +85,17 @@ docs.rs links use the unversioned `latest` permalink. The library pin on bevy-ma
 ### Related Skills
 
 #### Prerequisites
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
-- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
-- [bevy-camera-systems](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Camera2d.
-- [bevy-2d-animation](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Hub and schedules.
+- [bevy-ecs-composition](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-ecs-composition/SKILL.md) - Components and systems.
+- [bevy-camera-systems](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-camera-systems/SKILL.md) - Camera2d.
+- [bevy-2d-animation](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-2d-animation/SKILL.md) - Sprite clips.
 
 #### Complements
-- [bevy-adapt-2d-to-3d](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-adapt-2d-to-3d/SKILL.md) - The reverse adapt.
-- [godot-adapt-3d-to-2d](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/godot-adapt-3d-to-2d/SKILL.md) - Equivalent Godot skill.
+- [bevy-adapt-2d-to-3d](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-adapt-2d-to-3d/SKILL.md) - The reverse adapt.
+- [godot-adapt-3d-to-2d](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/godot-adapt-3d-to-2d/SKILL.md) - Equivalent Godot skill.
 
 #### Downstream / consumers
 - None yet.
 
 #### Master
-- [bevy-master](https://github.com/thedivergentai/Game-Design-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
+- [bevy-master](https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/main/skills/bevy-master/SKILL.md) - Bevy router.
